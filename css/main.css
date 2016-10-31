@@ -1,0 +1,289 @@
+/* LAYOUT
+   ========================================================================== */
+html {
+	background:url('../images/mountain.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+
+header {
+	background-color:rgba(0, 0, 0, .4);
+	height:35px;
+	width:100%;
+	margin:10px 0 0 0;
+	text-align:center;
+}
+
+nav {
+	margin:0px 100px 0 0;
+	width:600px;
+	height:35px;
+	float:right;
+}
+
+.hero p {
+	margin: 0 0 0 0;
+}
+
+.hero h1 {
+	margin: 0 0 0 0;
+}
+
+.clear {
+	clear:all;
+	height:1px;
+}
+
+.below-header {
+	margin: 20px 0 0 0 ;
+	width:100%;
+	height:100vh;
+}
+
+
+
+/* HEADER
+   ========================================================================== */
+   	
+header h1 {
+	float:left;
+	padding:0 0 0 40px;
+	margin:0 0 0 0;
+	color:white;
+}
+
+header a {
+	text-decoration:none;
+	color:white;
+}
+
+header a:hover {
+	color:rgba(50,205,50,1);
+	transition: .3s, ease-in;
+}
+
+nav ul  {
+	margin: 3px 0 3px 0;
+	width:600px;
+	height:35px;
+}
+
+nav ul li {
+	list-style:none;
+	float:right;
+	margin: 0 0 0 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	margin: 0 25px 0 0;
+	font-size:18px;
+}
+
+nav ul li a:hover {
+	color:rgba(50,205,50,1);
+	transition: .3s, ease-in;
+}
+
+#normal nav ul li a  {
+	color:white;
+}
+
+#highlight nav ul li a  {
+	color:yellow;
+}
+
+
+
+/* MAIN
+   ========================================================================== */
+
+.hero {
+	text-align:left;
+	margin: 0px 0 0 40px;
+	width:480px;
+	float:left;
+}
+
+.CTA {
+	width:500px;
+	height:280px;
+	/*height:265px;*/
+	float:right;
+	margin: 60px 100px 0 0;
+	text-align:center;
+	background:rgba(255, 255, 255, .2);
+	border:1px solid grey;
+	border-radius:2%;
+	display:inline-block;	
+}
+
+.CTA1 {
+	margin:-10px 20px 20px 0;
+
+
+}
+
+#CTA2 {
+	float:left;
+	margin: 0 0 0 40px;
+	width:200px;
+	height:200px;
+	border: 1px solid black;
+	background:rgba(255, 255, 255, .8);
+	width:200px;
+	height:180px;
+
+}
+
+#CTA3 {
+	float:left;
+	margin: 0 0 0 20px;
+	display:inline-block;
+	border: 1px solid black;
+	background:rgba(255, 255, 255, .8);
+	width:200px;
+	height:180px;
+}
+
+
+
+
+button a  {
+	text-decoration:none;
+	color:black;
+}
+
+.buttons li {
+	list-style:none;
+	margin:10px 0 0 0;
+}
+
+.big button   {
+	background:orange;
+	font-size:20px;
+}
+
+.small button   {
+	background:white;
+	font-size:10px;
+}
+
+.bug {
+	margin:5px 0 0 500px;
+}
+
+ul.buttons {
+	text-align:center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+
+
+/* BLOG
+   ========================================================================== */
+
+.blog {
+	width:200px;
+	height:auto;
+	margin:20px 0 0 -200px;
+	padding: 0 0 0 0;
+	float:left;
+}
+
+.blog-info {
+	background:white;
+	width:200px;
+	height:500px;
+	margin: 20px 50px 0 500px;
+	float:left;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+	padding:0 0 0 20px;
+}
+
+.blog-post {
+	background:white;
+	width:600px;
+	margin: 0 0 20px 40px;
+	padding: 1px 20px 20px 20px;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+}
+
+.blog-post h2 {
+	color:maroon;
+}
+
+.blog-post h6 {
+	border-top:1px solid black;
+	margin:30px 0 0 0;
+}
+
+.blog-post p {
+	font-size:15px;
+}
+
+.blog-info img {
+	width:150px;
+	border:1px solid white;
+	border-radius:50%;
+}
+
+.blog-info ul {
+	list-style:none;
+}
+
+.blog-info ul a {
+	color:maroon;
+	text-decoration:none;
+}
+
+.portfolio-post {
+	background:white;
+	width:600px;
+	margin:50px 50px 0px 120px;
+	padding: 0 20px 20px 20px;
+	float:left;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+}
+
+
+.portfolio-post h2 {
+	color:maroon;
+}
+
+.portfolio-post h6 {
+	border-top:1px solid black;
+	margin:30px 0 0 0;
+}
+
+.portfolio-post p {
+	font-size:15px;
+}
+
+.roadmap {
+	background:white;
+	width:90%;
+	height:auto;
+	margin: 50px 0 30px 40px;
+	padding: 0 0 0 0;
+	float:left;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+}
+
+.roadmap_list {
+ 	width:95%;
+ 	min-height:500px;
+ 	height:auto;
+ 	margin:0 2.5% 0 2.5%;
+}
+
+.roadmap-intro {
+	margin: 0 0 0 30px;
+	width:70%;
+}
