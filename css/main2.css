@@ -1,14 +1,19 @@
 /*Clear Initial Margins/Padding*/
 
-h1 {
+h1, h2, h3, h4, h5 {
 margin: 0 0 0 0;
 padding: 0 0 0 0;
 }
 
+h6 {
+	margin: 10px 0 0 0;
+}
+
 /*Set Background(s)*/
 html {
-	background:url('../images/green_bg.png');
+	background:url('../images/brick_bg.png');
 	background-repeat:repeat;
+	font-family: 'Open Sans', sans-serif;
 }
 /*****************Layout*************/
 
@@ -20,49 +25,208 @@ html {
 	justify-content: space-around;
 }
 
-.hamburger {
-	margin:0px 160px 0px 0px ;
-	flex:0;
-	height:40px;
-}
 
-.logo {
-	padding:10px;
-	height:40px;
-}
+/*************************
+Global Header Settings
+*************************/
 
-/*Header - float controlled (to display understanding)*/
-
-.HeaderTitle h1 {
-	margin: 0 auto;
-	width:200px;
-}
-
-/*Navigation - flex controlled*/
-
-nav {
-	border:1px solid black;
-}
-
-nav ul {
-	display:flex;
-	flex-direction:column-reverse;
-	align-items:center;
-	list-style:none;
-}
-
-nav li {
-	margin:5px;
-	width:200px;
-	background-color:white;
-	border:1px solid red;
-	float:center;
-}
 
 nav a {
 	text-decoration:none;
+	color:black;
 }
 
+nav a:hover {
+	color:green; 
+	transition: .3s, ease-in;
+}
+
+nav ul {
+	list-style:none;
+}
+
+header {
+	background-color:white;
+}
+
+nav li {
+	background-color:white;
+}
+
+
+
+/*************************
+Global Settings (For now :))
+*************************/
+
+@media only screen and (max-width:600px) {
+
+
+	.logo-burger-title {
+		display:flex;
+		justify-content:space-around;
+		background-color:white;
+		align-content:center;
+		padding:1% 0 0 0 ;
+	}
+
+	.burger {
+		align-self:center;
+		margin:0 0 0 2%;
+		max-height:40px;		
+	}
+
+	.logo {
+		align-self:center;
+		margin:0 2% 0 0;
+		max-height:40px;
+	}
+
+	.title {
+		text-decoration:none;
+		color:black;
+		align-self:center;
+	}
+
+	nav ul {
+		display:flex;
+		flex-direction:column;
+		background:url('../images/dark_bg.png');
+		padding:3vw;
+	}
+
+	nav li {
+		height:25px;
+		text-align:center;
+	}
+
+
+	nav ul {
+		align-items:center;
+	}
+
+	nav li {
+		margin:4px 0 3px 0;
+		width:200px;
+		float:center;
+		padding:6px;
+	}
+
+	nav a {
+		text-decoration:none;
+	}
+
+	.main {
+		display:block;
+		text-align:center;
+		background-color:white;
+		width:90%;
+		margin:2% 4% 2% 4%;
+		padding:0 0 10px 0;
+	}
+
+	.portfolio-pieces {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		align-content:center;
+	}
+
+
+	.portfolio-piece {
+		background:grey;
+		max-width:20%;
+		min-width:100px;
+		margin:20px 5px 0 5px;
+		padding:10px;
+
+	}
+
+	.portfolio-piece {
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
+
+	.portfolio-piece img {
+		padding:10px;
+	}
+
+	.portfolio-title {
+		color:white;
+	}
+
+	.companies {
+		padding:20px 0 0 0;
+	}
+
+	.companies img {
+		height:50px;
+		margin:20px;
+
+	}
+
+	.company-logos  {
+		display:flex;
+		flex-wrap:wrap;
+		align-content:center;
+	}
+
+	.references {
+		display:flex;
+		flex-wrap:wrap;
+		align-items:center;
+	}
+
+	.references h5 {
+		width:100%;
+		margin:10px 0 0 0;
+	}
+
+	.references p {
+		align-self:left;
+	}
+
+	.reference-piece {
+		margin:10px;
+	}
+
+}
+
+/*************************
+Settings for Screens Over 600px
+*************************/
+
+  
+@media only screen and (min-width: 600px) {
+
+	header {
+		display:flex;
+		align-content:flex-end;
+	}
+
+	.hamburger {
+		display:none;
+	}
+
+	header {
+		display:flex;
+		align-content:flex-start;
+	}
+
+	nav li { /*For testing - Can remove this*/
+	  	list-style:none;
+		margin:0 20px 0 20px;
+	}
+
+	 nav ul {
+		display:flex;
+		flex-direction:row;
+	}
+
+
+
+}
 
 
 
