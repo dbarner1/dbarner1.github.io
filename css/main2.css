@@ -1,3 +1,7 @@
+/*Screen Resolutions*/
+
+--first-screen-break:770px; /*Not used*/
+
 /*Clear Initial Margins/Padding*/
 
 h1, h2, h3, h4, h5 {
@@ -56,18 +60,128 @@ nav li {
 
 
 /*************************
-Global Settings (For now :))
+Global Settings
 *************************/
 
-@media only screen and (max-width:600px) {
+	.main {
+		display:block;
+		text-align:center;
+		background-color:white;
+		width:90%;
+		margin:2% 4% 2% 4%;
+		padding:1px 0 10px 0;
+	}
+
+	.portfolio-pieces {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		align-content:center;
+	}
 
 
+	.portfolio-piece {
+		max-width:30%;
+		min-width:100px;
+		height:250px;
+		margin:20px 5px 0 5px;
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		background-color:grey;
+	}
+
+	.bslc {
+		background:url('../images/bslc_bg.jpeg');
+		background-size:cover;
+		border:1px solid grey;
+	}
+
+	.bslc:hover {
+		background: magenta;
+	}
+
+	.portfolio-title {
+		color:white;
+		padding:20px 0 0 0;
+	}
+
+	.portfolio-piece h6 {
+		color:white;
+	}
+
+	.portfolio-description {
+		background-color:grey;
+		margin:70px 0 0 0;
+		height:50px;
+		align-self:flex-end;
+	}
+
+	.companies {
+		padding:20px 0 0 0;
+	}
+
+	.companies img {
+		height:50px;
+		margin:20px;
+	}
+
+	.company-logos  {
+		display:flex;
+		flex-wrap:wrap;
+		align-content:space-around;
+		justify-content: center;
+	}
+
+	.CTA {
+		background-image:url("../images/hike_bg.png");
+		background-size:cover;
+		color:white;
+		width:90%;
+		text-align:left;
+	}
+
+	.CTA h5, h1, h2, h3, h4 {
+		margin:0;
+	}
+
+	button {
+	background:orange;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	margin:0 0 0 10px;
+	}
+
+	button a {
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+	}
+
+	button:hover{
+		background:red;
+		transition:.03s ease-in;
+}
+
+
+
+/*************************
+Small Screen Settings 
+*************************/
+
+@media only screen and (max-width:779px) {
+
+	.logo {
+		margin:0 2% 0 0;
+		align-self:center;
+		max-height:40px;
+	}
 	.logo-burger-title {
 		display:flex;
 		justify-content:space-around;
 		background-color:white;
-		align-content:center;
 		padding:1% 0 0 0 ;
+		height:40px;
 	}
 
 	.burger {
@@ -76,11 +190,6 @@ Global Settings (For now :))
 		max-height:40px;		
 	}
 
-	.logo {
-		align-self:center;
-		margin:0 2% 0 0;
-		max-height:40px;
-	}
 
 	.title {
 		text-decoration:none;
@@ -116,61 +225,8 @@ Global Settings (For now :))
 		text-decoration:none;
 	}
 
-	.main {
-		display:block;
-		text-align:center;
-		background-color:white;
-		width:90%;
-		margin:2% 4% 2% 4%;
-		padding:0 0 10px 0;
-	}
-
-	.portfolio-pieces {
-		display:flex;
-		flex-wrap:wrap;
-		justify-content: space-around;
-		align-content:center;
-	}
 
 
-	.portfolio-piece {
-		background:grey;
-		max-width:20%;
-		min-width:100px;
-		margin:20px 5px 0 5px;
-		padding:10px;
-
-	}
-
-	.portfolio-piece {
-		display:flex;
-		justify-content:center;
-		flex-wrap:wrap;
-	}
-
-	.portfolio-piece img {
-		padding:10px;
-	}
-
-	.portfolio-title {
-		color:white;
-	}
-
-	.companies {
-		padding:20px 0 0 0;
-	}
-
-	.companies img {
-		height:50px;
-		margin:20px;
-
-	}
-
-	.company-logos  {
-		display:flex;
-		flex-wrap:wrap;
-		align-content:center;
-	}
 
 	.references {
 		display:flex;
@@ -194,35 +250,82 @@ Global Settings (For now :))
 }
 
 /*************************
-Settings for Screens Over 600px
+Settings for Screens Over 779px
 *************************/
 
   
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width:780px) {
 
 	header {
 		display:flex;
-		align-content:flex-end;
+		flex-direction:row;
 	}
 
-	.hamburger {
+	.logo-burger-title {
+		display:flex;
+		justify-content:space-around;
+		background-color:white;
+		padding-top:3px;
+		height:40px;
+	}
+
+	.logo {
+		margin:0 10px 0 0;
+		max-height:40px;
+		align-self:flex-end;
+	}
+
+
+	.title {
+		text-decoration:none;
+		color:black;
+		align-self:center;
+		order:1;
+	}
+
+	nav {
+		order:2;
+		margin-left:auto;
+		margin-right:6%;
+	}
+
+	.burger {
 		display:none;
-	}
-
-	header {
-		display:flex;
-		align-content:flex-start;
 	}
 
 	nav li { /*For testing - Can remove this*/
 	  	list-style:none;
-		margin:0 20px 0 20px;
+		margin:0 5px 0 5px;
+		padding:0 5px 0 5px;
+		border-left:1px solid grey;
+		border-left:1px solid grey;
 	}
 
 	 nav ul {
 		display:flex;
 		flex-direction:row;
+		border-right:1px solid grey;
+
 	}
+
+	.CTA {
+		min-height:300px;
+	}
+
+	.CTA h1 {
+		margin:5px 0 0 10px;
+	}
+
+	.CTA h3 {
+		margin:0 0 0 10px;
+	}
+
+	.CTA h5 {
+		margin:0 0 0 10px;
+	}
+
+}
+
 
 
 
