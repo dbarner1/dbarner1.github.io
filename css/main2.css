@@ -1,25 +1,15 @@
-/*Screen Resolutions*/
-
---first-screen-break:770px; /*Not used*/
-
 /*Clear Initial Margins/Padding*/
 
 h1, h2, h3, h4, h5 {
-margin: 0 0 0 0;
-padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
-h6 {
-	margin: 10px 0 0 0;
+.CTA h1 {
+	font-size:2.5em;
 }
 
-/*Set Background(s)*/
-html {
-	background:url('../images/brick_bg.png');
-	background-repeat:repeat;
-	font-family: 'Open Sans', sans-serif;
-}
-/*****************Layout*************/
+/*****************Global Layout*************/
 
 /*Logo & Hamburger - flex controlled*/
 
@@ -28,6 +18,16 @@ html {
 	align-items:center;
 	justify-content: space-around;
 }
+
+header {
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;	
+	box-shadow: 2px 2px 10px 0 #d9d9d9; /*1 1 5 ratio*/
+}
+
+
+
 
 
 /*************************
@@ -58,109 +58,197 @@ nav li {
 }
 
 
-
 /*************************
 Global Settings
 *************************/
 
-	.main {
-		display:block;
-		text-align:center;
-		background-color:white;
-		width:90%;
-		margin:2% 4% 2% 4%;
-		padding:1px 0 10px 0;
-	}
+html {
+	font-family: 'Open Sans', sans-serif;
+}
 
-	.portfolio-pieces {
-		display:flex;
-		flex-wrap:wrap;
-		justify-content: space-around;
-		align-content:center;
-	}
+.main {
+	display:block;
+	text-align:center;
+	width:100%;
+	margin:2% 4% 2% 4%;
+	padding:1px 0 10px 0;
+}
+
+.portfolio-pieces {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content:center;
+}
 
 
-	.portfolio-piece {
-		max-width:30%;
-		min-width:100px;
-		height:250px;
-		margin:20px 5px 0 5px;
-		display:flex;
-		justify-content:center;
-		flex-wrap:wrap;
-		background-color:grey;
-	}
+.portfolio-piece {
+	max-width:25%;
+	min-width:90px;
+	min-height:250px;
+	margin:20px 5px 0 5px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
 
-	.bslc {
-		background:url('../images/bslc_bg.jpeg');
-		background-size:cover;
-		border:1px solid grey;
-	}
+.portfolio-piece:hover {
+	box-shadow: 2px 2px 10px 0 #d9d9d9; /*1 1 5 ratio*/
 
-	.bslc:hover {
-		background: magenta;
-	}
+}
 
-	.portfolio-title {
-		color:white;
-		padding:20px 0 0 0;
-	}
+.bslc {
+	background:url('../images/bslc_bg.jpeg');
+	background-size:cover;
+}
 
-	.portfolio-piece h6 {
+.blackjack {
+	background:url('../images/cards.png');
+	background-size:cover;
+}
+
+.operationcode {
+	background:url('../images/badge.png');
+	background-size:80px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.references {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	min-height:400px;
+	align-content:center;
+	justify-content: space-around;
+	background-color:rgba(14,41,60,.8);
+	margin:30px 0 0 0;
+	color:white;
+}
+
+.section-title {
+	width:100%;
+	color:grey;
+}
+
+
+.section-title-white {
+	width:100%;
+	color:white;
+	text-align:center;
+	padding:30px 0 25px 0;
+}
+
+.portfolio-title {
+	color:white;
+	text-shadow:1px 1px 2px rgba(0, 0, 0 ,0 .5);
+	background-color:rgba(104,104,104,1);
+	text-align: center;
+	height:12vh;
+	width:100%;
+}
+
+.portfolio {
+	min-height:400px;
+}
+
+.CTA ul {
+	padding:0;
+	margin:0 0 0 20px;
+	list-style:none;
+}
+
+.portfolio-piece h6 {
 		color:white;
 	}
 
 	.portfolio-description {
-		background-color:grey;
-		margin:70px 0 0 0;
-		height:50px;
+		background-color:rgba(90,197,163,6);
+		margin:60px 0 0 0;
+		padding:0 10px 10px 10px;
+		min-height:50px;
 		align-self:flex-end;
 	}
 
 	.companies {
 		padding:20px 0 0 0;
+		height:40vh;
 	}
 
 	.companies img {
-		height:50px;
+		height:80px;
 		margin:20px;
 	}
 
 	.company-logos  {
 		display:flex;
 		flex-wrap:wrap;
+		margin:30px 0 0 0;
 		align-content:space-around;
 		justify-content: center;
 	}
 
 	.CTA {
-		background-image:url("../images/hike_bg.png");
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:space-between;
+		background-image:url("../images/nightsky.jpeg");
 		background-size:cover;
 		color:white;
-		width:90%;
 		text-align:left;
+		width:100vw;
+		padding:30px 0 0 10px;
+	}
+
+	.hero {
+		height:80vh;
+		width:100vw;
+	}
+
+	.arrow {
+		background:url("../images/arrow.png");
+		background-repeat:no-repeat;
+		height:50px;
+		width:50px;
+		padding:0 35px 10px 0;
+	}
+
+	.arrow a:hover {
+		height:50px;
+		width:50px;
+		align-self:center;
+		background:url("../images/arrow_shaddow.png")
 	}
 
 	.CTA h5, h1, h2, h3, h4 {
 		margin:0;
 	}
 
-	button {
-	background:orange;
-	border-right:1px solid black;
-	border-bottom:1px solid black;
-	margin:0 0 0 10px;
+.section-title {
+	text-align:center;
+	padding:30px 0 0 0;
+}
+
+
+h6 {
+	margin: 10px 0 0 0;
+}
+button {
+	background-color:orange;
+	margin:10px 0 0 0px;
+	box-shadow: 1px 1px 5px 0 #d9d9d9;
 	}
 
-	button a {
+button a {
 	font-size:20px;
 	text-decoration:none;
 	color:black;
 	}
 
-	button:hover{
-		background:red;
-		transition:.03s ease-in;
+button:hover{
+	background-color:rgba(254,146,20,.8);
+	transition:.03s ease-in;
 }
 
 
@@ -171,37 +259,54 @@ Small Screen Settings
 
 @media only screen and (max-width:779px) {
 
+
+.flex-head {
+		width:100vw;
+		display:block;
+}
+
+
+header {
+	display:inline-flex;
+	width:100vw;
+	flex-direction:column;
+	height:;
+}
+
 	.logo {
-		margin:0 2% 0 0;
+		margin:0 0 0 0;
 		align-self:center;
 		max-height:40px;
 	}
 	.logo-burger-title {
 		display:flex;
-		justify-content:space-around;
-		background-color:white;
-		padding:1% 0 0 0 ;
+		flex-direction:row;
+		width:100vw;
+		margin:0 0 0 0;
 		height:40px;
 	}
 
 	.burger {
 		align-self:center;
-		margin:0 0 0 2%;
-		max-height:40px;		
+		margin:0 0 0 1%;
+		max-width:40px;		
 	}
 
 
 	.title {
 		text-decoration:none;
 		color:black;
-		align-self:center;
+		margin: 0 auto;
+	}
+
+	nav {
+		padding:10px 0 10px 0;
 	}
 
 	nav ul {
 		display:flex;
 		flex-direction:column;
 		background:url('../images/dark_bg.png');
-		padding:3vw;
 	}
 
 	nav li {
@@ -231,7 +336,7 @@ Small Screen Settings
 	.references {
 		display:flex;
 		flex-wrap:wrap;
-		align-items:center;
+
 	}
 
 	.references h5 {
@@ -243,30 +348,45 @@ Small Screen Settings
 		align-self:left;
 	}
 
-	.reference-piece {
-		margin:10px;
-	}
+
 
 }
 
 /*************************
-Settings for Screens Over 779px
+Settings for BIG screens
 *************************/
 
   
 @media only screen and (min-width:780px) {
 
+
+.logo-burger-title {
+	order:-3;
+	align-self:flex-start;
+}
+
+.CTA {
+	order:-2;
+}
+
+nav {
+	order:-1;
+}
+
+
 	header {
-		display:flex;
+		position:fixed;
+		width:100vw;
+		display:inline-flex;
 		flex-direction:row;
 	}
 
 	.logo-burger-title {
-		display:flex;
-		justify-content:space-around;
 		background-color:white;
-		padding-top:3px;
+		padding:3px 0 0 0;
 		height:40px;
+		width:300px;
+		display:inline;
 	}
 
 	.logo {
@@ -279,13 +399,13 @@ Settings for Screens Over 779px
 	.title {
 		text-decoration:none;
 		color:black;
-		align-self:center;
+		padding: 0 0 0 45px;
 		order:1;
 	}
 
 	nav {
 		order:2;
-		margin-left:auto;
+		/*margin-left:auto;*/
 		margin-right:6%;
 	}
 
@@ -309,19 +429,48 @@ Settings for Screens Over 779px
 	}
 
 	.CTA {
-		min-height:300px;
+		min-height:95vh;
 	}
 
 	.CTA h1 {
-		margin:5px 0 0 10px;
+		margin:55px 0 0 80px;
 	}
 
 	.CTA h3 {
-		margin:0 0 0 10px;
+		margin:0 0 0 80px;
 	}
 
 	.CTA h5 {
-		margin:0 0 0 10px;
+		margin:0 0 0 80px;
+	}
+
+	.reference-piece {
+		margin:10px;
+		max-width:25%;
+		min-width:90px;
+		height:250px;
+		background-color:rgba(140, 140, 140, 0.3);
+	}
+
+	footer {
+		display:flex;
+		flex-direction:column;
+		align-content:center;
+		background-color:grey;
+		width:100vw;
+	}
+
+	footer p {
+		align-self:center;
+	}
+
+	footer form {
+		align-self:center;	
+		margin:0 0 50px 0;
+	}
+
+	.contact {
+		color:white;
 	}
 
 }
