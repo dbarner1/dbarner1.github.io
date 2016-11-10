@@ -3,7 +3,7 @@
 
 
 <!doctype html>
-<html lang="en" class="mountain1">
+<html lang="en">
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,21 @@
 	    <meta name="author" content="Dave Barner">
 	    <title>Dave's Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	    <!--<link rel="stylesheet" href="../../css/normalize.css">
-	    <link rel="stylesheet" href="../../css/main.css">-->
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/main.css">
     </head>
 
  <body>
+ 	<div class="main-content">
+ 		<h1>JS BlackJack</h1>
+ 		<div class="main-rules">
+ 			<p>Note: This game of blackjack has no face cards, and aces are always worth 11.</p>
+ 		</div>
 
- 	<script type="text/javascript" src="blackjack.js"></script>
+ 		<div id="answer" class="main-answer">
+ 			<p id="text_update">Reload this page to play Blackjack!</p>
+ 		</div>
+ 	</div>
 
 
  <!--Master header should be updated across all pages when editing above!-->
@@ -26,6 +34,8 @@
  	<footer>
  	<!--Blank-->	
  	</footer>
+
+
 
 <!--GA Tracking-->
 
@@ -42,18 +52,6 @@
 <!--End GA Tracking-->
 
 </body>
-
-
-
-
-<!--
-
-Things to Research
-
-<meta>
-	charsets available, and why we use utf-8
-	http-equiv="X-UA-Compatible content=IE=edge - what does that mean?
-	name=viewport content=width=device-width, initial-scale=1 - what do these mean?
-	name=description content="" - what does this mean?
-	name="author" content="Dave"
+</html>
+<script type="text/javascript" src="js/blackjack.js"></script>
 
