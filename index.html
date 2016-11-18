@@ -1,7 +1,7 @@
 <!--
 Integrate changes from Milton.
 
-Sentence caps or lowercase font, thin font for subtext (see:font-variant, maybe)
+Sentence caps or lowercase font, thin font for subtext (see:font-variant)
 Add nice scroll behavior on homepage
 Add titles below the portfolio, to indicate that it's a clickable item
 Consider adding an "about me"
@@ -20,13 +20,12 @@ Remove linkedin from nav.
 	    <meta name="description" content="">
 	    <meta name="author" content="Dave Barner">
 	    <title>Dave Barner - Front End Engineer</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/main2.css">
     </head>
 
 <body>
-
 	<div class="flex-head">
 	  	<header>
 	  		<div class="logo-burger-title">
@@ -38,11 +37,7 @@ Remove linkedin from nav.
 
  		<nav>
  			<ul>
- 				<li><a href="#">Connect</a></li>
-  				<li><a id="normal" href="about.html">LinkedIn</a></li>
- 				<li><a id="normal" href="portfolio.html">Portfolio</a></li>
- 				<li><a id="normal" href="about.html">Resume</a></li>
-
+ 				<li><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf">Resume</a></li>
  			</ul>
  		</nav>
  	</header>
@@ -51,28 +46,33 @@ Remove linkedin from nav.
 
 	<div class="hero">
 			<h1>FRONT END DEVELOPER</h1>
-			<h3>WITH A <br>PRODUCT MANAGEMENT COMPASS</h3>
-			<br>
-			<h5>Languages and frameworks:
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Javascript</li>
-				<li>Angular 2</li>
-			</ul>
-			<br>
-			 <form>
-			 	<button>
-			 		<a href="about.html">Learn More</a></h6>
-			 	</button><!--Learn more button-->
-			 </form>
+			<h3>with product management and analytics experience</h3>
+			<H6><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf">Download Resume</a></h6>
+		<div class="sub-heroes">
+			<div class="sub-hero-1">
+				<ul>
+					<li><h4>Skills</h4></li>
+					<li><h5>Angular 2</h5></li>
+					<li><h5>node.JS</h5></li>				
+					<li><h5>Bootstrap</h5></li>
+					<li><h5>Javascript</h5></li>
+					<li><h5>jQuery</h5></li>
+					<li><h5>HTML</h5></li>						
+					<li><h5>CSS</h5></li>					
+				</ul>
+			</div><!--sub-hero-1-->
 
-</div><!--CTAs-->
-
-	<a id=portfolio class="arrow" href="#portfolio">
-		<div>
-	 	
-	 </div></a><!--Arrow-->
+			<div class="sub-hero-2">
+				<ul>
+					<li><h4>Currently Developing<h4></li>
+					<li><h5>Site for Bay State Learning Center using Javascript, jQuery, HTML, CSS, and examples of bootstrap, Angular 2, and SASS.</h5></li>
+					<li>---</li>
+					</li><h5>Estimated Completion: December 15, 2016</h5></li>
+				</ul>
+			</div><!--sub-hero-2-->
+		</div><!--sub-heroes-->
+	</h3><!--hero-->
+</div><!--CTA-->
 
 </div><!--Flex head-->
 
@@ -81,33 +81,55 @@ Remove linkedin from nav.
 
 	<div class="portfolio-pieces">
 
-		<!--<div class="portfolio-piece bslc">
-			<div class="portfolio-title"><h4>BAY STATE <br>LEARNING CENTER</h4>
+		<div class="portfolio-piece bslc">
+
+			<div class="portfolio-title">
+				<h4>BAY STATE <br>
+				    LEARNING CENTER</h4>
+				<h5>In Development</h5>
 			</div>
+
 			<div class="portfolio-description">
 				<h6>Product Management, UX Design, and Engineering of a beautiful new marketing site.</h6>
-			</div><!--BSLC Description
+			</div><!--BSLC Description-->
+
 		</div><!--BSLC-->
 
-		<a href="products/blackjack/blackjack.html"><div class="portfolio-piece blackjack">
-			<div class="portfolio-title"><h4>BLACKJACK <BR>MINI-GAME</h4>
+		
+		<div class="portfolio-piece blackjack">
+		
+			
+			<div class="portfolio-title">
+				<h4>BLACKJACK <br>
+				    MINI-GAME</h4>
+				<h5>Live</h5>
 			</div>
+						<a target="_blank" href="products/blackjack/blackjack.html">	
+			<div class="portfolio-middle">
+			</div>
+			
 			<div class="portfolio-description">
 				<h6>Engineering to teach the basics of Javascript for the students at Bay State Learning Center.</h6>
-			</div></a><!--Blackjack Description-->
+			</a>
+			</div><!--Blackjack Description-->
+
+			<!--Blackjack link-->
 		</div><!--Blackjack-->
 
-		<!--<div class="portfolio-piece operationcode">
-			<div class="portfolio-title">OPERATION<br>CODE</h4>
+		<div class="portfolio-piece operationcode">
+			<div class="portfolio-title">
+				<h4>OPERATION<br>
+				    CODE</h4>
+				<h5>In Development</h5>
 			</div>
 			<div class="portfolio-description">
-				<h6>Something goes here too and stuff and stuff and stuff and stuff and stuff.</h6>
-			</div><!--Operation Code Description
+				<h6>Product Management and UX Design for a program to train the veteran community how to code.</h6>
+			</div><!--Operation Code Description-->
 		</div><!--OperationCode-->
 
 	</div><!--Portfolio Pieces-->
 </div><!--Portfolio-->
-
+</div><!--background-2-->
 <div class="companies">
 	<h3 class="section-title">Previous Experience</h3>
 	<div class="company-logos">
@@ -119,12 +141,11 @@ Remove linkedin from nav.
 </div><!--Companies-->
 
 <footer class="contact">
-		<p id="bottom-CTA">Contact Dave!</p>
-		<form>
-			 	<button>
-			 		<a href="about.html">Connect!</a></h6>
-			 	</button><!--Learn more button-->
-			 </form>
+		<p id="bottom-CTA">Let's Connect!</p>
+		<div class="social">
+		<a target="_blank" href="mailto:dbarner@gmail.com"><img src="images/email-button.jpg"/></a>
+		<a target="_blank" href="http://linkedin.com/in/dbarner"><img src="images/linkedin_button.png"/></a>
+		<div>
 </footer>
 <script type="text/javascript" src="script.js"></script>
 </body>
