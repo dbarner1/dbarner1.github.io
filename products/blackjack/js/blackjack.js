@@ -83,7 +83,7 @@ function validate_first() {
 		console.log("validate_first()")
 
 		//If 21, tell the user they won!
-		if(your_sum===21) {
+		if(your_sum==21) {
 			console.log("Initial user count is 21");
 			win();
 			console.log("win 1");
@@ -130,12 +130,12 @@ var hit = function () {
 function validate() {
 	console.log("validate()");
 
-		if(your_sum===21 && dealer_sum====21) {
+		if(your_sum===21 && dealer_sum===21) {
 			console.log("push();");
 			push();
 		}
 
-		if(your_sum===21) {
+		if(your_sum==21) {
 			console.log("win();");
 			win();
 		}
@@ -162,6 +162,8 @@ function win () {
 
 		stay_button.style.visibility = 'hidden';
         hit_button.style.visibility = 'hidden';
+
+        document.getElementById("actions").innerHTML = "<form><input type='text' id='name' name='user_name'><br><input type='text' id='score' name='score'><br><button>Hello</button></form>"
 }
 
 //Displays message to the user if they win
