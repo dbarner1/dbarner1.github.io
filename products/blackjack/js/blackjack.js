@@ -130,6 +130,11 @@ var hit = function () {
 function validate() {
 	console.log("validate()");
 
+		if(your_sum===21 && dealer_sum====21) {
+			console.log("push();");
+			push();
+		}
+
 		if(your_sum===21) {
 			console.log("win();");
 			win();
@@ -198,7 +203,7 @@ var final_result = function () {
 	if(dealer_sum===21) {
 		console.log("user_value is " + your_sum);
 		console.log("lose-1");
-		lose();//The JS script ENDS here.
+		win();//The JS script ENDS here.
 	}
 	else
 
