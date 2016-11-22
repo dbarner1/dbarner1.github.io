@@ -115,7 +115,7 @@ they go to the "stay" cycle.*/
 function deal() {
 	console.log("deal()");
 
-	document.getElementById("user_msg").innerHTML = "<p>The cards hit the table.  You have a " + your_card_1 + " and a " + your_card_2 + ".  The dealer is showing a " + dealer_card_1 + ".  Type 'hit' to hit.  'stay' to stay.</p>";
+	document.getElementById("user_msg").innerHTML = "<p>The cards hit the table.</p><br><p>You show<p>" + your_card_1 + " and " + your_card_2 + "</p><br><p> The dealer is showing</p><p>" + dealer_card_1 + "</p>";
 
 	actiondiv.appendChild(hit_button);
 	actiondiv.appendChild(stay_button);
@@ -158,7 +158,7 @@ function validate() {
 /*If the user wins, they get this message*/
 function win () {
 		console.log("user wins");
-		user_msg =  "You win.  You had " + your_sum + ". The dealer had " + dealer_sum + ".  This e-coffee is on us!";
+		user_msg =  "<b>You win!</b> <br>  You had<br>" + your_sum + "<br> The dealer had<br>" + dealer_sum + "<br>This e-coffee is on us!";
 		document.getElementById("user_msg").innerHTML = user_msg;	
 
 		win_count+=1;
@@ -171,7 +171,7 @@ function win () {
 /*If the user loses, they get this message:*/
 function lose () {
 		console.log("dealer wins");
-		user_msg = "You lost this game. You had " + your_sum + ".  The dealer had " + dealer_sum + ". Thankfully, the only losers are those who call other players losers.";
+		user_msg = "You lost this game. Bummer.<br>You had<br>" + your_sum + "<br>The dealer had<br>" + dealer_sum + "<br><br>Thankfully, the only losers are those who call other players losers.";
 		document.getElementById("user_msg").innerHTML = user_msg;
 
 		lose_count+=1;
