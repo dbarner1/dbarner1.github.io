@@ -14,8 +14,10 @@ p {
 body {
 	background-color:rgba(30,177,145,.5);
 	background-repeat: repeat;
-	background-size: 100px;;
+	background-size: 100px;
 }
+
+
 
 
 .user_msg {
