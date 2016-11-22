@@ -1,9 +1,6 @@
-<!--Master header should be updated across all pages when editing below!-->
+<!DOCTYPE html>
+<html>
 
-
-
-<!doctype html>
-<html lang="en">
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,30 +10,72 @@
 	    <title>Dave's Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
+	    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+	    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
 	    <link rel="stylesheet" href="css/main.css">
     </head>
 
- <body>
- 	<div class="main-content">
- 		<h1>JS BlackJack</h1>
- 		<div class="main-rules">
- 			<p>Note: This game of blackjack has no face cards, and aces are always worth 11.</p>
- 		</div>
+<body>
+	<div class="container">
+	 		<nav class="navbar navbar-light navbar-fixed-top bg-faded">
+		  <a class="navbar-brand" href="#">No Losers BlackJack</a>
+		  <span class="navbar-text float-xs-right">
+		  	 	<ul class="nav nav-pills">
+			  		<li class="nav-item">
+			  		  <a class="nav-link" href="#">Rules</a>
+			 	 	</li>
+			 	    <li class="nav-item">
+			   		 <a class="nav-link" href="http://dbarner.me">About The Developer</a>
+			  		</li>
+				</ul>
+		  </span>
+		</nav>
+	</div>
 
- 		<div id="answer" class="main-answer">
- 			<p id="text_update">Welcome to Blackjack!</p>
- 		</div>
- 	</div>
+	<div class="container hero">
+	       	<h1 class="display-4 text-white">Welcome!</h1>
+ 			<h4 class="text-grey">How about we play?</h4>
+	 </div>
+
+	<div class="container sub-hero">
+	    	<div class="user_score  col-xs-12 col-sm-6">
+	       	<p id="user_win_msg">You won: 0 games</p>
+			<p id="user_lose_msg">You lost: 0 games</p>
+	         </div>
+	 </div>
+
+	 <div class="container deal_me">
+          <button type="button" id="deal_me">Deal Me In!</button>
+         <div id="actions" class="col-xs-12"> 
+
+         </div>
+     </div>
+
+	<div class="container sub-hero">
+	     <div class="user_msg col-xs-12 col-sm-6">
+	        <p id="user_msg">Step right up everyone! It's time to play!</p>
+	    </div>
+	</div>
+
+	  
 
 
- <!--Master header should be updated across all pages when editing above!-->
-
- 	<footer>
- 	<!--Blank-->	
- 	</footer>
 
 
+	  </div>
+    </div>
 
+
+
+
+<script type="text/javascript" src="js/blackjack.js"></script>
+</body>
 <!--GA Tracking-->
 
 <script>
@@ -50,8 +89,5 @@
 </script>
 
 <!--End GA Tracking-->
-
-</body>
 </html>
-<script type="text/javascript" src="js/blackjack.js"></script>
 

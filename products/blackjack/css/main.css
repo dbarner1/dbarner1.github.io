@@ -11,20 +11,83 @@ p {
 	font-size:90%;
 }
 
-
-
 body {
-	background:url("../images/green_bg.png");
-	background-repeat:repeat;
+	background: url("../images/felt_bg.png");
+	background-repeat: repeat;
+	background-size: 100px;;
+}
+
+
+
+.user_msg {
+	margin-top:1px;
+}
+
+.hero {
+	padding-top:20vh;
+	text-align:center;
+}
+
+.hit, .stay {
+	width:100px;
+	height:50px;
+	background-color:orange;
+}
+
+#deal_me {
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	min-width:20%;
+	min-height:50px;
+	margin:0 40% 0 40%;
+	background-color:orange;
+}
+
+.sub-hero {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
 }
 
 .main-content h1 {
 	color:white;
 }
 
+#actions {
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	width:100%;
+}
+
+.user_msg {
+	background-color:white;
+	border:1px solid white;
+	border-radius:2%;
+	padding:5vh 5vw 5vh 5vw;
+	text-align:center;
+	width:40%;
+}
+
+
+.user_score {
+	background-color:white;
+	text-align:center;
+	border:1px solid white;
+	border-radius:2%;
+	width:30%;
+	margin:2%;
+}
+
+
+#deal_div {
+	width: 25vw;
+	align-self: center;
+}
+
 .main-content {
 	width:100%;
-	margin:0 auto;
 	padding-top:5%;
 	text-align:center;
 }
@@ -32,7 +95,20 @@ body {
 .main-answer, .main-rules {
 	background-color:white;
 	width:40%;
-	margin:10px auto 0 auto;
 	padding:1%;
 	box-shadow:2px 2px 2px 	black;
 }
+
+@media only screen and (min-width:0px) and (max-width:500px) {
+	
+	.user_msg{
+			width:90%;
+	}
+
+	 .user_score {
+	 	width:70%;
+	 }
+
+
+}	
+

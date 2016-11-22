@@ -14,66 +14,96 @@
  /*******************************************************
  ***VARIABLES********************************************
  ********************************************************/
+var your_card_1
+	, your_card_2
+	, your_sum
+	, dealer_card_1
+	, dealer_card_2
+	, dealer_sum
+	, first_hit_or_stay
+	, hit_or_stay
+	, your_new_card
+	, dealer_new_card
+	, i, win_message
+	, lose_message;
 
-/*Note: Shown in a way that's hard to understand when coding, but mirrors and sass compression.*/
-var your_card_1, your_card_2, your_sum, dealer_card_1, dealer_card_2, dealer_sum, first_hit_or_stay, hit_or_stay, your_new_card, dealer_new_card, i, win_message, lose_message;
+var win_count = 0;
+var lose_count = 0;
+
+var deal_button = document.getElementById('deal_me');
+var user_msg = document.getElementById('user_msg');
+var actiondiv = document.getElementById('actions');
+
+ /*******************************************************
+ ***MESSAGES*********************************************
+ ********************************************************/
 
 
+ /*******************************************************
+ ***BUTTONS**********************************************
+ ********************************************************/
 
+var hit_button = document.createElement("button");
+hit_button.className = "hit";
+hit_button.innerHTML = "Hit Me!";
+
+var stay_button = document.createElement("button");
+stay_button.className = "stay";
+stay_button.innerHTML = "I'll Stay";
 
  /*******************************************************
  ***FUNCTIONS********************************************
  ********************************************************/
 
-/*Welcome the user, and invite them to play.
-  Also, deal them their cards, so if they hit 
-  21 we can let them know in the event they play.*/
-function welcome() {
-	console.log("Ran: welcome()");
-	welcome_msg = prompt("Welcome to JS Blackjack!  If you'd like to play, enter 'play'.");
-	console.log("Responded:" + welcome_msg);
+//Welcomes the user, and asks them if they want to hit or stay.
+var deal_first = function () {
+	//Log that the game began.
+	console.log("Clicked 'Deal me in!'");
+
+    stay_button.style.visibility = 'visible';
+    hit_button.style.visibility = 'visible';
+
+	//Deal all cards for the user, and the dealer.
 	your_card_1 = Math.floor(11*Math.random())+1;
 	your_card_2 = Math.floor(11*Math.random())+1;
 	your_card_3 = Math.floor(11*Math.random())+1;
 	dealer_card_1 = Math.floor(11*Math.random())+1;
 	dealer_card_2 =  Math.floor(11*Math.random())+1;
+
+	//Caculate card totals for the user and dealer
 	your_sum = your_card_1 + your_card_2;
 	dealer_sum = dealer_card_1 + dealer_card_2;
+
+	//Log the user's card total after first deal to the console.
 	console.log("The user's cards total " + your_sum);
+	
+	//Run script to see if user hit 21, went over, or should play (before we ask them to hit or stay.)
+	validate_first();
+}
 
-	if(welcome_msg.toLowerCase() === "play") {
-		console.log("wants to play");
-		validate_first();
-	}
-
-	else{
-		bye();
-		console.log("doesn't want to play");
-	}
-}	
-
-/*Understand if their cards are 21.  If they are, they 
-get notified right away that they won, and the game
-is over.  If they're over 21 initially (should never happen) they're told the game is over (this would be a bug!).
-Otherwise, they're dealt cards.*/
-
+	
+//Checks user's total, and responds with relevant message.
 function validate_first() {
-	console.log("validate first()")
-		if(your_sum===21) {
-			console.log("win();");
-			win();
-		console.log("win 1");
-		}
 
+		//Log that this function ran.
+		console.log("validate_first()")
+
+		//If 21, tell the user they won!
+		if(your_sum===21) {
+			console.log("Initial user count is 21");
+			win();
+			console.log("win 1");
+		}
+		//If under 21, tell the user they can hit or stay via the "deal" function.
 		if(your_sum<21) {
-			console.log("running deal();");
+			console.log("Initial user count <21");
 			deal();
 		}
-
+		//This should never happen, but if the cards are over 21, the user will lose, and we log an error to the console.
 		else {
-			console.log("Error: Lost.");
+			console.log("Error: User lost.  Please contact the developer of this app at http://dbarner.me");
 			lose();
-		console.log("lose 1");
+			console.log("lose 1");
 			;
 		}
 }
@@ -82,25 +112,27 @@ function validate_first() {
 if they want to hit or stay.  If they hit, they go into the "hit" cycle.  If they stay,
 they go to the "stay" cycle.*/
 
-function deal_first() {
-	first_hit_or_stay = prompt("The cards hit the table.  You have a " + your_card_1 + " and a " + your_card_2 + ".  The dealer is showing a " + dealer_card_1 + ".  Type 'hit' to hit.  'stay' to stay.");
-	if(first_hit_or_stay.toLowerCase() === "hit") {
-		hit();
-		console.log("hit()");
-	}
-	else {
-		hit_dealer();
-				console.log("hit_dealer()");
-	}
+function deal() {
+	console.log("deal()");
+
+	document.getElementById("user_msg").innerHTML = "<p>The cards hit the table.  You have a " + your_card_1 + " and a " + your_card_2 + ".  The dealer is showing a " + dealer_card_1 + ".  Type 'hit' to hit.  'stay' to stay.</p>";
+
+	actiondiv.appendChild(hit_button);
+	actiondiv.appendChild(stay_button);
+
+	console.log("Dealer sum is " + dealer_sum);
+	hit_button.onclick = hit;
+	stay_button.onclick = hit_dealer;
 }
 
-/*If they hit, we'll give them another card, and validate their total to see if its over 21, 21, or less than*/
-
-function hit() {
+var hit = function () {
 	your_new_card = Math.floor(11*Math.random())+1;
 	your_sum += your_new_card;
+	console.log("User's new sum is " + your_sum);
 	validate();
 }
+
+
 
 /*This is the function to validate their total.  It's like validate_first, but a different message.
 Refactor this later*/
@@ -114,7 +146,7 @@ function validate() {
 
 		if(your_sum<21) {
 			console.log("deal();");
-			deal();
+			deal_again();
 		}
 
 		else {
@@ -124,82 +156,97 @@ function validate() {
 }
 
 /*If the user wins, they get this message*/
-function win() {
-		win_message =  "You win.  You had " + your_sum + ". The dealer had " + dealer_sum + ".  This e-coffee is on us!";
-		document.getElementById("answer").innerHTML = win_message;	
+function win () {
+		console.log("user wins");
+		user_msg =  "You win.  You had " + your_sum + ". The dealer had " + dealer_sum + ".  This e-coffee is on us!";
+		document.getElementById("user_msg").innerHTML = user_msg;	
+
+		win_count+=1;
+		document.getElementById("user_win_msg").innerHTML = "<p>You won " + win_count + " games";
+
+		stay_button.style.visibility = 'hidden';
+        hit_button.style.visibility = 'hidden';
 }
 
 /*If the user loses, they get this message:*/
-function lose() {
-		lose_message = "You lost this game. You had " + your_sum + ".  The dealer had " + dealer_sum + ". Thankfully, the only losers are those who call other players losers.";
-		document.getElementById("answer").innerHTML = lose_message;	
-}
+function lose () {
+		console.log("dealer wins");
+		user_msg = "You lost this game. You had " + your_sum + ".  The dealer had " + dealer_sum + ". Thankfully, the only losers are those who call other players losers.";
+		document.getElementById("user_msg").innerHTML = user_msg;
 
-/*If the user doesn't want to play, they get this message:*/
-function bye () {
-		bye_message =  "Thanks for stopping bye.  Refresh this page if you change your mind, and would like to play.";
-		document.getElementById("answer").innerHTML = bye_message;	
+		lose_count+=1;
+		document.getElementById("user_lose_msg").innerHTML = "You lost: " + lose_count + " games";
+
+        stay_button.style.visibility = 'hidden';
+        hit_button.style.visibility = 'hidden';
 }
 
 
 /*If the user hits again, they get this*/
 
-function deal() {
-	hit_or_stay = prompt("Your cards now total " + your_sum + ".  The dealer is still showing a " + dealer_card_1 + ".");
-	if(hit_or_stay==="hit") {
-		hit();
-	}
-	if(hit_or_stay==="stay") {
-		hit_dealer();
-	}
+var deal_again = function () {
+	document.getElementById("user_msg").innerHTML = "Your cards now total " + your_sum + ".  The dealer is still showing a " + dealer_card_1 + ".";
+	hit_button.onclick = hit;
+	stay_button.onclick = hit_dealer;
 }
 
 /*If the user stays, we verify the dealer is over 16, and if not, keep giving them cards until they are.
 Then, when they're over 16, we see if they have 21 or not.*/
 
-function stay() {
+var final_result = function () {
+	console.log("Final Results");
+	
+	if(dealer_sum===21) {
+		console.log("user_value is " + your_sum);
+		console.log("lose-1");
+		lose();
+	}
+	else
 
 	if(dealer_sum>21) {
+		console.log("user_value is " + your_sum);
+		console.log("win-1");
 		win();
-		console.log("win 5 - dealer bust")
 	}
 
-	else {
-		if(your_sum===dealer_sum) {
+	else
+
+	if(your_sum===dealer_sum) {
+		console.log("user_value is " + your_sum);
+		console.log("lose-2");
 		lose();
-		console.log("lose 3");
-		}
+	}
 
-		if(your_sum<dealer_sum) {
-		lose();
+	else
 
-		console.log("lose 4");	
-		}
+	if(your_sum<dealer_sum) {
+		console.log("user_value is " + your_sum);
+		console.log("lose-3");
+		lose();		
+	}
 
-		if(your_sum>dealer_sum) {
-		win();
-		console.log("win 2");		
-		}
+	else
+
+	if(your_sum>dealer_sum) {
+		console.log("user_value is " + your_sum);
+		console.log("win-2");
+		win();		
 	}
 }
 
-function hit_dealer () {
+var hit_dealer = function () {
 
-	if (dealer_sum<16) {
-		for (dealer_sum;dealer_sum<15;dealer_sum+=dealer_new_card) {
-			dealer_new_card = Math.floor(11*Math.random())+1;
-			dealer_sum+=dealer_new_card;
-			console.log(dealer_new_card + " is your new dealer card");
-			console.log(dealer_sum + " is new dealer total");
-		}
-	stay();
-	}
+	for (dealer_sum;dealer_sum<16;dealer_sum+=dealer_new_card) {
+		dealer_new_card = Math.floor(11*Math.random())+1;
+		dealer_sum+=dealer_new_card;
+		console.log(dealer_new_card + " is your new dealer card");
+		console.log(dealer_sum + " is new dealer total");
+		if(dealer_sum>=16) break;
+	}	
+	
+	final_result();
 }
 
-/*Run Welcome*/
-welcome();
-
-
-
-
+/*Events*/
+deal_button.onclick = deal_first;
 

@@ -1,16 +1,5 @@
 /*------------------------------------------------
 --------------------------------------------------
-CLEAR BROWSER CSS---------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-h1, h2, h3, h4, h5 {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
-
-/*------------------------------------------------
---------------------------------------------------
 GLOBAL SETTINGS-----------------------------------
 --------------------------------------------------
 ------------------------------------------------*/
@@ -19,47 +8,29 @@ GLOBAL SETTINGS-----------------------------------
 Font***************************************
 ******************************************/
 
-html {
-	font-family: 'Open Sans', sans-serif;
-}
-
-.CTA h1 {
-	font-size:2.5em;
-}
-
 h3 {
-	font-size:1.2em;
-	font-variant:small-caps;
-}
-
-
-.sub-heroes h4  {
-	color:white;
-	margin-top:10px;
+	font-size: 1.2em;
+	font-variant: small-caps;
 }
 
 h6 {
 	margin: 10px 0 0 0;
 }
 
-.portfolio-piece h6 {
-	color:white;
-}
-
 a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
-.CTA h5, h1, h2, h3, h4 {
-		margin:0;
-	}
+ul {
+	list-style:none;
+}
 
-footer p {
-		align-self:center;
-	}
+.contact, .CTA, .sub-hero-1, .sub-hero-2, .footer, a {
+	color: white;
+}
 
-.contact, .CTA {
-	color:white;
+header, footer {
+	box-shadow: 2px 2px 10px 0 #d9d9d9;
 }
 
 /******************************************
@@ -67,112 +38,93 @@ Layout*************************************
 ******************************************/
 
 body {
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:url("../images/nightsky.jpeg");
+	font-family: 'Open Sans', sans-serif;
+    background-color: rgba(30,177,145,7);
 }
 
 header {
-	display:flex;
-	flex-direction:row;
-	height:45px;
-	margin:-50px 0 0 0;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-	background-color:black;	
-	box-shadow: 2px 2px 10px 0 #d9d9d9; /*1 1 5 ratio*/
+	height: 45px;
+	margin: -50px 0 18vh 0;
+	background-color: rgba(253,23,39,.8);	
+
 }
 
 .CTA {
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-	text-align:left;
-	height:70vh;
-	width:80vw;
-	padding:2vh 5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+	height: 70vh;
+	width: 80vw;
+	padding: 2vh 5vw;
 	margin: 50px auto 18vh auto;
 }
 
 .portfolio-pieces {
-	display:flex;
-	flex-wrap:wrap;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content:center;
-	padding:5vw;
+	align-content: center;
+	padding: 5vw;
 
 }
 
 .portfolio-piece {
-	max-width:20%;
-	min-width:170px;
-	min-height:250px;
-	margin:20px 5px 0 5px;
-	display:flex;
-	justify-content:center;
-	flex-wrap:wrap;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 170px;
+	max-width: 20%;
+	min-height: 250px;
+	margin: 20px 5px 0 5px;
 }
 
 .hero {
-	width:85vw;
+	width:70vw;
 }
 
 .sub-heroes {
-	display:flex;
-	flex-direction:row;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	margin-top:2vh;
+	margin-top: 2vh;
 }
 
-.sub-hero-1 {
+.sub-hero-1, .sub-hero-2 {
 	width:30vw;
 	min-height:40vh;
 	text-align:left;
 	border:1px solid white;
-	background: rgba(46, 45, 45, 0.9);
+	background: rgba(46, 45, 45, 0.6);
 	padding-left:1vw;
 	margin-left:1vw;
-	color:white;
+
 }
 
 .sub-hero-2 {
-	width:30vw;
-	min-height:40vh;
-	text-align:left;
-	padding-left:1vw;
-	margin-left:1vw;
-	border:1px solid white;
-background: rgba(46, 45, 45, 0.9);
-	color:white;
+	padding-left:2vw;
+	padding-right:2vw;
+	margin-left:.5vw;
 }
 
 
-.portfolio {
+.portfolio, .companies {
 	min-height:50vh;
-	margin:45px 5vh 0 5vh;
+	margin:45px 5vh 3vh 5vh;
 	border:1px solid white;
 	background:rgba(231,231,231,.8);
-}
-
-.companies {
-		border:1px solid white;
-	background:rgba(231,231,231,.8);
-	padding:20px 0 0 0;
-	min-height:40vh;
-	margin:90px 5vh 10vh 5vh;
 }
 
 footer {
-	background-color:black;
-	display:flex;
-	flex-direction:column;
-	align-content:center;
-	padding-bottom:5px;
-	color:white;
-	box-shadow: -2px -2px 10px 0 #d9d9d9; /*1 1 5 ratio*/
-	}
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: rgba(253,23,39,.8);
+}
 
 .social {
 	display:flex;
@@ -180,36 +132,26 @@ footer {
 	justify-content: center;
 }
 
-
 /******************************************
 Header*************************************
 ******************************************/
 
-nav a {
-	text-decoration:none;
-	color:white;
-}
-
 nav a:hover {
-	color:rgba(24, 193, 108,1); 
+	color: rgba(24, 193, 108,1); 
 	transition: .2s, ease-in;
 }
 
 nav ul {
-	list-style:none;
-	display:flex;
-	flex-direction:row;
-	border-right:1px solid grey;
+	display: flex;
+	flex-direction: row;
+	border-right: 1px solid white;
 }
 
 nav li { 
-  	list-style:none;
 	margin:0 5px 0 5px;
 	padding:0 5px 0 5px;
-	border-left:1px solid grey;
-	border-left:1px solid grey;
+	border-left: 1px solid white;
 }
-
 
 /******************************************
 Section Shared Settings********************
@@ -227,10 +169,25 @@ Section Shared Settings********************
 CTA****************************************
 ******************************************/
 
+.CTA h1 {
+	font-size:2.5em;
+}
+
 .CTA ul {
-	list-style:none;
 	padding:0px;
 }
+
+.sub-hero-1 h5 {
+	margin-left:25px;
+}
+
+.sub-heroes h4  {
+	color:white;
+	margin-top:10px;
+}
+
+
+
 
 /******************************************
 Portfolio**********************************
@@ -254,6 +211,13 @@ Portfolio**********************************
 	min-height:50px;
 	align-self:flex-end;
 }
+
+.portfolio-piece h6 {
+	color:white;
+}
+
+
+
 
 button {
 	margin-top:10px;
@@ -311,6 +275,12 @@ footer img {
 	margin:0 10px 0 0;
 }
 
+footer p {
+		align-self:center;
+	}
+
+
+
 
 /******************************************
 Small Screen Special Settings**************
@@ -363,7 +333,6 @@ header {
 		width:100vw;
 		height:40px;
 		margin:0 0 0 0;
-		background-color:black;
 		}
 
 	.burger {
@@ -412,7 +381,7 @@ BIG Screen Special Settings****************
 	}
 
 	.logo-burger-title {
-		background-color:black;
+
 		padding:3px 0 0 0;
 		height:40px;
 		width:300px;
