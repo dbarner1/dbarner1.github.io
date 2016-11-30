@@ -163,7 +163,6 @@ function win () {
 		stay_button.style.visibility = 'hidden';
         hit_button.style.visibility = 'hidden';
 
-        document.getElementById("actions").innerHTML = "<form><input type='text' id='name' name='user_name'><br><input type='text' id='score' name='score'><br><button>Hello</button></form>"
 }
 
 //Displays message to the user if they win
