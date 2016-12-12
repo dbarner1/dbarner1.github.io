@@ -23,7 +23,7 @@ h5 {
 }
 
 h3 {
-	font-size: 1.2em;
+	font-size: 1.5vw;
 	font-weight:200;
 }
 
@@ -91,19 +91,19 @@ header {
 }
 
 .portfolio {
-	margin-bottom: 3vh;
+	margin-bottom: 20vh;
 	background:rgba(55,140,214,.4);
 	min-height:93vh; /*Sorry IE...*/
 }
 
 .companies {
-	margin-bottom: 3vh;
+	margin-bottom: 10vh;
 	background:rgba(55,140,214,.4);
 	min-height:250px;
 }
 
 .sub-heroes {
-	margin-bottom: 3vh;
+	margin-bottom: 30vh;
 	background:rgba(55,140,214,.4);
 	min-height:50vh; /*Sorry IE...*/
 }
@@ -200,7 +200,7 @@ Section Shared Settings********************
 
 .section-title {
 	width:100%;
-	color:white;
+	color:black;
 	font-weight:400;
 	text-align:center;
 	padding:30px 0 0 0;
@@ -285,6 +285,8 @@ button {
 	background-color:rgba(253,40,61,.8);
 	width:100%;
 	color:white;
+		border-bottom:2px solid grey;
+	border-right:2px solid grey;
 }
 
 .inactive {
@@ -348,11 +350,19 @@ footer #bottom-CTA {
 
 
 
+
+
 /******************************************
-Small Screen Special Settings**************
+Medium Screen Special Settings**************
 ******************************************/
 
-@media only screen and (max-width:741px) {
+@media (min-width:430px) AND (max-width:600px) {
+
+
+	h3 {
+		font-size: 3.5vw;
+		font-weight:200;
+	}
 
 h4 {
 	font-size:3vw;	
@@ -426,6 +436,21 @@ h5 {
 	.smallLinkDiv {
 		margin-top:30px;
 	}
+
+	#avatar {
+	width:40%;
+	padding-bottom:20px;
+	}
+
+.CTA.a {
+	margin-top:10vh;
+}
+
+#downArrow {
+	width:4vw;
+	padding-top:5vh;
+}
+
 }
 
 /******************************************
@@ -433,7 +458,12 @@ BIG Screen Special Settings****************
 ******************************************/
 
 
- @media only screen and (min-width:741px) {
+ @media only screen and (min-width:600px) {
+
+	h3 {
+		font-size: 1.8vw;
+		font-weight:200;
+	}
 
 	.logo-burger-title {
 		order:-3;
@@ -499,6 +529,122 @@ BIG Screen Special Settings****************
 	.smallLinks {
 		display:none;
 	}
+
+	#avatar {
+	width:30%;
+	padding-bottom:20px;
+	}
+
+.CTA.a {
+	margin-top:10vh;
+}
+
+#downArrow {
+	width:4vw;
+	padding-top:5vh;
+}
+}
+
+
+/******************************************
+Small Screen Special Settings**************
+******************************************/
+
+@media (min-width:1px) AND (max-width:430px) {
+
+
+	h3 {
+		font-size: 4vw;
+		font-weight:200;
+	}
+
+	h4 {
+		font-size:3vw;	
+	}
+
+	h5 {
+		font-size:3vw;	
+		font-variant:small-caps;
+	}
+
+	header {
+		position:fixed;
+		margin-top:-50px;
+	}
+
+	.portfolio {
+		margin-top:5vh;
+	}
+
+	.portfolio-title {
+		height:10vw;
+		font-size:2.8vw;
+	}
+
+	.sub-hero-1, .sub-hero-2 {
+		width:45vw;
+	}
+
+	.sub-heroes {
+		margin-bottom:5vh;
+	}
+
+
+	.CTA {
+		text-align:center;
+	}
+
+	.flex-head {
+		width:100%;
+		display:block;
+	}
+
+
+	.logo {
+		margin:0 0 0 0;
+		align-self:center;
+		max-height:40px;
+	}
+
+	.logo-burger-title {
+		display:flex;
+		flex-direction:row;	
+		width:100vw;
+		height:40px;
+		margin:0 0 0 0;
+	}
+
+	.burger {
+		display:none;
+		align-self:center;
+		margin:0 0 0 1%;
+		max-width:40px;		
+	}
+
+	.title {
+		text-decoration:none;
+		color:white;
+		margin: 0 auto;
+	}
+
+	.smallLinkDiv {
+		margin-top:30px;
+	}
+
+	#avatar {
+	width:50vw;
+	padding-bottom:20px;
+	}
+
+	.CTA.a {
+	margin-top:10vh;
+	}
+
+	#downArrow {
+	width:4vw;
+	padding-top:5vh;
+	}
+
 }
 
 
