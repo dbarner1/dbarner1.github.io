@@ -17,7 +17,7 @@ h4 {
 }
 
 h5 {
-	font-size:1.5vw;
+	font-size:1.2vw;
 	font-weight:200;	
 	
 }
@@ -92,19 +92,20 @@ header {
 
 .portfolio {
 	margin-bottom: 20vh;
-	background:rgba(55,140,214,.4);
+	background:rgba(0,0,0,.05);
 	min-height:93vh; /*Sorry IE...*/
+	margin-top:9vh;
 }
 
-.companies {
-	margin-bottom: 10vh;
-	background:rgba(55,140,214,.4);
+#companies {
+	margin-top:11vh;
+	margin-bottom: 12vh;
+	background:rgba(0,0,0,0);
 	min-height:250px;
 }
 
 .sub-heroes {
-	margin-bottom: 30vh;
-	background:rgba(55,140,214,.4);
+
 	min-height:50vh; /*Sorry IE...*/
 }
 
@@ -114,7 +115,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: center;
-	padding: 5vw;
+	padding: 2vw;
 
 }
 
@@ -131,10 +132,11 @@ header {
 	border-right:2px solid grey;
 }
 
-.sub-heroes-title {
+#sub-heroes-title {
 	text-align:center;
-	padding-top:20px;
-	background-color:rgba(55,140,214,.4);
+	margin-top:9vh;
+	padding:40px 0;
+	background-color:rgba(0,0,0,.05);
 }
 
 .sub-heroes {
@@ -142,22 +144,23 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	width:100%;
-	padding:10vh 0;
+	padding:2vh 0;
 }
 
 .sub-hero-1, .sub-hero-2 {
-	width:40vw;
+	width:35vw;
 	max-height:400px;
 	text-align:left;
 	border:1px solid white;
-	background-color:rgba(29,30,25,.5);
+	padding:10px;
+	background-color:rgba(0,0,0,.5);
 }
 
 footer {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	background-color: rgba(29,30,25,.5);
+	background-color: rgba(253,23,39,.8);	
 }
 
 .social {
@@ -293,6 +296,12 @@ button {
 	background-color:white;
 }
 
+#downArrow2 {
+	width:4vw;
+	padding-top:5vh;
+	margin-left:48%;
+}
+
 
 .bslc {
 	background:url('../images/bslc_bg.jpeg');
@@ -312,11 +321,19 @@ button {
 	background-color:white;
 }
 
+#downArrow3 {
+	display:block;
+	width:4vw;
+	padding-top:3vh;
+	margin-left:48%;
+	margin-right:48%;
+}
+
 /******************************************
 Companies**********************************
 ******************************************/
 
-.companies img {
+#companies img {
 	height:80px;
 	margin:20px;
 }
@@ -324,7 +341,7 @@ Companies**********************************
 .company-logos  {
 	display:flex;
 	flex-wrap:wrap;
-	margin:30px 0 0 0;
+	margin:20vh 0 0 0;
 	align-content:space-around;
 	justify-content: center;
 }
@@ -360,7 +377,7 @@ Medium Screen Special Settings**************
 
 
 	h3 {
-		font-size: 3.5vw;
+		font-size: 3.4vw;
 		font-weight:200;
 	}
 
@@ -585,9 +602,6 @@ Small Screen Special Settings**************
 		width:45vw;
 	}
 
-	.sub-heroes {
-		margin-bottom:5vh;
-	}
 
 
 	.CTA {

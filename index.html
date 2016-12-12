@@ -23,6 +23,7 @@ Remove linkedin from nav.
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--Used only for scrolling behavior-->
     </head>
 
 <body>
@@ -45,7 +46,7 @@ Remove linkedin from nav.
  
 <div class="CTA">
 		<h3>Oh, hi!</h3>
-		<h3>I'm Dave</h3>
+		<h3>I'm Dave.</h3>
 		<img id="avatar" src="images/man-2.svg"/>
 		
 	
@@ -66,7 +67,7 @@ Remove linkedin from nav.
 </div><!--Flex head-->
 
 <div id="portfolio" class="portfolio"> 
-	<h3 class="section-title">I love to create.<br>Here are some samples.</h3>
+	<h3 class="section-title">I love to create.<br>Here are some samples:</h3>
 
 	<div class="portfolio-pieces">
 		<div class="portfolio-piece bslc">
@@ -120,13 +121,14 @@ Remove linkedin from nav.
 
 
 	</div><!--Portfolio Pieces-->
+	<a href="#sub-heroes-title"><img id="downArrow2" src="images/down-arrow-2.svg"/></a>
 </div><!--Portfolio-->
 
-<div class="sub-heroes-title">
-			<h3 class="section-title">I'm currently leveling up my developer self. <br>Here's my current status of skills/work.</h3>
-</div>
 
-			<div class="sub-heroes">
+<div id="sub-heroes-title">
+			<h3 class="section-title">I'm currently leveling up my developer self. <br>Here's my current status of skills/work.</h3>
+
+		<div class="sub-heroes">
 			<div class="sub-hero-1">
 				<ul>
 					<li><h4>I come preloaded with...</h4></li>
@@ -157,13 +159,16 @@ Remove linkedin from nav.
 				
 					</li><h5>Estimated Completion: January 30, 2016</h5></li>
 				</ul>
+
 			</div><!--sub-hero-2-->
+
+
 		</div><!--sub-heroes-->
-
-
-</div><!--background-2-->
-<div class="companies">
-	<h3 class="section-title">Lastly, here are my past friends</h3>
+<a href="#companies"><img id="downArrow3" src="images/down-arrow-2.svg"/></a>
+	
+</div><!--subheroestitle-->
+<div id="companies">
+	<h3 class="section-title">Lastly, my alumni network:</h3>
 	<div class="company-logos">
 	<img src="images/TA_logo.png">
 	<img src="images/fly_logo.png">
@@ -179,6 +184,29 @@ Remove linkedin from nav.
 		<a target="_blank" href="http://linkedin.com/in/dbarner"><img src="images/linkedin_button.png"/></a>
 		<div>
 </footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+	$(document).ready(function(){
+	  $("#downArrow").on('click', function(event) {
+
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 600, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+</script>
 </body>
 </html>
 
