@@ -55,14 +55,14 @@ header {
 }
 
 .hero {
-	width:100%;
+	width:100vw;
 	display:flex;
 	flex-direction:row;
 	margin-top:0vh;
 }
 
 #hero3 {
-	width:100%;
+	width:100vw;
 	display:flex;
 	flex-direction:row;
 	height:9vh;
@@ -102,7 +102,7 @@ header {
 	flex-direction:column;
 	flex-wrap: wrap;
 	min-width: 200px;
-	width: 25%;
+	width: 25vw;
 	min-height: 200px;
 	margin: 20px 5px 0 5px;
 	position: relative;
@@ -338,19 +338,22 @@ button {
 }
 
 .love {
-	width:15%;
+	width:15vw;
 	min-width:150px;
-	padding:2vw;
 }
 
 .love img {
-	margin-top:2vh;
+	margin-top:0vh;
+	background:white;
+	padding:2vw;
 }
 
 .love-title {
 	text-align:center;
 	background:white;
 	height:5vh;
+	padding:2vw;
+		width:15vw;
 }
 
 /******************************************
