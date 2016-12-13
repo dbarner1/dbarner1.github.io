@@ -136,6 +136,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	text-align:center;
 	background-color: rgba(253,23,39,.8);	
 }
 
@@ -308,7 +309,6 @@ button {
 	margin-left:48%;
 }
 
-
 .bslc {
 	background:url('../images/bslc_bg.jpeg');
 	background-size:cover;
@@ -343,9 +343,9 @@ button {
 }
 
 .love img {
-	margin-top:0vh;
 	background:white;
 	padding:2vw;
+	width:15vw;
 }
 
 .love-title {
@@ -353,7 +353,7 @@ button {
 	background:white;
 	height:5vh;
 	padding:2vw;
-		width:15vw;
+	width:15vw;
 }
 
 /******************************************
@@ -545,6 +545,26 @@ Medium Screen Special Settings**************
 		padding-bottom:10px;
 	}
 
+.love {
+	width:15vw;
+	min-width:150px;
+}
+
+.love img {
+	background:white;
+	padding:2vw;
+	width:23vw;
+}
+
+.love-title {
+	text-align:center;
+	background:white;
+	height:5vh;
+	padding:2vw;
+	width:23vw;
+}
+
+
 }
 
 /******************************************
@@ -646,6 +666,10 @@ BIG Screen Special Settings****************
 	.sub-heroes {
 		margin-top:2vh;
 	}
+
+	#hero4 {
+	padding-top:6vh;
+}
 }
 
 
@@ -680,7 +704,7 @@ Small Screen Special Settings**************
 
 	.CTA {
 		width:80vw;
-		padding-top:20px;
+		padding-top:50px;
 	}
 
 	.portfolio {
@@ -794,6 +818,26 @@ Small Screen Special Settings**************
 	.portfolio {
 		padding-top:0vh;
 	}
+
+.love img {
+	background:white;
+	padding:2vw;
+	margin:0 2vw;
+	width:33vw;
+}
+
+.love-title {
+	text-align:center;
+	background:white;
+	height:5vh;
+	padding:2vw;
+	margin:0 2vw;
+	width:33vw;
+}
+
+#hero4 {
+	padding-top:6vh;
+}
 
 }
 
