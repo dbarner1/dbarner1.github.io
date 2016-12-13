@@ -80,6 +80,7 @@ header {
 	background:rgba(0,0,0,0);
 	min-height:250px;
 	padding-bottom:10vh;
+	padding-top:5vh;
 }
 
 .sub-heroes {
@@ -109,10 +110,8 @@ header {
 
 
 
-
 #sub-heroes-title {
 	text-align:center;
-	margin-top:9vh;
 	background-color:rgba(0,0,0,.05);
 }
 
@@ -145,6 +144,8 @@ footer {
 	flex-direction:row;
 	justify-content: center;
 }
+
+
 
 /******************************************
 Header*************************************
@@ -313,6 +314,7 @@ button {
 	background-size:cover;
 }
 
+
 .blackjack {
 	background:url('../images/cards.png');
 	background-size:cover;
@@ -333,6 +335,21 @@ button {
 	padding-top:3vh;
 	margin-left:48%;
 	margin-right:48%;
+}
+
+.love {
+	width:15%;
+	padding:2vw;
+}
+
+.love img {
+	margin-top:2vh;
+}
+
+.love-title {
+	text-align:center;
+	background:white;
+	height:5vh;
 }
 
 /******************************************

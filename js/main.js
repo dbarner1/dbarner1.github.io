@@ -42,6 +42,8 @@ $('.CTA').css({'width': vpw + 'px'});
 $('.CTA').css({'height': vph + 'px'});
 $('#sub-heroes-title').css({'height': vph + 'px'});
 $('#sub-heroes-title').css({'width': vpw + 'px'});
+$('#sub-heroes-title').css({'height': vph + 'px'});
+$('#sub-heroes-title').css({'width': vpw + 'px'});
 $('#companies').css({'height': (vph-(.3*vph)) + 'px'});
 $('#companies').css({'width': vpw + 'px'});
 
