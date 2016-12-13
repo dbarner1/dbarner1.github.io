@@ -154,7 +154,7 @@ function validate() {
 //Displays message to the user if they win
 function win () {
 		console.log("user wins");
-		user_msg =  "<b>You win!</b> <br>  You had<br>" + your_sum + "<br> The dealer had<br>" + dealer_sum + "<br>This e-coffee is on us!";
+		user_msg =  "<b>You win!</b> <br>  You had<br>" + your_sum + "<br> The dealer had<br>" + dealer_sum;
 		document.getElementById("user_msg").innerHTML = user_msg;	
 
 		win_count+=1;
@@ -168,7 +168,7 @@ function win () {
 //Displays message to the user if they win
 function lose () {
 		console.log("dealer wins");
-		user_msg = "You lost this game. Bummer.<br>You had<br>" + your_sum + "<br>The dealer had<br>" + dealer_sum + "<br><br>Thankfully, the only losers are those who call other players losers.";
+		user_msg = "You lost this game. Bummer.<br>You had<br>" + your_sum + "<br>The dealer had<br>" + dealer_sum;
 		document.getElementById("user_msg").innerHTML = user_msg;
 
 		lose_count+=1;

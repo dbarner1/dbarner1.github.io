@@ -12,7 +12,7 @@ h1 {font-weight:400;}
 h4 {font-size:2vw;}
 h5 {font-size:1.2vw; font-weight:200;}
 h2 {font-size: 5vw; font-weight:200;}
-h3 {font-size: 1.5vw;font-weight:200;}
+h3 {font-size: 1.8vw;font-weight:200;}
 h4 {font-size: 1.4vw; font-weight:200;}
 h6 {margin: 10px 0 0 0;}
 
@@ -37,8 +37,8 @@ header {
 	justify-content: space-between;
 	height: 8vh;	
 	margin-top: -10vh;
-	padding:1vh;
 	background-color: rgba(253,23,39,.8);	
+
 }
 
 .CTA {
@@ -102,8 +102,8 @@ header {
 	flex-direction:column;
 	flex-wrap: wrap;
 	min-width: 200px;
-	width: 25vw;
-	min-height: 200px;
+	width: 20vw;
+	min-height: 180px;
 	margin: 20px 5px 0 5px;
 	position: relative;
 }
@@ -292,7 +292,7 @@ Portfolio**********************************
 
 button {
 	margin-top:10px;
-	background-color:rgba(253,40,61,.8);
+	background-color:rgba(55,140,214,1);
 	width:100%;
 	color:white;
 		border-bottom:2px solid grey;
@@ -469,6 +469,7 @@ Medium Screen Special Settings**************
 	header {
 		position:fixed;
 		margin-top:-50px;
+		padding:3vh 0 1vh 0;
 	}
 
 	.portfolio {
@@ -580,7 +581,7 @@ BIG Screen Special Settings****************
  	}
 
 	h3 {
-		font-size: 1.4vw;
+		font-size: 2vw;
 		font-weight:200;
 	}
 
@@ -607,6 +608,7 @@ BIG Screen Special Settings****************
 		width:100vw;
 		display:inline-flex;
 		flex-direction:row;
+		padding:3vh 0 1vh 0;
 	}
 
 	.logo-burger-title {
@@ -700,6 +702,7 @@ Small Screen Special Settings**************
 	header {
 		position:fixed;
 		margin-top:-50px;
+		padding:3vh 0 1vh 0;
 	}
 
 	.CTA {
