@@ -56,8 +56,9 @@ var userAgent = navigator.userAgent.toLowerCase();
           
        }else{//Is Safari
           var portfolioPieces = document.querySelector( ".portfolio-pieces" ); 
-          var love = document.querySelector( ".love" ); 
+          var lovely = document.querySelector( ".lovely" ); 
              portfolioPieces.classList.add( "safariParent" );
-             love.classList.add( "safariParentLove" );
+             lovely.classList.add( "safariParentLove" );
+
        }
     }

@@ -572,13 +572,17 @@ Medium Screen Special Settings**************
 }
 
 .safariParent {
-	display:block;
-	margin:auto 35%;
+	display: block;
+	margin: auto 30%;
 }
 
 .safariParentLove {
-	display:block;
-	margin:auto 40%;
+	display: block;
+	margin: auto 35% auto 35%;
+}
+
+.safariLovelyEnd {
+
 }
 
 
