@@ -26,7 +26,7 @@
   });
 
 //WINDOW RESIZING CODE
-/*
+
 $(document).ready(function(){
 resizeDiv();
 });
@@ -46,6 +46,18 @@ $('#sub-heroes-title').css({'height': vph + 'px'});
 $('#sub-heroes-title').css({'width': vpw + 'px'});
 $('#companies').css({'height': (vph-(.3*vph)) + 'px'});
 $('#companies').css({'width': vpw + 'px'});
-
 }
-*/
+
+var userAgent = navigator.userAgent.toLowerCase(); 
+    if (userAgent .indexOf('safari')!=-1){ 
+       if(userAgent .indexOf('chrome')  > -1){
+        
+       }else if((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1)){
+          
+       }else{//Is Safari
+          var portfolioPieces = document.querySelector( ".portfolio-pieces" ); 
+          var love = document.querySelector( ".love" ); 
+             portfolioPieces.classList.add( "safariParent" );
+             love.classList.add( "safariParentLove" );
+       }
+    }
