@@ -26,7 +26,7 @@
   });
 
 //WINDOW RESIZING CODE
-
+/*
 $(document).ready(function(){
 resizeDiv();
 });
@@ -48,4 +48,4 @@ $('#companies').css({'height': (vph-(.3*vph)) + 'px'});
 $('#companies').css({'width': vpw + 'px'});
 
 }
-
+*/
