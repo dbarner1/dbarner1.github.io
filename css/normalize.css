@@ -425,6 +425,10 @@ th {
 /* Custom by dbarner
    ========================================================================== */
 
+ul {
+  margin:0;
+}
+
 /**
  * Remove default margins for copy elements.
  */

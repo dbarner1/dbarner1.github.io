@@ -1,18 +1,5 @@
-<!--
-Integrate changes from Milton.
-
-Sentence caps or lowercase font, thin font for subtext (see:font-variant)
-Add nice scroll behavior on homepage
-Add titles below the portfolio, to indicate that it's a clickable item
-Consider adding an "about me"
-Remove linkedin from nav.
-
--->
-
-<!--Master header should be updated across all pages when editing below!-->
 <!doctype html>
 <html lang="en">
-
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,165 +7,139 @@ Remove linkedin from nav.
 	    <meta name="description" content="">
 	    <meta name="author" content="Dave Barner">
 	    <title>Dave Barner - Software Developer</title>
-
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/main1.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--Used only for scrolling behavior-->
-
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+	    <!--jQuery used only for scrolling behavior - frameworks = bad for showing knowledge!-->
     </head>
 
 <body>
 	<div class="flex-head">
 	  	<header>
-	  		<div class="logo-burger-title">
-	  	
-		   		<h1 class="title"><b><a class="title" href="index.html">Dave Barner</a></b></h1>	
-		   	</div><!--logo-burger-->
-	  		
-		<!--	<div class="gap"></div>-->
- 		<nav>
- 			<ul>
- 			 	<li><a id="normal" target="_blank" href="https://github.com/dbarner1/"><p>GitHub</p></a></li>
- 				<li><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf"><p>Resume</p></a></li>
- 				<li><a id="normal" href="#hero"><p>Portfolio</p></a></li>
- 			</ul>
- 		</nav>
- 	</header>
+		   	<h1 class="title"><a class="title" href="index.html">Dave Barner</a></h1>	
+	 		<nav>
+	 			<ul>
+	 			 	<li><a id="normal" target="_blank" href="https://github.com/dbarner1/"><p>GitHub</p></a></li>
+	 				<li><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf"><p>Resume</p></a></li>
+	 				<li><a id="normal" href="#hero"><p>Portfolio</p></a></li>
+	 			</ul>
+	 		</nav>
+ 		</header>
  
-<div class="CTA">
-		<h2>Oh, hi!</h2>
-		<h2>I'm Dave.</h2>
-		<img id="avatar" src="images/man-me.svg"/>
-		
+		<div class="CTA">
+			<h2>Oh, hi!</h2>
+			<h2>I'm Dave.</h2>
+			<img id="avatar" src="images/man-me.svg"/>
+			<h3>A Front End Developer <br>who specializes in Javascript, HTML, CSS, SASS, and Bootstrap.</h3>
+			<div class="smallLinkDiv">
+				<h3 class="smallLinks"><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf">Download Resume</a></h3>
+				<h3 class="smallLinks"><a id="normal" target="_blank" href="https://github.com/dbarner1">View Github</a></h3>
+			</div>
+			<a href="#hero"><img id="downArrow" src="images/down-arrow-2.svg"/></a>
+		</div><!--CTA-->
 	
-		<h3>A Front End Developer <br>who specializes in Javascript, HTML, CSS, SASS, and Bootstrap.</h3>
-
-		<div class="smallLinkDiv">
-			<h3 class="smallLinks"><a id="normal" target="_blank" href="https://github.com/dbarner1/dbarner1.github.io/blob/master/BARNER_resume.pdf">Download Resume</a></h3>
-			<h3 class="smallLinks"><a id="normal" target="_blank" href="https://github.com/dbarner1">View Github</a></h3>
+		<div id="hero" class="hero">
 		</div>
 
-		<a href="#hero"><img id="downArrow" src="images/down-arrow-2.svg"/></a>
-</div>
-	<div id="hero" class="hero">
+	</div><!--flex-head-->
 
+	<div id="portfolio" class="portfolio"> 
+		<h3 class="section-title">I <img class="heart" src="images/heart.svg"/> to create.<br>Here are some samples.</h3>
+		<div class="portfolio-pieces">
+			<div class="portfolio-piece bslc">
+				<div class="portfolio-title">
+					<h4>Bay State<br>Learning Center</h4>
+				</div><!--portfolio-title-->
+				<div class="portfolio-middle">
+				</div>
+				<div class="portfolio-description">
+					<h6>Building a new website for Massachusett's leading self-directed learning center.  I am the Product Manager, Designer, and Web Developer!</h6>
+					<a target="_blank" href="https://github.com/dbarner1/BSLC"><button>View Github</button></a>
+				</div><!--portfolio-description-->
+			</div><!--portfolio-piece-->
 
+			<div class="portfolio-piece operationcode">
+				<div class="portfolio-title">
+					<h4>Operation Code</h4>
+				</div><!--portfolio-title-->
+				<div class="portfolio-middle">
+				</div><!--portfolio-middle-->
+				<div class="portfolio-description">
+					<h6>I am leading the re-design/build of Operation Code's website.  I am the Product Lead, Designer, and Front End Developer!  If interested in helping, contact me!</h6>
+					<a target="_blank" href="https://github.com/OperationCode"><button class="active">View Github</button></a>
+				</div><!--porfolio-description-->
+			</div><!--porfolio-piece-->
 		
+			<div class="portfolio-piece blackjack">
+				<div class="portfolio-title">
+					<h4>Pup Dog Blackjack<br>Mini-Game</h4>
+				</div><!--portfolio-title-->
+				<div class="portfolio-middle">
+				</div><!--portfolio-middle-->
+				<div class="portfolio-description">
+					<h6>I built this game in vanilla JS to teach the basics of Javascript for the stude	nts at Bay State Learning Center.  May the odds be ever in your favor.  ;)</h6>	
+					<a target="_blank" href="products/blackjack/blackjack.html"><button class="active">Play</button></a>
+				</div><!--porfolio-description-->
+			</div><!--portfolio-piece-->
+		</div><!--portfolio-pieces-->
+		<a href="#hero2"><img id="downArrow2" src="images/down-arrow-2.svg"/></a>
+	</div><!--portfolio-->
 
-</div><!--Flex head-->
+	<div id="hero2" class="hero">
+	</div>
 
-<div id="portfolio" class="portfolio"> 
-	<h3 class="section-title">I love to create.<br>Here are some samples:</h3>
+	<div id="portfolio" class="portfolio"> 
+		<h3 class="section-title">Here are 3 things I can't live without:</h3>
+		<div class="portfolio-pieces lovely">
+			<div class="love">
+				<div class="love-title">
+					<h3>MY USER</h3>
+				</div><!--love-title-->
+				<img src="images/user.svg"/>
+			</div><!--love-->
 
-	<div class="portfolio-pieces">
-		<div class="portfolio-piece bslc">
-			<div class="portfolio-title">
-				<h4>BAY STATE<br>LEARNING CENTER</h4>
-			</div>
-			<div class="portfolio-description">
-				<h6>Product Management, UX Design, and Engineering of a beautiful new marketing site.</h6>
-				<a target="_blank" href="https://github.com/dbarner1/BSLC"><button>View Github</button></a>
-			</div><!--BSLC Description-->
-		</div><!--BSLC-->
+			<div class="love">
+				<div class="love-title">
+					<h3>DEVELOPMENT</h3>
+				</div><!--love-title-->
+				<img src="images/devices.svg"/>
+			</div><!--love-->
 
-
-<div class="portfolio-piece operationcode">
-			<div class="portfolio-title">
-				<h4>OPERATION<br>
-				    CODE</h4>
-			</div>
-						<div class="portfolio-middle">
-
-			</div>
-			<div class="portfolio-description">
-				<h6>Product Management and UX Design for a program to train the veteran community how to code.</h6>
-		<a target="_blank" href="https://github.com/OperationCode"><button class="active">View Github</button></a>
-			</div><!--Operation Code Description-->
-		</div><!--OperationCode-->
-		
-		<div class="portfolio-piece blackjack">
-		
+			<div class="love">
+				<div class="love-title">
+					<h3>DATA</h3>
+				</div><!--love-title-->
+				<img src="images/pie-chart.svg"/>
+			</div><!--love-->
 			
-			<div class="portfolio-title">
-				<h4>BLACKJACK <br>
-				    MINI-GAME</h4>
-			</div>
-				
-			<div class="portfolio-middle">
-
-			</div>
-			
-			<div class="portfolio-description">
-				<h6>Engineering to teach the basics of Javascript for the students at Bay State Learning Center.</h6>
-					
-				<a target="_blank" href="products/blackjack/blackjack.html"><button class="active">Play</button></a>
-			
-			</div><!--Blackjack Description-->
-
-			<!--Blackjack link-->
-		</div><!--Blackjack-->
-
+			<h3 class="section-title lovelyEnd">...in that order.</h3>
 		
+		</div><!--lovely-->
 
+		<a href="#hero3"><img id="downArrow2" src="images/down-arrow-2.svg"/></a>
 
-	</div><!--Portfolio Pieces-->
-
-	<a href="#hero2"><img id="downArrow2" src="images/down-arrow-2.svg"/></a>
-</div><!--Portfolio-->
-
-	<div id="hero2" class="hero"></div>
-
-<div id="portfolio" class="portfolio"> 
-	<h3 class="section-title">Here are 3 things I can't live without:</h3>
-
-	<div class="portfolio-pieces lovely">
-		<div class="love">
-			<div class="love-title">
-				MY USER
-			</div>
-			<img src="images/user.svg"/>
-		</div>
-
-		<div class="love">
-			<div class="love-title">
-				DEVELOPMENT
-			</div>
-			<img src="images/devices.svg"/>
-		</div>
-
-
-		<div class="love">
-			<div class="love-title">
-				DATA
-			</div>
-			<img src="images/pie-chart.svg"/>
-		</div>
-	<h3 class="section-title lovelyEnd">...in that order.</h3>
-	</div><!--Portfolio Pieces-->
-
-	<a href="#hero3"><img id="downArrow2" src="images/down-arrow-2.svg"/></a>
-</div><!--Portfolio-->
+	</div><!--Portfolio-->
 
 	<div id="hero3" class="hero"></div>
 
 
-<div id="sub-heroes-title">
-			<h3 class="section-title">My Skills, My Current Work</h3>
+	<div id="sub-heroes-title">
+		<h3 class="section-title">My Skills, My Current Work</h3>
 
 		<div class="sub-heroes">
 			<div class="sub-hero-1">
 				<ul>
-					<li><h4>I come preloaded with...</h4></li>
+					<li><h4 class="left"><b>I come preloaded with...</b></h4></li>
 					<li><h5>Javascript</h5></li>
 					<li><h5>jQuery</h5></li>
 					<li><h5>Bootstrap</h5></li>
 					<li><h5>HTML</h5></li>						
 					<li><h5>CSS</h5></li>	
-					<li><h4>As a bonus, you get...</h4></li>
-					<li><h5>6 years product management experience.</h5></li>
-					<li><h5>3 years analytics experience.</h5></li>	
-					<li><h4>And in the next 2 months you get...</h4></li>
+					<li><h4 class="left"><b>As a bonus, you get...</b></h4></li>
+					<li><h5 class="left">6 years product management experience.</h5></li>
+					<li><h5 class="left">3 years analytics experience.</h5></li>	
+					<li><h4 class="left"><b>And in the next 2 months you get...</b></h4></li>
 					<li><h5>Angular 2</h5></li>
 					<li><h5>node.JS</h5></li>				
 				</ul>
@@ -186,73 +147,72 @@ Remove linkedin from nav.
 
 			<div class="sub-hero-2">
 				<ul>
-					<li><h4>I'm currently working on...<h4></li>
-					<li><h5>A site for Bay State Learning Center using vanilla Javascript, jQuery, HTML, CSS, and examples of bootstrap, Angular 2, and SASS.</h5></li>
-					
-					</li><h5>Estimated Completion: January 15, 2016</h5></li>
+
+					<li><h4><b>I'm currently working on...</b><h4></li>
+					<li><img src="images/pencil.svg"</li>
+					<li><h5 class="left">A site for Bay State Learning Center using vanilla Javascript, jQuery, HTML, CSS, and examples of bootstrap, Angular 2, and SASS.</h5></li><br>
+					</li><h5 class="left">Estimated Completion: January 15, 2016</h5></li>
 					<br>
-					<li>---</li>
+					<li><img src="images/briefcase.svg"</li>
 					<br>
-					<li><h5>A site for Operation Code using vanilla Javascript, jQuery, HTML, CSS</h5></li>
-				
-					</li><h5>Estimated Completion: January 30, 2016</h5></li>
+					<br>
+					<li><h5 class="left">A site for Operation Code using vanilla Javascript, jQuery, HTML, CSS</h5></li>
+					</li><h5 class="left">Estimated Completion: January 30, 2016</h5></li>
 				</ul>
-
 			</div><!--sub-hero-2-->
-
-
 		</div><!--sub-heroes-->
-<a href="#hero4"><img id="downArrow3" src="images/down-arrow-2.svg"/></a>
+
+		<a href="#hero4"><img id="downArrow3" src="images/down-arrow-2.svg"/></a>
 	
-</div><!--subheroestitle-->
+	</div><!--subheroestitle-->
 
-<div id="hero4" class="hero"></div>
+	<div id="hero4" class="hero"></div>
 
-<div id="companies">
-	<h3 class="section-title">My Previous Companies</h3>
-	<div class="company-logos">
-	<img class="logo" src="images/TA_logo.png">
-	<img class="logo" src="images/fly_logo.png">
-	<img class="logo" src="images/pwc_logo.png">
-	<img class="logo" src="images/gc_logo.jpg">
-	</div><!--company-logos-->
-	<a href="#"><img id="downArrow4" src="images/up-arrow-2.svg"/></a>
-</div><!--Companies-->
+	<div id="companies">
+		<h3 class="section-title">My Previous Companies</h3>
+		<div class="company-logos">
+			<img class="logo" src="images/TA_logo.png">
+			<img class="logo" src="images/fly_logo.png">
+			<img class="logo" src="images/pwc_logo.png">
+			<img class="logo" src="images/gc_logo.jpg">
+		</div><!--company-logos-->
+		<a href="#"><img id="downArrow4" src="images/up-arrow-2.svg"/></a>
+	</div><!--companies-->
 
-<footer class="contact">
+	<footer class="contact">
 		<p id="bottom-CTA">Interested in working together?</p>
 		<div class="social">
-		<a target="_blank" href="mailto:dbarner@gmail.com"><img src="images/mail-icon.png"/></a>
-		<a target="_blank" href="http://linkedin.com/in/dbarner"><img src="images/linkedin_button.png"/></a>
-		<div>
-</footer>
+			<a href="tel:7814679961"><img src="images/iphone.svg"/></a>
+			<a target="_blank" href="mailto:dbarner@gmail.com"><img src="images/mail-icon.png"/></a>
+			<a target="_blank" href="http://linkedin.com/in/dbarner"><img src="images/linkedin_button.png"/></a>
+		<div><!--social-->
+	</footer>
 
-<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
-<script>
-	$(document).ready(function(){
-	  $("#downArrow").on('click', function(event) {
+	<script>
+		$(document).ready(function(){
+		  $("#downArrow").on('click', function(event) {
 
-	    if (this.hash !== "") {
-	      event.preventDefault();
+		    if (this.hash !== "") {
+		      event.preventDefault();
 
-	      var hash = this.hash;
+		      var hash = this.hash;
 
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 600, function(){
-	   
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	      });
-	    } // End if
-	  });
-	});
-</script>
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 600, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
 </body>
 </html>
 
 <!--Special thanks to Salva Ferrando Cuesta, Newton Ikhariale, Doug Martin, Meghan Gwinn for career and portfolio support-->
-
 <!--Salava's portfolio site: salvaferrando.com and salvaferrando.es-->
 

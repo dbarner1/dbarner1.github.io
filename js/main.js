@@ -1,3 +1,5 @@
+//SMOOTH SCROLLING CODE
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -39,13 +41,11 @@ vpw = $(window).width();
 vph = $(window).height();
 $('.CTA').css({'width': vpw + 'px'});
 $('.CTA').css({'height': vph + 'px'});
-$('#sub-heroes-title').css({'height': vph + 'px'});
-$('#sub-heroes-title').css({'width': vpw + 'px'});
-$('#sub-heroes-title').css({'height': vph + 'px'});
-$('#sub-heroes-title').css({'width': vpw + 'px'});
 $('#companies').css({'height': (vph-(.3*vph)) + 'px'});
 $('#companies').css({'width': vpw + 'px'});
 }
+
+//SAFARI FLEXBOX FIX
 
 var userAgent = navigator.userAgent.toLowerCase(); 
     if (userAgent .indexOf('safari')!=-1){ 
@@ -58,7 +58,6 @@ var userAgent = navigator.userAgent.toLowerCase();
           var lovely = document.querySelector( ".lovely" ); 
              portfolioPieces.classList.add( "safariParent" );
              lovely.classList.add( "safariParentLove" );
-
        }
     }
 
