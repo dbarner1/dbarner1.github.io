@@ -1,8 +1,8 @@
 //SMOOTH SCROLLING CODE
 
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  // Add smooth scrolling to all "arrow" image links
+  $(".arrow").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -61,11 +61,3 @@ var userAgent = navigator.userAgent.toLowerCase();
        }
     }
 
-//CAROUSEL
-$('.slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 3,
-    dots: true,
-    infinite: true,
-    cssEase: 'linear'
-});
