@@ -181,9 +181,8 @@ Portfolio**********************************
 
 .portfolio-pieces {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	margin-top:20px;
 }
 
@@ -481,7 +480,7 @@ Small Screen Special Settings**************
 	}
 
 	.smallLinkDiv {
-		margin-top: 5vh;
+		margin-top: 1vh;
 	}
 
 	#avatar {
@@ -514,9 +513,8 @@ Small Screen Special Settings**************
 	}
 
 	.portfolio-piece {
-		display:block;
 		width:40%;
-		margin:0 10% 20px 10%;
+		margin:2vh auto;
 	}	
 
 	.love {
@@ -536,7 +534,6 @@ Small Screen Special Settings**************
 		display:flex;
 		flex-direction:column;
 		justify-content:center;
-
 	}
 
 	.love-title {
