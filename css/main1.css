@@ -432,6 +432,10 @@ Small Screen Special Settings**************
 		padding: 10px 0;
 	}
 
+	.smallLinks {
+		display: block;
+	}
+
 	nav {
 		display:none;
 	}
@@ -473,7 +477,7 @@ Small Screen Special Settings**************
 	}
 
 	.company-logos {
-			margin-top: 10px;
+			margin-top: 5px;
 	}
 
 	.smallLinkDiv {
@@ -493,7 +497,7 @@ Small Screen Special Settings**************
 	#downArrow2, 
 	#downArrow3 {
 		width: 10vw;
-		padding-top: 5vh;
+		padding-top: 2vh;
 		padding-bottom:2vh;
 
 	}
@@ -501,8 +505,9 @@ Small Screen Special Settings**************
 	#downArrow4  {
 		width: 10vw;
 		padding-top: 2vh;
-		margin: 0vh 48vw 0 48vw;
+		margin: 0vh 54vw 0 46vw;
 		}
+
 	.portfolio {
 		padding-top: 0vh;
 
@@ -517,6 +522,7 @@ Small Screen Special Settings**************
 	.love {
 		align-self:center;
 		height:35vh;
+		width:40vw;
 	}
 
 	.love img {
@@ -536,8 +542,12 @@ Small Screen Special Settings**************
 	.love-title {
 		text-align: center;
 		height: 2vh;
-		width: 30vw;
+		width: 40vw;
 		min-width:150px;
+	}
+
+	#companies {
+		min-height:75vh;
 	}
 
 	#hero4 {
