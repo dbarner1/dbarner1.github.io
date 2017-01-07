@@ -424,7 +424,7 @@ Small Screen Special Settings**************
 @media (min-width:1px) AND (max-width:423px) {
 
 	h2 {font-size: 9vw; font-weight: 200;}
-	h3 {font-size: 5vw; font-weight: 200;}
+	h3 {font-size: 4vw; font-weight: 200;}
 	h4 {font-size: 3vw;}
 	h5 {font-size: 3vw;}
 
@@ -434,6 +434,12 @@ Small Screen Special Settings**************
 
 	nav {
 		display:none;
+	}
+
+	.CTA {
+		padding:0 1vw;
+
+
 	}
 
 	.title {
@@ -488,6 +494,8 @@ Small Screen Special Settings**************
 	#downArrow3 {
 		width: 10vw;
 		padding-top: 5vh;
+		padding-bottom:2vh;
+
 	}
 
 	#downArrow4  {
@@ -497,6 +505,7 @@ Small Screen Special Settings**************
 		}
 	.portfolio {
 		padding-top: 0vh;
+
 	}
 
 	.portfolio-piece {
@@ -505,6 +514,11 @@ Small Screen Special Settings**************
 		margin:0 10% 20px 10%;
 	}	
 
+	.love {
+		align-self:center;
+		height:35vh;
+	}
+
 	.love img {
 		background:white;
 		padding: 3vw;
@@ -512,13 +526,18 @@ Small Screen Special Settings**************
 		width: 30vw;
 	}
 
+	.lovely {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+
+	}
+
 	.love-title {
 		text-align: center;
-		background: white;
 		height: 2vh;
-		padding: 3vw;
-		margin: 0 2vw;
 		width: 30vw;
+		min-width:150px;
 	}
 
 	#hero4 {
@@ -526,7 +545,7 @@ Small Screen Special Settings**************
 	}
 
 	.section-title {
-		font-size:6vw;
+		font-size:5vw;
 	}
 
 }
