@@ -451,8 +451,10 @@ Small Screen Special Settings**************
 
 	.CTA {
 		padding:0 1vw;
+	}
 
-
+	.sub-hero-2 img {
+		width:15vw;
 	}
 
 	.title {
