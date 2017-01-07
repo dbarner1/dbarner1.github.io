@@ -265,25 +265,28 @@ Things I Love******************************
 	width: 20vw;
 	min-width: 150px;
 	z-index: -1;
+	background-color:white;
 	-webkit-box-shadow: 0 35px 20px #777;
 	-moz-box-shadow: 0 35px 20px #777;
 	box-shadow: 0 35px 20px #777;
 	margin-bottom:40px;
+
 }
 
 .love img {
 	display:block;
 	margin:0 auto;
-	background: white;
+	background-color: white;
 	padding: 1vw;
 	width: 50%;
 }
 
 .love-title {
 	text-align: center;
-	background: white;
+	background-color: white;
 	height: 5vh;
-	padding: 2vw;
+	padding-top:2vw;
+	padding-bottom:2vw;
 	width: 15vw;
 }
 
