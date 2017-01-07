@@ -534,7 +534,7 @@ Small Screen Special Settings**************
 	}
 
 	.lovely {
-		display:flex;
+		display:none;
 		flex-direction:column;
 		justify-content:center;
 	}
