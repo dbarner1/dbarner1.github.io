@@ -1,7 +1,7 @@
 
 
 //SMOOTH SCROLLING CODE
-/*
+
 $(document).ready(function(){
   // Add smooth scrolling to all "arrow" image links
   $(".arrow").on('click', function(event) {
@@ -26,7 +26,7 @@ $(document).ready(function(){
     } // End if
   });
 });
-*/
+
 
 //WINDOW RESIZING CODE
 
