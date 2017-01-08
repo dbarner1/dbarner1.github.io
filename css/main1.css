@@ -11,7 +11,9 @@ Font***************************************
 ******************************************/
 
 /*families*/
-body {font-family: 'Open Sans', sans-serif;}
+body {
+		font-family: 'Open Sans', sans-serif;
+		position:relative;}
 
 /*sizes*/
 h1 		 {font-size: 35px;}	
@@ -89,6 +91,7 @@ footer {
 	align-content: center;
 	text-align: center;
 	height: 25vh;
+	z-index:-8;
 	background-color: rgba(0,0,0,.8);	
 }
 
@@ -718,4 +721,29 @@ Medium Screen Special Settings**************
 	box-shadow: 0 35px 20px #777;  
 }*/
 
+/*DOUGHNUT!*/
+.doughnut {
+	position:absolute;
+	overflow:hidden;
+	width:35px;
+	margin-left:61.5%;
+	z-index:-5;
+	transform: translateY(-300%);
+	transition:transform 8s;
+}
+
+.fallFromSky {
+	transform:translateY(+8750%);
+	left:0;
+}
+
+.trophy {
+	z-index:2;
+}
+
+.move {
+	position:absolute;
+	transform: translateY(-220%);
+	transition:transform 8s;
+}
 

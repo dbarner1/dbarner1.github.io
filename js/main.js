@@ -1,3 +1,16 @@
+//DOUGHNUT
+
+var doughnutButton = document.getElementById("doughnutButton");
+var doughnut = document.getElementsByClassName("doughnut")[0];
+var doughDiv = document.getElementsByClassName("dough")[0];
+var trophy = document.getElementsByClassName("trophy")[0];
+
+doughnutButton.addEventListener("click", function() {
+    doughnut.classList.toggle("fallFromSky");
+    doughnut.classList.toggle("doughtnut");
+    trophy.classList.toggle("move");
+});
+
 
 
 //SMOOTH SCROLLING CODE
