@@ -2,11 +2,20 @@
 
 var doughnutButton = document.getElementById("doughnutButton");
 var doughnut = document.getElementsByClassName("doughnut")[0];
+var do_milk = document.getElementsByClassName("do_milk")[0];
 var doughDiv = document.getElementsByClassName("dough")[0];
 var trophy = document.getElementsByClassName("trophy")[0];
 
 doughnutButton.addEventListener("click", function() {
     doughnut.classList.toggle("fallFromSky");
+    do_milk.classList.toggle("fallFromSky");   
+    doughnut.classList.toggle("doughtnut");
+    trophy.classList.toggle("move");
+});
+
+trophy.addEventListener("click", function() {
+    doughnut.classList.toggle("hide");
+    do_milk.classList.toggle("fallFromSky");   
     doughnut.classList.toggle("doughtnut");
     trophy.classList.toggle("move");
 });

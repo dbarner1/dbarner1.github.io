@@ -722,14 +722,21 @@ Medium Screen Special Settings**************
 }*/
 
 /*DOUGHNUT!*/
-.doughnut {
+.doughnut, .do_milk {
 	position:absolute;
 	overflow:hidden;
 	width:35px;
-	margin-left:61.5%;
-	z-index:-5;
+	margin-left:64%;
 	transform: translateY(-300%);
-	transition:transform 8s;
+	transition:transform 6s;
+}
+
+.doughtnut {
+	z-index:-5;
+}
+
+.do_milk {
+	z-index:-6;
 }
 
 .fallFromSky {
@@ -738,12 +745,17 @@ Medium Screen Special Settings**************
 }
 
 .trophy {
-	z-index:2;
+	/*z-index:2;*/
+	transition:transform 6s;
 }
 
 .move {
-	position:absolute;
-	transform: translateY(-220%);
-	transition:transform 8s;
+	position: absolute;
+	transform: translateY(-200%);
+	transition: transform 6s;
+}
+
+.hide{
+	display:none;
 }
 
