@@ -1,3 +1,13 @@
+
+/*
+var featuredKPI = document.querySelector(".why-box-featured");
+
+featuredKPI.
+
+*/
+
+
+
 //SMOOTH SCROLLING CODE
 
 $(document).ready(function(){
