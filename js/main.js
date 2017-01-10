@@ -1,21 +1,38 @@
 //DOUGHNUT
 
 var doughnutButton = document.getElementById("doughnutButton");
+var navUl = document.getElementById("ul");
 var doughnut = document.getElementsByClassName("doughnut")[0];
 var doughDiv = document.getElementsByClassName("dough")[0];
-var trophy = document.getElementsByClassName("trophy")[0];
+var msg;
 
 doughnutButton.addEventListener("click", function() {
+    updatemsg();
+ 
     doughnut.classList.toggle("fallFromSky");
-    doughnut.classList.toggle("doughtnut");
-    trophy.classList.toggle("move");
 });
 
-trophy.addEventListener("click", function() { 
-    doughnut.classList.toggle("fallFromSky");
-    doughnut.classList.toggle("doughtnut");
-    trophy.classList.toggle("move");
-});
+function updatemsg () {
+  console.log("ran updatemsg");
+
+  switch (msg) {
+    case undefined:
+      msg="Done?";
+      break;
+    case "Done?":
+      msg="Donut?";
+      break;
+    case "Donut?":
+      msg="Done?";
+      break;
+  }
+
+  doughnutButton.innerHTML = msg; 
+}
+    
+
+
+
 
 
 

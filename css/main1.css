@@ -528,7 +528,7 @@ Small Screen Special Settings**************
 	}
 
 	.portfolio-piece {
-		width:40%;
+		width:51%;
 		margin:2vh auto;
 	}	
 
@@ -725,38 +725,20 @@ Medium Screen Special Settings**************
 .doughnut {
 	position:absolute;
 	overflow:hidden;
-	width:35px;
-	margin-left:70%;
-	transform: translateY(-200px);
-	transition:transform 6s;
-}
-
-.doughtnut {
+	width:50px;
 	z-index:-5;
-}
-
-.do_milk {
-	z-index:-6;
+	margin-left:60%;
+	transform: translateY(-150px);
+	transition: transform 3s;
 }
 
 .fallFromSky {
-	transform:translateY(+9300%);
+	transform:translateY(+300%);
 	left:0;
 }
 
-.trophy {
-	/*z-index:2;*/
-	transition:transform 6s;
-}
-
-.move {
-	position: absolute;
-	transform: translateX(275%);
-	transition: transform 6s;
-}
-
-.hide{
-	display:none;
+.hide {
+	visibility:collapse;
 }
 
 
