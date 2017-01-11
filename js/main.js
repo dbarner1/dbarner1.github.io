@@ -20,9 +20,9 @@ function updatemsg () {
       msg="Done?";
       break;
     case "Done?":
-      msg="Donut?";
+      msg="For You";
       break;
-    case "Donut?":
+    case "For You":
       msg="Done?";
       break;
   }
