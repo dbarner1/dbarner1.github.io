@@ -103,6 +103,8 @@ header {
   margin-top: 10px;
   border-bottom-left-radius: 100% 10px;
   border-bottom-right-radius: 100% 10px; }
+  .hero .orange {
+    background-color: orange; }
 @-webkit-keyframes animate {
   from {
     background-position: 0 0; }

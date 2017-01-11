@@ -147,6 +147,11 @@ header {
 
 .hero {
 
+
+	.orange  {
+		background-color:orange;
+	}
+	
 //Animation of hero by https://codepen.io/asfarmed/pen/cfslr
 background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 	-webkit-animation: 5s linear 0s normal none infinite animate;
@@ -180,7 +185,6 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	from {background-position:0 0;}
 	to {background-position: 0 500px;}
 }	
-
 
 
 	height:100vh;
@@ -233,7 +237,9 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 		border-bottom: 1px solid #EEEEEE;
 		text-align:center;
 		background:rgba(255,255,255,1);
-		transition: all .2s ease-in-out; }
+		transition: all .2s ease-in-out; 
+}
+
 
 
 		a {
