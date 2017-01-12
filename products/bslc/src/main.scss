@@ -154,36 +154,36 @@ header {
 	
 //Animation of hero by https://codepen.io/asfarmed/pen/cfslr
 background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 5s linear 0s normal none infinite animate;
-	-moz-animation: 5s linear 0s normal none infinite animate;
-	-ms-animation: 5s linear 0s normal none infinite animate;
-	-o-animation: 5s linear 0s normal none infinite animate;
-	animation: 5s linear 0s normal none infinite animate;
+	-webkit-animation: 0s linear 0s normal none infinite animate;
+	-moz-animation: 0s linear 0s normal none infinite animate;
+	-ms-animation: 0s linear 0s normal none infinite animate;
+	-o-animation: 0s linear 0s normal none infinite animate;
+	animation: 0s linear 0s normal none infinite animate;
  
  
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 0 -500px;}
+	to {background-position: 0 0px;}
 }
  
 @-moz-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 0 -500px;}
+	to {background-position: 0 0px;}
 }
  
 @-ms-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 0 -500px;}
+	to {background-position: 0 0px;}
 }
  
 @-o-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 0 -500px;}
+	to {background-position: 0 0px;}
 }
  
 @keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 0 500px;}
+	to {background-position: 0 0px;}
 }	
 
 
@@ -192,8 +192,7 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	margin:0 auto;
 	margin-top:10px;
 
-	border-bottom-left-radius: 100%10px;
-	border-bottom-right-radius: 100%10px; 
+
 
 	.arrow img {
 		width:5%;
@@ -322,26 +321,26 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	height:100vh;
 	padding-top:10vh;
 	background:url('../img/greenBG.png') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
+	-webkit-animation: 0s linear 0s normal none infinite animate;
+	-moz-animation: 0s linear 0s normal none infinite animate;
+	-ms-animation: 0s linear 0s normal none infinite animate;
+	-o-animation: 0s linear 0s normal none infinite animate;
+	animation: 0s linear 0s normal none infinite animate;
  
  
 	@-webkit-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -0;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-moz-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -0;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-ms-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -0;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-o-keyframes animate {
@@ -568,36 +567,36 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	text-align:center;
 
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 5s linear 0s normal none infinite animate;
-	-moz-animation: 5s linear 0s normal none infinite animate;
-	-ms-animation: 5s linear 0s normal none infinite animate;
-	-o-animation: 5s linear 0s normal none infinite animate;
-	animation: 5s linear 0s normal none infinite animate;
+	-webkit-animation: 0s linear 0s normal none infinite animate;
+	-moz-animation: 0s linear 0s normal none infinite animate;
+	-ms-animation: 0s linear 0s normal none infinite animate;
+	-o-animation: 0s linear 0s normal none infinite animate;
+	animation: 0s linear 0s normal none infinite animate;
  
  
 	@-webkit-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0px;}
 	}
 	 
 	@-moz-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0px;}
 	}
 	 
 	@-ms-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0px;}
 	}
 	 
 	@-o-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 500px;}
+		to {background-position: 0 0px;}
 	}
 	 
 	@keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 500px;}
+		to {background-position: 0 0px;}
 	}	
 		h3 {
 			font-weight:500;
@@ -698,36 +697,36 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	text-align:center;
 
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 5s linear 0s normal none infinite animate;
-	-moz-animation: 5s linear 0s normal none infinite animate;
-	-ms-animation: 5s linear 0s normal none infinite animate;
-	-o-animation: 5s linear 0s normal none infinite animate;
-	animation: 5s linear 0s normal none infinite animate;
+	-webkit-animation: 0s linear 0s normal none infinite animate;
+	-moz-animation: 0s linear 0s normal none infinite animate;
+	-ms-animation: 0s linear 0s normal none infinite animate;
+	-o-animation: 0s linear 0s normal none infinite animate;
+	animation: 0s linear 0s normal none infinite animate;
  
  
 	@-webkit-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-moz-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-ms-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 -500px;}
+		to {background-position: 0 0;}
 	}
 	 
 	@-o-keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 500px;}
+		to {background-position: 0 0;}
 	}
 	 
 	@keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 500px;}
+		to {background-position: 0 0;}
 	}	
 
 	form {
