@@ -537,6 +537,9 @@ footer {
   footer .icon {
     width: 6%;
     min-width: 60px; }
+  footer .facebook_icon {
+    width: 15%;
+    min-width: 60px; }
   footer .paypalIcon {
     width: 30%; }
   footer a {
