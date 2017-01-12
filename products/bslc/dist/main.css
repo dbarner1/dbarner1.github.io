@@ -186,8 +186,8 @@ header {
   text-align: center;
   background: rgba(245, 245, 245, 0.9);
   transition: all .2s ease-in-out;
-  -moz-box-shadow: 3px 3px 5px 6px black;
-  -webkit-box-shadow: 3px 3px 5px 6px black;
+  -moz-box-shadow: 5px 3px 5px 2px black;
+  -webkit-box-shadow: 5px 3px 5px 2px black;
   box-shadow: 5px 3px 5px 2px black; }
   .sub-hero-2 a {
     text-decoration: none; }
