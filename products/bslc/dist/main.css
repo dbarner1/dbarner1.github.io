@@ -177,6 +177,12 @@ header {
   transform: scale(1.2); }
 
 .sub-hero-2 {
+  z-index: -1;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777; }
+
+.sub-hero-2 {
   float: left;
   margin: 7% 0 0 5%;
   padding: 2%;
@@ -185,10 +191,7 @@ header {
   border: 1px solid #EEEEEE;
   text-align: center;
   background: rgba(245, 245, 245, 0.9);
-  transition: all .2s ease-in-out;
-  -moz-box-shadow: 5px 3px 5px 2px black;
-  -webkit-box-shadow: 5px 3px 5px 2px black;
-  box-shadow: 5px 3px 5px 2px black; }
+  transition: all .2s ease-in-out; }
   .sub-hero-2 a {
     text-decoration: none; }
   .sub-hero-2 .sub-hero-headline {

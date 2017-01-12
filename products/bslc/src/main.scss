@@ -267,6 +267,13 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 	}
 
 	.sub-hero-2 {
+    z-index: -1;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+	box-shadow: 0 35px 20px #777;
+ }
+
+	.sub-hero-2 {
 		float:left;
 		margin:7% 0 0 5%;
 		padding:2%;
@@ -276,9 +283,7 @@ background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3d
 		text-align:center;
 		background:rgba(245,245,245,.9);
 		transition: all .2s ease-in-out; 
-		 -moz-box-shadow:    5px 3px 5px 2px black;
-  	  -webkit-box-shadow:    5px 3px 5px 2px black;
-  	          box-shadow:    5px 3px 5px 2px black;
+	
 
 
 		a {
@@ -1030,6 +1035,8 @@ footer {
 	width:100%;
 	margin-bottom:2%;
 }
+
+
 
 
 
