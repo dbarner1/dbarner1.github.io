@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Bay State Learning Center</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dist/normalize.css">
 	<link rel="stylesheet" type="text/css" href="dist/main.css?v3">
 	<!--jQuery used only for scrolling behavior and carouseling - frameworks = bad for showing knowledge!-->
@@ -14,7 +14,7 @@
 			<a href="index.html"><img src="img/bslcLogo.jpeg" alt="BSLC Logo"/></a>
 			<nav>
 				<ul>
-					<li><h3><a href="learnmore.html">Learn More</a></h3></li>
+					<li class="border-left"><h3><a href="learnmore.html">Learn More</a></h3></li>
 					<li><h3><a href="curriculum.html">Curriculum</a></h3></li>
 					<li><h3><a href="tuition.html">Tuition</a></h3></li>
 					<li><h3><a href="#">Makerspace</a></h3></li>
@@ -30,32 +30,35 @@
 		<div class="clear"></div>
 
 		<div class="hero">
+			<div class="allHeros">
+				<div class="headline">
+					<h1>Bay State Learning Center</h1> 
+					<h3>Inspiring young learners to take education into their own hands.</h3>
+				</div>
 
-			<div class="headline">
-				<h1>Bay State Learning Center</h1> 
-				<h3>Inspiring young learners to take education into their own hands.</h3>
-			</div>
+				<div class="sub-hero-2">
+					<div class="sub-hero-2-content">
+						<h3>Our Curriculum</h3>
+						<p>To understand if your child would be a good fit for our program, we welcome you to view the curriculum, take a test to see if they're a good fit, or contact other parents of students in our current cohort.</p>
+						<button><h5><a href="learnmore.html">Our Approach</a></h5></button>
+					</div>
+				</div>
 
-			<div class="sub-hero-2">
-				<h3>Our Curriculum</h3>
-				<p>To understand if your child would be a good fit for our program, we welcome you to view the curriculum, take a test to see if they're a good fit, or contact other parents of students in our current cohort.</p>
-				<button><h5><a href="learnmore.html">Our Approach</a></h5></button>
-			</div>
+				<div class="sub-hero-middle">
+					<img src="img/class.png" alt="class photo"/>
+					<p>Everyday here is crafted personally for each student.</p>
+					<button class="orange"><h5><a href="index.html">Learn more.</a></h5></button>
+				</div>
 
-			<div class="sub-hero-middle">
-				<img src="img/class.png" alt="class photo"/>
-				<p>Everyday here is crafted personally for each student.</p>
-				<button class="orange"><h5><a href="index.html">Learn more.</a></h5></button>
-			</div>
-
-			<div class="sub-hero-2">
-				<h3>Partner With Us!</h3>
-				<p>To become part of the future of education in Massachusetts we're currently open to partner with you.  We have many benefits to give you, including advertising, student projects, and more!</p>
-				<button><h5><a href="curriculum.html">Learn More</a></h5></button>
-			</div>
-		
+				<div class="sub-hero-2">
+					<div class="sub-hero-2-content">
+						<h3>Partner With Us!</h3>
+						<p>To become part of the future of education in Massachusetts we're currently open to partner with you.  We have many benefits to give you, including advertising, student projects, and more!</p>
+						<button><h5><a href="curriculum.html">Learn More</a></h5></button>
+					</div>
+				</div>
+			</div> <!--all-heros-->
 			<a href="#why" class="arrow"><img src="img/down-arrow-2.svg"/></a>
-
 		</div><!--/hero-->
 
 		<div class="empty"></div>
@@ -199,18 +202,14 @@
 			<h3>Fill this form out, and we'll reply within 48 business hours.</h3> 
 
 			<form name="request">
-				<label for="first_name">Parent First Name</label>
-				<input class="inactiveValue" id="first_name" type="text" value="First Name1">	
-
-				<label for="last">Parent Last Name</label>
-				<input class="inactiveValue" id="last" type="text" value="Last Name1">
-
-			<label for="age">Prospective Student Age</label>
-				<input class="inactiveValue" id="age" type="text" value="Age1">	
-
-			<label for="grade">Prospective Student Grade</label>
-				<input class="inactiveValue" id="grade" type="text" value="Grade1">	
-
+				
+				<input class="inactiveValue" id="first_name" type="text" placeholder="Parent's First Name">	
+				
+				<input class="inactiveValue" id="last" type="text" placeholder="Parent's Last Name">
+			
+				<input class="inactiveValue" id="age" type="text" placeholder="Prospective Student's Age">	
+			
+				<input class="inactiveValue" id="grade" type="text" placeholder="Prospective Student's Grade">	
 				<button id="requestButton">Request</button>
 		</div><!--/feature-->
 
@@ -222,7 +221,7 @@
 			<a href="http://paypal.com/baystatelearningcenter"><img class="paypalIcon" src="img/paypal_icon.png" alt="paypal-icon"/></a>
 		</div><!--footwrap-->
 		<div class="footWrap">
-			<h3>Get In Touch!</h3>
+		
 
 			<a href="https://twitter.com/baystatecoop"><img class="icon" src="img/twitter_icon.png" alt="twitter-icon"/></a>
 
