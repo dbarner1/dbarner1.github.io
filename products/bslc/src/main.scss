@@ -359,9 +359,7 @@ WHY*************************************
 
 	}
 
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(-15deg); /* flip the pane when hovered */
-	}	
+
 
 	.front, .back {
 		width:100%;
@@ -386,11 +384,15 @@ WHY*************************************
 		
 	.front {
 		z-index: 2; /* front pane, placed above back */
-		transform: rotateY(0deg); /* for firefox 31 */
+		transform: rotateY(-30deg); /*The default position of the featured panel */
 }
 
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(30deg); /* The new position when flipped */
+	}	
+
 	.back {
-		transform: rotateY(180deg);/* back, initially hidden pane */
+		transform: rotateY(0deg);/* back, initially hidden pane */
 	}
 
 	//Flip normal logic
@@ -399,24 +401,19 @@ WHY*************************************
 		width:100%;
 		margin-top:2vh;
 	}
-			/* flip the pane when hovered */
-	.flip-container2:hover .flipper2 {
-		transform: rotateY(-30deg);
-	}
+
 
 
 	.flip-container2,
 	 .front2, .back2 {
 		width:100%;
 		height:22vh;
-		float:right;
-		margin-right:2%;
 		margin-top:2%;
 	}
 
 		
 	.flipper2 {
-		transition: .6s; /* flip speed goes here */
+		transition: 4s; /* flip speed goes here */
 		transform-style: preserve-3d;
 		position: relative;
 	}
@@ -434,15 +431,18 @@ WHY*************************************
 		
 	.front2 {
 		z-index: 2;
-		/* for firefox 31 */
-		transform: rotateY(0deg); /* front pane, placed above back */
+		transform: rotateY(0deg); /* Initial value of each why panel*/
+		transform: rotateX(0deg); /* Initial value of each why panel*/
 	}
 
+	.flip-container2:hover .flipper2 {
+		transform: rotateX(-180deg); /*Hover value of why boxes*/
+	}
 
 	.back2 {
-		transform: rotateY(180deg); /* back, initially hidden pane */
-		background-color:rgba(255,255,255,0);
-		border:1px solid red;
+		transform: rotateY(-180deg); /* back, initially hidden pane */
+		background-color:lightblue;
+		border:1px solid lightblue;
 	}
 
 
@@ -463,7 +463,6 @@ WHY*************************************
 			margin:0 0 4% 0;
 			width:100%;
 		}	
-
 
 		.allButArrow {
 			display:flex;
@@ -504,7 +503,6 @@ WHY*************************************
 		flex-direction:column;
 		padding:2%;
 		width: 30vw;
-		
 		margin-left:8%;
 		border: 1px solid #EEEEEE;
 		text-align:center;
@@ -519,7 +517,7 @@ WHY*************************************
 		}
 
 		img {
-			width:50%;
+			width:30%;
 			margin:0 auto;
 		}
 	}
@@ -542,7 +540,7 @@ WHY*************************************
 	margin:0 auto;
 	display:inline-block;
 	background:rgba(255,255,255,1);
-	padding:11% 0 4% 0;
+	padding:5vh 0 23vh 0;
 	width:100%;
 	height:-200px+$moduleHeight;
 	color:white;
@@ -581,7 +579,7 @@ WHY*************************************
 
 	form {
 		max-width:30%;
-		margin:4vh auto 0 auto;
+		margin:8vh auto 0 auto;
 		background-color:rgba(5,5,5,.3);
 		padding:2%;
 		color:white;
