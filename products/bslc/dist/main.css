@@ -251,6 +251,7 @@ WHY*************************************
 
 .flip-container {
   width: 30%;
+  max-height: 60vh;
   margin: 0 12% 0 8%;
   perspective: 1000px;
   /* entire container, keeps perspective */ }
@@ -274,11 +275,11 @@ WHY*************************************
 .front {
   z-index: 2;
   /* front pane, placed above back */
-  transform: rotateY(-30deg);
+  transform: rotateY(-10deg);
   /*The default position of the featured panel */ }
 
 .flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(30deg);
+  transform: rotateY(10deg);
   /* The new position when flipped */ }
 
 .back {
