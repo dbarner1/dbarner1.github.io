@@ -1,12 +1,27 @@
+//WHY BOXES
 
-/*
-var featuredKPI = document.querySelector(".why-box-featured");
+var featuredWhyBoxContents = document.querySelector(".why-box-featured");
+var whyBox1 = document.querySelector(".whyBox1");
+var whyBox2 = document.querySelector(".whyBox2");
+var whyBox3 = document.querySelector(".whyBox3");
 
-featuredKPI.
+whyBox1.addEventListener("click", function() {
+  featuredWhyBoxContents.innerHTML = whyBox1.innerHTML;
+  featuredWhyBoxContents.classList +=" clickedWhy1 ";
 
-*/
+});
 
+whyBox2.addEventListener("click", function() {
+  featuredWhyBoxContents.innerHTML = whyBox2.innerHTML;
+  featuredWhyBoxContents.classList +=" clickedWhy2 ";
 
+});
+
+whyBox3.addEventListener("click", function() {
+  featuredWhyBoxContents.innerHTML = whyBox3.innerHTML;
+  featuredWhyBoxContents.classList +=" clickedWhy3 ";
+
+});
 
 //SMOOTH SCROLLING CODE
 

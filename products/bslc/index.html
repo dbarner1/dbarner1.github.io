@@ -23,14 +23,13 @@
 				</ul>
 			</nav>
 		</header>
-	<div class="main-wrapper">
+
 
 
 
 		<div class="clear"></div>
 
 		<div class="hero">
-			<div class="allHeros">
 				<div class="headline">
 					<h1>Bay State Learning Center</h1> 
 					<h3>Inspiring young learners to take education into their own hands.</h3>
@@ -45,9 +44,10 @@
 				</div>
 
 				<div class="sub-hero-middle">
-					<img src="img/class.png" alt="class photo"/>
+					<img id="class" src="img/class.png" alt="class photo"/>
 					<p>Everyday here is crafted personally for each student.</p>
-					<button class="orange"><h5><a href="index.html">Learn more.</a></h5></button>
+					<button class="orangeButton"><h5><a href="index.html">Learn more.</a></h5></button>
+					<a href="#why" class="arrow"><img src="img/down-arrow-2.svg"/></a>
 				</div>
 
 				<div class="sub-hero-2">
@@ -57,13 +57,53 @@
 						<button><h5><a href="curriculum.html">Learn More</a></h5></button>
 					</div>
 				</div>
-			</div> <!--all-heros-->
-			<a href="#why" class="arrow"><img src="img/down-arrow-2.svg"/></a>
 		</div><!--/hero-->
 
 		<div class="empty"></div>
 
 		<div class="why" id="why">
+
+			<div class="sub-whys">
+				<div class="flip-container2"> 
+					<div class="flipper2">
+						<div class="why-box whyBox1 front2">
+							<div class="KPI">
+								<img src="img/svg_edu/svg/graduate.svg"/>
+								<h3>70%</h3>
+							</div> 
+							<div class="kpiDescription" id="graduate">
+								<p>Based on data from our partner Liberated Learning, we will graduate 70% students to college.  This is likely higher than the public high school average.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flip-container2"> 
+					<div class="flipper2">
+						<div class="why-box whyBox2 front2">
+							<div class="KPI">
+								<img src="img/svg_edu/svg/ereader.svg"/>
+								<h3>100%</h3>
+							</div> 
+							<div class="kpiDescription">
+								<p>100% of students leave this program with a portfolio and report that details their teaching.  Colleges accept students with this material, even without taking the SAT.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flip-container2"> 
+					<div class="flipper2">
+						<div class="why-box whyBox3 front2">
+							<div class="KPI">	
+								<img src="img/svg_edu2/svg/presentation.svg"/>
+								<h3>94%</h3>
+							</div> 
+							<div class="kpiDescription">
+							<p>Our students report a satisfaction rate of 94%, via an independent survey. There are several reasons why.  Read more <a href="#">here</a>. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--Sub-whys-->
 
 			<div class="flip-container"> 
 				<div class="flipper">
@@ -79,52 +119,9 @@
 
 				</div>
 			</div>
-
-			<div class="flip-container2"> 
-				<div class="flipper2">
-					<div class="why-box front2">
-						<div class="KPI">
-							<img src="img/svg_edu/svg/graduate.svg"/>
-							<h3>70%</h3>
-						</div> 
-						<div class="kpiDescription" id="graduate">
-							<p>Based on data from our partner Liberated Learning, we will graduate 70% students to college.  This is likely higher than the public high school average.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-container2"> 
-				<div class="flipper2">
-					<div class="why-box front2">
-						<div class="KPI">
-							<img src="img/svg_edu/svg/ereader.svg"/>
-							<h3>100%</h3>
-						</div> 
-						<div class="kpiDescription">
-							<p>100% of students leave this program with a portfolio and report that details their teaching.  Colleges accept students with this material, even without taking the SAT.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-container2"> 
-				<div class="flipper2">
-					<div class="why-box front2">
-						<div class="KPI">	
-							<img src="img/svg_edu2/svg/presentation.svg"/>
-							<h3>94%</h3>
-						</div> 
-						<div class="kpiDescription">
-						<p>Our students report a satisfaction rate of 94%, via an independent survey. There are several reasons why.  Read more <a href="#">here</a>. </p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			
-					<a href="#students"><img id="downArrow" src="img/down-arrow-2.svg"/></a>
+			<a href="#students" class="what"><img src="img/down-arrow-2.svg"/></a>
 		</div><!--/why-->
+			
 
 		<div class="empty"></div>
 
@@ -191,7 +188,7 @@
 				<h4>Click their to learn more about their entrepeneurial paths!</h4>
 			</div>
 		</div><!--all but arrow-->
-		<a href="#request"><img id="downArrow2" src="img/down-arrow-2.svg"/></a>
+		<a href="#request" class="arrow2"><img src="img/down-arrow-2.svg"/></a>
 	</div>
 
 
@@ -199,7 +196,7 @@
 
 		<div class="requestInfo" id="request">
 			<h1>Interested in Applying?</h1> 
-			<h3>Fill this form out, and we'll reply within 48 business hours.</h3> 
+			<h3>Fill this form out, and call you for an introduction to our program within 48 hours.</h3> 
 
 			<form name="request">
 				
@@ -210,6 +207,8 @@
 				<input class="inactiveValue" id="age" type="text" placeholder="Prospective Student's Age">	
 			
 				<input class="inactiveValue" id="grade" type="text" placeholder="Prospective Student's Grade">	
+
+				<input class="inactiveValue" id="number" type="text" placeholder="Number to Call You">	
 				<button id="requestButton">Request</button>
 		</div><!--/feature-->
 
