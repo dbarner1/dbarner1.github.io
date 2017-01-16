@@ -451,9 +451,9 @@ WHY*************************************
 	display:flex;
 	flex-direction:column;
 	background:rgba(255,255,255,1);
-	padding:20vh 0 0 0;
+	padding-top:20vh;
 	width:100%;
-	height:80vh;
+	min-height:80vh;
 	text-align:center;
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 
@@ -463,6 +463,12 @@ WHY*************************************
 			width:100%;
 		}	
 
+		h4 
+		{
+			font-weight:100;
+			margin:4vh 0 0 0;
+		}
+
 		.allButArrow {
 			display:flex;
 			flex-direction:row;
@@ -471,9 +477,8 @@ WHY*************************************
 		}
 
 	.studentContainer {
-		margin-left:2%;
+		min-width: 20vw;
 		margin-right:10%;
-		width: 70vw;
 
 		.students2 {
 			display:flex;
@@ -486,6 +491,10 @@ WHY*************************************
 		.student img {
 			width:80%;
 			margin:0;
+		}
+
+		h4 {
+			margin-top:2vh;
 		}
 
 	}
@@ -502,7 +511,7 @@ WHY*************************************
 		flex-direction:column;
 		padding:2%;
 		width: 30vw;
-		margin-left:8%;
+		margin-left:10%;
 		border: 1px solid #EEEEEE;
 		text-align:center;
 		background:rgba(255,255,255,.9);
@@ -539,7 +548,7 @@ WHY*************************************
 	margin:0 auto;
 	display:inline-block;
 	background:rgba(255,255,255,1);
-	padding:5vh 0 23vh 0;
+	padding:10vh 0 10vh 0;
 	width:100%;
 	height:-200px+$moduleHeight;
 	color:white;
