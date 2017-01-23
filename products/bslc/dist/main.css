@@ -60,6 +60,7 @@ header {
     float: left;
     width: 40px;
     height: 40px;
+    z-index: 1000;
     margin-left: 5%; }
   header img {
     margin-left: 10%;
@@ -92,6 +93,11 @@ ARROWS**********************************
   width: 10%;
   margin: 5vh 40% 0 40%; }
 
+.arrowmobile img {
+  display: none;
+  width: 10%;
+  margin: 5vh 40% 0 40%; }
+
 .arrow2 {
   width: 40%;
   margin-left: 30%;
@@ -101,6 +107,10 @@ ARROWS**********************************
   width: 40%;
   margin-left: 48%; }
 
+.what2 {
+  width: 5%;
+  margin: 20px auto 0 auto; }
+
 /***************************************
 ****************************************
 HERO************************************
@@ -108,13 +118,12 @@ HERO************************************
 ***************************************/
 .hero {
   background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
-  height: 97vh;
+  min-height: 97vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: top; }
+  justify-content: center; }
   .hero .headline {
     height: 50px;
     width: 80%;
@@ -185,7 +194,7 @@ WHY*************************************
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  height: 92vh;
+  min-height: 92vh;
   padding-top: 10vh;
   background: url("../img/greenBG.png") repeat 0 0; }
   .why .sub-whys {
@@ -222,7 +231,7 @@ WHY*************************************
       text-align: center;
       border: 1px solid black; }
       .why .why-box-featured .KPI h3 {
-        font-size: 2.1em;
+        font-size: 1.7em;
         font-weight: 700; }
   .why .why-box {
     z-index: 2;
@@ -240,10 +249,10 @@ WHY*************************************
         width: 100%;
         margin: 0 auto; }
       .why .why-box .KPI h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: 700; }
     .why .why-box .kpiDescription p {
-      font-size: 100%;
+      font-size: .9em;
       margin-top: 4%;
       margin: 4% 15%;
       padding-left: 1%;
@@ -319,14 +328,13 @@ WHY*************************************
   /* Initial value of each why panel*/ }
 
 .flip-container2:hover .flipper2 {
-  transform: rotateX(-180deg);
+  transform: rotateX(0deg);
   /*Hover value of why boxes*/ }
 
 .back2 {
-  transform: rotateY(-180deg);
+  transform: rotateY(0deg);
   /* back, initially hidden pane */
-  background-color: lightblue;
-  border: 1px solid lightblue; }
+  display: none; }
 
 .students {
   display: flex;
@@ -479,76 +487,158 @@ footer {
     margin: 0 auto;
     text-align: center; }
 
-@media all and (max-width: 940px) {
-  #hamburger {
-    display: display; }
+@media all and (min-width: 700px) and (max-width: 860px) {
+  body button h5 {
+    font-size: 80%; }
+
+  header img {
+    margin-left: 42%;
+    padding: 6px;
+    width: 150px; }
 
   nav {
     display: none; }
 
-  h1 {
-    text-align: center; }
+  .hero .headline h1 {
+    font-size: 2.5em;
+    margin-top: 100px; }
 
-  .hero {
-    margin: 0 auto; }
+  .why .why-box .KPI h3 {
+    font-size: 1em; }
+  .why .why-box .kpiDescription p {
+    font-size: .8em; }
 
-  .headline {
-    width: 100%; }
+  .students .allButArrow {
+    display: flex;
+    flex-direction: column; }
+  .students .featuredStudentContainer {
+    width: 80%;
+    margin-bottom: 10px; }
 
-  .hero .headline h3 {
-    margin: 0 10%;
-    width: 80%; }
+  .requestInfo form {
+    max-width: 60%; }
 
-  .why .why-box {
-    width: 74%;
-    margin: 0 auto;
-    padding: 3%;
-    background: white;
-    border: 1px solid black; }
-    .why .why-box .KPI h3 {
-      font-size: 2em; }
-    .why .why-box p {
-      font-size: 100%; } }
+  footer .facebook_icon {
+    width: 30%; } }
 @media all and (max-width: 700px) and (min-width: 1px) {
-  .hero .sub-hero-1, .hero .sub-hero-2 {
-    margin: 30px 9%; }
+  body button h5 {
+    font-size: 80%; }
 
-  .why .why-box {
-    float: none;
-    width: 74%;
-    min-height: 180px;
-    margin: 0 auto;
-    padding: 3%;
-    background: white;
-    border: 1px solid black; }
-    .why .why-box .KPI h3 {
-      font-size: 2em; }
-    .why .why-box p {
-      font-size: 100%; }
-
-  #hamburger {
-    display: display; }
+  header img {
+    margin-left: 42%;
+    padding: 6px;
+    width: 150px; }
 
   nav {
     display: none; }
 
-  h1 {
-    text-align: center; }
-
-  .headline {
-    width: 100%; }
-
   .hero {
-    width: 100%;
-    height: 100%; }
-    .hero .headline h3 {
-      margin: 10px 0 0 0;
-      width: 95%; }
-    .hero .sub-hero-2, .hero .sub-hero-1 {
-      height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 95vh; }
+    .hero .headline {
+      order: -1;
+      width: 100%;
+      height: 100px;
+      margin: 70px 0 20px 0; }
+      .hero .headline h1 {
+        font-size: 7vw;
+        margin-top: 0px;
+        width: 95%; }
+      .hero .headline h3 {
+        width: 95%;
+        font-size: 3vw; }
+    .hero .sub-hero-middle, .hero .sub-hero-2 {
       width: 80%;
-      border: 1px solid grey;
-      float: none; } }
+      margin: 0 auto;
+      margin-bottom: 20px; }
+      .hero .sub-hero-middle .arrow, .hero .sub-hero-2 .arrow {
+        display: none; }
+    .hero .sub-hero-middle {
+      order: 0;
+      transition: none; }
+    .hero .sub-hero-middle:hover {
+      transform: none; }
+    .hero .sub-hero-2 {
+      order: 1; }
+      .hero .sub-hero-2 .sub-hero-2-content {
+        transition: none; }
+      .hero .sub-hero-2 .sub-hero-2-content:hover {
+        transform: none; }
+    .hero a.arrowmobile {
+      display: block;
+      order: 2;
+      width: 20%;
+      margin: 30px auto; }
+    .hero .arrowmobile img {
+      order: 2;
+      width: 100%;
+      display: block;
+      margin: 0; }
+
+  .why {
+    display: flex; }
+    .why .front, .why .back {
+      backface-visibility: hidden;
+      /* hide back of pane during swap */
+      position: relative;
+      top: 0;
+      left: 0; }
+    .why .flip-container {
+      margin: 20px auto;
+      width: 100%; }
+    .why .flip-container2 {
+      margin: 0 auto;
+      width: 90%; }
+    .why .flipper2 {
+      width: 100%; }
+    .why .what {
+      order: 4; }
+    .why .flip-container .flipper {
+      z-index: 0; }
+    .why .flip-container:hover .flipper, .why .flip-container.hover .flipper {
+      transform: rotateY(0deg);
+      /* The new position when flipped */ }
+    .why .why-box-featured {
+      order: 0;
+      transform: none;
+      z-index: 0;
+      min-height: 0px;
+      width: 80%;
+      margin: 0 auto; }
+    .why #flip3 {
+      order: 0;
+      z-index: 0;
+      transform: none; }
+    .why .sub-whys {
+      width: 100%;
+      z-index: 0;
+      order: 2;
+      margin: 0 auto; }
+      .why .sub-whys .why-box, .why .sub-whys .flip1, .why .sub-whys .flip2, .why .sub-whys .flip0 {
+        z-index: 0;
+        transform: none;
+        width: 96%;
+        margin: 0 auto; }
+        .why .sub-whys .why-box .KPI h3, .why .sub-whys .flip1 .KPI h3, .why .sub-whys .flip2 .KPI h3, .why .sub-whys .flip0 .KPI h3 {
+          font-size: 1em; }
+        .why .sub-whys .why-box .kpiDescription p, .why .sub-whys .flip1 .kpiDescription p, .why .sub-whys .flip2 .kpiDescription p, .why .sub-whys .flip0 .kpiDescription p {
+          font-size: .8em; }
+
+  .students .allButArrow {
+    display: flex;
+    flex-direction: column; }
+  .students .featuredStudentContainer {
+    width: 80%;
+    margin-bottom: 10px; }
+
+  .requestInfo form {
+    max-width: 60%; }
+
+  footer .facebook_icon {
+    width: 30%; } }
 .curriculumTitle {
   text-align: center;
   margin-bottom: 1%; }
