@@ -1,192 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Dave Barner">
 	<title>Bay State Learning Center</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dist/normalize.css">
 	<link rel="stylesheet" type="text/css" href="dist/main.css?v3">
 	<!--jQuery used only for scrolling behavior and carouseling - frameworks = bad for showing knowledge!-->
 </head>
 <body>
+	<header>
+		<a href="index.html"><img id="logo" src="img/bslcLogo.jpeg" alt="BSLC Logo"/></a>
+		<nav>
+			<ul>
+				<li class="border-left"><h3><a href="learnmore.html">Learn More</a></h3></li>
+				<li><h3><a href="curriculum.html">Curriculum</a></h3></li>
+				<li><h3><a href="tuition.html">Tuition</a></h3></li>
+				<li><h3><a href="#">Makerspace</a></h3></li>
+				<li><h3><a href="contactus.html">Contact Us</a></h3></li>
+			</ul>
+		</nav>
+	</header>
 
-		<header>
-			<img id="hamburger" src="img/hamburger.png" alt="hamburger"/>
-			<a href="index.html"><img src="img/bslcLogo.jpeg" alt="BSLC Logo"/></a>
-			<nav>
-				<ul>
-					<li class="border-left"><h3><a href="learnmore.html">Learn More</a></h3></li>
-					<li><h3><a href="curriculum.html">Curriculum</a></h3></li>
-					<li><h3><a href="tuition.html">Tuition</a></h3></li>
-					<li><h3><a href="#">Makerspace</a></h3></li>
-					<li><h3><a href="contactus.html">Contact Us</a></h3></li>
+	<div class="clear"></div>
 
-				</ul>
-			</nav>
-		</header>
+	<div id="hero" class="hero">
+		<div class="headline">
+			<h1>Bay State Learning Center</h1> 
+			<h3>Inspiring young learners to take education into their own hands.</h3>
+		</div>
+		<div class="edgeSubHero">
+			<div class="edgeSubHeroContent">
+				<h3>Our Curriculum</h3>
+				<p>To understand if your child would be a good fit for our program, we welcome you to view the curriculum, take a test to see if they're a good fit, or contact other parents of students in our current cohort.</p>
+				<button><h5><a href="learnmore.html">Our Approach</a></h5></button>
+			</div>
+		</div>
+		<div class="middleSubHero">
+			<img id="classPic" src="img/class.png" alt="class photo"/>
+			<p>Everyday here is crafted personally for each student.</p>
+			<button class="orangeButton"><h5><a href="index.html">Learn more.</a></h5></button>
+			<a href="#why" class="heroArrow"><img src="img/down-arrow-2.svg"/></a>
+		</div>
+		<div class="edgeSubHero">
+			<div class="edgeSubHeroContent">
+				<h3>Partner With Us!</h3>
+				<p>To become part of the future of education in Massachusetts we're currently open to partner with you.  We have many benefits to give you, including advertising, student projects, and more!</p>
+				<button><h5><a href="curriculum.html">Learn More</a></h5></button>
+			</div>
+		</div>
+		<a href="#why" class="arrowMobile"><img src="img/down-arrow-2.svg"/></a>
+	</div><!--/hero-->
 
+	<div class="empty"></div>
 
-
-
-		<div class="clear"></div>
-
-		<div id="hero" class="hero">
-				<div class="headline">
-					<h1>Bay State Learning Center</h1> 
-					<h3>Inspiring young learners to take education into their own hands.</h3>
-				</div>
-
-				<div class="sub-hero-2">
-					<div class="sub-hero-2-content">
-						<h3>Our Curriculum</h3>
-						<p>To understand if your child would be a good fit for our program, we welcome you to view the curriculum, take a test to see if they're a good fit, or contact other parents of students in our current cohort.</p>
-						<button><h5><a href="learnmore.html">Our Approach</a></h5></button>
-					</div>
-				</div>
-
-				<div class="sub-hero-middle">
-					<img id="class" src="img/class.png" alt="class photo"/>
-					<p>Everyday here is crafted personally for each student.</p>
-					<button class="orangeButton"><h5><a href="index.html">Learn more.</a></h5></button>
-					<a href="#why" class="arrow"><img src="img/down-arrow-2.svg"/></a>
-				</div>
-
-				<div class="sub-hero-2">
-					<div class="sub-hero-2-content">
-						<h3>Partner With Us!</h3>
-						<p>To become part of the future of education in Massachusetts we're currently open to partner with you.  We have many benefits to give you, including advertising, student projects, and more!</p>
-						<button><h5><a href="curriculum.html">Learn More</a></h5></button>
-					</div>
-				</div>
-				<a href="#why" class="arrowmobile"><img src="img/down-arrow-2.svg"/></a>
-		</div><!--/hero-->
-
-		<div class="empty"></div>
-
-		<div class="why" id="why">
-
-			<div class="sub-whys">
-				<div class="flip-container2"  id="flip0"> 
-					<div class="flipper2">
-						<div class="why-box whyBox1 front2">
-							<div class="KPI">
-								<img src="img/svg_edu/svg/graduate.svg"/>
-								<h3>70%</h3>
-							</div> 
-							<div class="kpiDescription" id="graduate">
-								<p>Based on data from our partner Liberated Learning, we will graduate 70% students to college.  This is likely higher than the public high school average.</p>
-							</div>
-						</div>
-						<div class="back2">
-							<p>This is some other stat about BSLC</p>
-						</div>
-					</div>
-				</div>
-				<div class="flip-container2" id="flip1"> 
-					<div class="flipper2">
-						<div class="why-box whyBox2 front2">
-							<div class="KPI">
-								<img src="img/svg_edu/svg/ereader.svg"/>
-								<h3>100%</h3>
-							</div> 
-							<div class="kpiDescription">
-								<p>100% of students leave this program with a portfolio and report that details their teaching.  Colleges accept students with this material, even without taking the SAT.</p>
-							</div>
-						</div>
-						<div class="back2">
-							<p>This is some other stat about BSLC</p>
-						</div>
-					</div>
-				</div>
-				<div class="flip-container2" id="flip2"> 
-					<div class="flipper2">
-						<div class="why-box whyBox3 front2">
-							<div class="KPI">	
-								<img src="img/svg_edu2/svg/presentation.svg"/>
-								<h3>94%</h3>
-							</div> 
-							<div class="kpiDescription">
-							<p>Our students report a satisfaction rate of 94%, via an independent survey. There are several reasons why.  Read more <a href="#">here</a>. </p>
-							</div>
-						</div>
-						<div class="back2">
-							<p>This is some other stat about BSLC</p>
-						</div>
-					</div>
-				</div>
-			</div><!--Sub-whys-->
-
-			<div class="flip-container" id="flip3"> 
-				<div class="flipper">
-					<div class="why-box-featured front">
-						<img src="img/svg_edu2/svg/certificate.svg"/>
-						<div class="KPI">
-							<h3>90%</h3>
-						</div> 
-						<div class="kpiDescription">
-							We take pride in accepting most students. <br> Inclusion is part of our culture. <br>90% of students who apply are accepted into the program.
-						</div>
-					</div>
-
+	<div class="why" id="why">
+		<div class="sub-whys">
+			<div class="why-box whyBox1">
+				<div class="KPI">
+					<img src="img/svg_edu/svg/graduate.svg"/>
+					<h3>70%</h3>
+				</div> 
+				<div class="kpiDescription" id="graduate">
+					<p>Based on data from our partner Liberated Learning, we will graduate 70% students to college.  This is likely higher than the public high school average.</p>
 				</div>
 			</div>
-			<a href="#students" class="what"><img src="img/down-arrow-2.svg"/></a>
-		</div><!--/why-->
+			<div class="why-box whyBox2">
+				<div class="KPI">
+					<img src="img/svg_edu/svg/ereader.svg"/>
+					<h3>100%</h3>
+				</div> 
+				<div class="kpiDescription">
+					<p>100% of students leave this program with a portfolio and report that details their teaching.  Colleges accept students with this material, even without taking the SAT.</p>
+				</div>
+			</div>
+			<div class="why-box whyBox3">
+				<div class="KPI">	
+					<img src="img/svg_edu2/svg/presentation.svg"/>
+					<h3>94%</h3>
+				</div> 
+				<div class="kpiDescription">
+					<p>Our students report a satisfaction rate of 94%, via an independent survey. There are several reasons why.  Read more <a href="#">here</a>. </p>
+				</div>
+			</div>
+		</div><!--Sub-whys-->
+		<div class="whyBoxFeatured">
+			<img src="img/svg_edu2/svg/certificate.svg"/>
+			<div class="KPI">
+				<h3>90%</h3>
+			</div> 
+			<div class="kpiDescription">
+				We take pride in accepting most students. <br> Inclusion is part of our culture. <br>90% of students who apply are accepted into the program.
+			</div>
+		</div>
+		<a href="#students" class="arrow4"><img src="img/down-arrow-2.svg"/></a>
+	</div><!--/why-->
 			
 
-		<div class="empty"></div>
+	<div class="empty"></div>
 
-		<div class="students" id="students">
-			<div class="allButArrow">
-				<div class="featuredStudentContainer">
-					<h3>Meet Our Featured Student: James!</h3>
-					<img src="img/example_student.jpg" alt="student photo"/>
-					<h4>James is a 3rd year student at Bay State Learning Center.  Next Fall he'll embark on a new mission to help spread awareness about income inequality in the world.  <a href="#">Read more.</a></h4>
-				</div>
-				<div class="studentContainer featuredStudentContainer">
-					<h3>Our Current Class</h3> 
-					<!--Turn this into JS!-->
-					<div class="students2">
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
-						<div class="student">
-							<img src="img/svg_edu2/svg/reading.svg"/>
-						</div>	
+	<div class="students" id="students">
+		<div class="allButArrow">
+			<div class="featuredStudentContainer">
+				<h3>Meet Our Featured Student: James!</h3>
+				<img src="img/example_student.jpg" alt="student photo"/>
+				<h4>James is a 3rd year student at Bay State Learning Center.  Next Fall he'll embark on a new mission to help spread awareness about income inequality in the world.  <a href="#">Read more.</a></h4>
+			</div>
+			<div class="studentContainer featuredStudentContainer">
+				<h3>Our Current Class</h3> 
+				<!--Turn this into JS!-->
+				<div class="students2">
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
+					<div class="student">
+						<img src="img/svg_edu2/svg/reading.svg"/>
+					</div>	
 				</div>
 				<h4>Click their to learn more about their entrepeneurial paths!</h4>
 			</div>
 		</div><!--all but arrow-->
-		<a href="#request" class="arrow2"><img src="img/down-arrow-2.svg"/></a>
+		<a href="#request" class="arrow5"><img src="img/down-arrow-2.svg"/></a>
 	</div>
 
 
@@ -210,7 +178,7 @@
 				<button id="requestButton">Request</button>
 				</form>
 
-				<a href="#hero"><img class="what2" src="img/up-arrow-2.svg" /></a>
+				<a href="#hero"><img class="arrow3" src="img/up-arrow-2.svg" /></a>
 		</div><!--/feature-->
 
 

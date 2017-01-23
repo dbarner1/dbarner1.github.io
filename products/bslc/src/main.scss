@@ -18,12 +18,11 @@ html {font-size:100%;} //% of browser default ~24px
 
 h1, h2, h3, h4, h5, p {
 			font-family: 'Raleway', sans-serif;
-			font-weight:300, 500,700;
 }
 
 h1 			{font-size:3em; font-weight:700;}
 h2 			{font-size:90%;}
-h3, h4, h5  {font-size:100%;}
+h3, h4, h5  {font-size:100%; font-weight:300}
 p 			{font-size:80%;}
 
 //GLOBAL SETTINGS
@@ -37,15 +36,24 @@ body {
 	background-position:center;
 	background-attachment:fixed;
 
-
 	button {
 		display:block;
 		background:$textColor;
+		border:0;
 		margin:0 auto;
 		width:60%;
 		margin-top:2%;
 		margin-bottom:2%;
 		padding:2%;
+		
+		h5 {
+			font-weight:100;
+		}
+	}
+
+	button a:hover {
+		color:orange;
+
 	}
 
 	a {
@@ -64,27 +72,14 @@ HEADER**********************************
 ***************************************/
 
 header {
-	display:inline-block;
 	position: fixed;
-	top: 0;
-	z-index:1000;
+	z-index: 1000;
 	background: rgba(255,255,255,1);
 	width: 100%;
 	height: $headerHeight;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
-	/* offset-x | offset-y | blur-radius | spread-radius | color */
-
-	#hamburger {
-		display:none;
-		float:left;
-		width:40px;
-		height:40px;
-		z-index:1000;
-		margin-left:5%;
-	}
-
 	
-	img {
+	#logo {
 		margin-left:$leftTextMargin;
 		padding:6px; //Fix this later
 		width:150px;
@@ -96,26 +91,24 @@ header {
 		
 		li {
 			display:inline-block;
-			margin-left:auto;
-			text-align:center;
-			padding: 0 5px 0 5px;
+			padding: 0 5px;
 			color:$textColor;
 		}	
 
 		h3 {
-			font-weight:500;
+			font-weight:400;
 		}
 
 		a {
-		text-decoration:none;
-		color:$textColor;
+			text-decoration:none;
+			color:$textColor;
 		}	
 
 		a:hover {
 			color:orange;
 		}
 	}
-} /*End of header*/
+} /*Header*/
 
 /***************************************
 ****************************************
@@ -123,12 +116,12 @@ ARROWS**********************************
 ****************************************
 ***************************************/
 
-	.arrow img {
+	.heroArrow img {
 		width:10%;
 		margin:5vh 40% 0 40%;
 	}
 
-	.arrowmobile img {
+	.arrowMobile img {
 		display:none;
 		width:10%;
 		margin:5vh 40% 0 40%;
@@ -136,18 +129,23 @@ ARROWS**********************************
 
 	.arrow2 {
 		width:40%;
-		margin-left:30%;
-		margin-top:2vh;
+		margin:2vh 0 0 48vw;
 	}
 
-	.what {
+	.arrow4 {
+		width:30%;
+		margin-left:25%;
+
+	}
+
+	.arrow5 {
 		width:40%;
-		margin-left:48%;
+		margin:20px 0 20px 30vw;
 	}
 
-	.what2 {
+	.arrow3 {
 		width:5%;
-		margin:20px auto 0 auto;
+		margin:10px auto 0 auto;
 	}
 
 
@@ -162,6 +160,11 @@ HERO************************************
 	min-height:97vh;
 	width:100vw;
 	display:flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
@@ -175,7 +178,7 @@ HERO************************************
 
 		h1 {
 			width:90%;
-			margin:60px auto 0 auto;
+			margin:70px auto 0 auto;
 			font-size:3em;
 		}
 
@@ -186,7 +189,7 @@ HERO************************************
 		}
 	}
 
-	.sub-hero-middle {
+	.middleSubHero {
 		width: 40vw;
 		text-align:center;
 		transition: all .2s ease-in-out; 
@@ -198,29 +201,30 @@ HERO************************************
 			a {
 				text-decoration:none;
 			}
+
+			a:hover {
+				color:blue;
+			}
 		}
 
-		#class {
+		#classPic {
 			width:100%;
 		}
-
 
 		p {
 			width:80%;
 			margin:0 auto;
 			color:white;
 		}
-
 	}
 
-	.sub-hero-middle:hover { 
-		transform: scale(1.1); 
+	.middleSubHero:hover { 
+		transform: scale(1.3); 
 	}
 
-
-	.sub-hero-2 {
+	.edgeSubHero {
 		padding:0 2%;
-		width: 20vw;
+		width: 25vw;
 		min-height: 30%;
 		text-align:center;
 
@@ -228,22 +232,20 @@ HERO************************************
 			text-decoration:none;
 		}
 
-		.sub-hero-2-content {
-			background:rgba(245,245,245,.9);
-			border: 1px solid #EEEEEE;
+		.edgeSubHeroContent {
+			background:rgba(245,245,245,.7);
+			border: 1px solid(245,245,245,1);
 			padding:3%;
 			transition: all .2s ease-in-out; 
 
 			h3 {
 				margin-bottom:4%;
 			}
-
 		}
 	}
 
-	.sub-hero-2-content:hover { 
-		transform: scale(1.2); 
-
+	.edgeSubHeroContent:hover { 
+		transform: scale(1.3); 
 	}
 }/*End of Hero*/
 
@@ -270,7 +272,7 @@ WHY*************************************
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	justify-content:space-between;
+	justify-content:space-around;
 	margin:0 auto;
 	min-height:92vh;
 	padding-top:10vh;
@@ -281,23 +283,20 @@ WHY*************************************
 		flex-direction:column;
 		flex-wrap:wrap;
 		width:45%;
-		height:75vh;
-		margin-left:5%;
+		margin:10vh 0 0 2vw;
 	}
 
-	.why-box-featured {
+	.whyBoxFeatured {
 		display:flex;
 		flex-direction:column;
 		flex-wrap:wrap;
-		width:100%;
-		min-height:64vh;
-		margin-top:2vh;
-		padding:2vh 5%;
+		width:25%;
+		padding:0 1vw;
+		margin:10vh 6vw 15vh 0;
 		background-color:rgba(255,255,245,1);
 	
 		img {
 			width:30%;
-			margin-top:4%;
 			align-self:center;
 		}
 
@@ -327,8 +326,9 @@ WHY*************************************
 
 	.why-box {
 		z-index:2;
-		height:16vh;
+		min-height:16vh;
 		margin:1%;
+		background-color:#FFF;
 	
 		.KPI {
 			float:left;
@@ -358,161 +358,54 @@ WHY*************************************
 			border-left:1px solid black;
 		}
 	}
+
+	.whyBox1 {
+		margin-top:0;
+	}
 }
 
-	//Featured Why Flip Logic
+/***************************************
+****************************************
+STUDENTS********************************
+****************************************
+***************************************/
 
-	.flip-container {
-		width:30%;
-		max-height:60vh;
-		margin:0 12% 0 8%;
-		perspective: 1000px; /* entire container, keeps perspective */
-
-	}
-
-
-
-	.front, .back {
-		width:100%;
-		
-	}
-
-	.flipper {
-		transition: 0.6s;/* flip speed goes here */
-		transform-style: preserve-3d;
-		position: relative;
-	}
-
-		
-	.front, .back {
-		backface-visibility: hidden; /* hide back of pane during swap */
-		position: absolute;
-		top: 0;
-		left: 0;
-	
-	}
-		
-	.front {
-		z-index: 2; /* front pane, placed above back */
-		transform: rotateY(-10deg); /*The default position of the featured panel */
-	}
-
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(10deg); /* The new position when flipped */
-	}	
-
-	.back {
-		transform: rotateY(0deg);/* back, initially hidden pane */
-	}
-
-	//Flip normal logic
-
-	.flip-container2 {
-		width:100%;
-		margin-top:2vh;
-	}
-
-
-	.flip-container2,
-	 .front2, .back2 {
-		width:100%;
-		height:22vh;
-		margin-top:2%;
-	}
-
-		
-	.flipper2 {
-		transition: 4s; /* flip speed goes here */
-		transform-style: preserve-3d;
-		position: relative;
-	}
-
-		
-	.front2, .back2 {
-		backface-visibility: hidden; /* hide back of pane during swap */
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding:1% 2% 2% 2%;
-		background-color:rgba(255,255,245,1);
-	}
-
-		
-	.front2 {
-		z-index: 2;
-		transform: rotateY(0deg); /* Initial value of each why panel*/
-		transform: rotateX(0deg); /* Initial value of each why panel*/
-	}
-
-	.flip-container2:hover .flipper2 {
-		transform: rotateX(0deg); /*Hover value of why boxes*/
-	}
-
-	.back2 {
-		transform: rotateY(0deg); /* back, initially hidden pane */
-		display:none;
-	}
-
-
-//STUDENTS
 
 .students {
 	display:flex;
 	flex-direction:column;
 	background:rgba(255,255,255,1);
-	padding-top:20vh;
+	padding-top:16vh;
 	width:100%;
 	min-height:80vh;
 	text-align:center;
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 
-		h3 {
-			font-weight:500;
-			margin:0 0 4% 0;
-			width:100%;
-		}	
-
-		h4 
-		{
-			font-weight:100;
-			margin:4vh 0 0 0;
-		}
-
-		.allButArrow {
-			display:flex;
-			flex-direction:row;
-			flex-wrap:wrap;
-			justify-content:space-between;
-		}
-
-	.studentContainer {
-		min-width: 20vw;
-		margin-right:10%;
-
-		.students2 {
-			display:flex;
-			flex-direction:row;
-			flex-wrap:wrap;
-			justify-content:center;
-			align-content:center;
-		}
-
-		.student img {
-			width:80%;
-			margin:0;
-		}
-
-		h4 {
-			margin-top:2vh;
-		}
-
+	h1 {
+		margin-bottom: $sectionTitleMarginBottom;
 	}
 
-	.student {
-		width:90px;
-		height:13%;
-		background-color:grey;
-		border:1px solid white;
+	h3 {
+		font-weight:500;
+		margin:0 0 4% 0;
+		width:100%;
+	}	
+
+	h4 {
+		font-weight:100;
+		margin:4vh 0 0 0;
+	}
+	
+	img {
+		width:15%;
+		margin:2% 42.5% 0 42.5%;
+	}
+
+	.allButArrow {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-between;
 	}
 
 	.featuredStudentContainer {
@@ -522,7 +415,7 @@ WHY*************************************
 		width: 30vw;
 		margin-left:10%;
 		border: 1px solid #EEEEEE;
-		text-align:center;
+		text-align:center;	
 		background:rgba(255,255,255,.9);
 
 		a {
@@ -539,19 +432,44 @@ WHY*************************************
 		}
 	}
 
-		h1 {
-		margin-bottom: $sectionTitleMarginBottom;
+	.studentContainer {
+		min-width: 20vw;
+		margin-right:10%;
+
+		h4 {
+			margin-top:2vh;
+		}
+		.students2 {
+			display:flex;
+			flex-direction:row;
+			flex-wrap:wrap;
+			justify-content:center;
+			align-content:center;
+		}
+
+		.student img {
+			width:80%;
+			margin:0;
+		}
 	}
 
-	img {
-		width:15%;
-		margin:2% 42.5% 0 42.5%;
+	.student {
+		width:90px;
+		height:13%;
+		background-color:grey;
+		border:1px solid white;
 	}
+
+	
 }
 
 
+/***************************************
+****************************************
+REQUEST INFO****************************
+****************************************
+***************************************/
 
-//REQUEST INFO
 
 .requestInfo {
 	margin:0 auto;
@@ -629,24 +547,15 @@ WHY*************************************
 		margin-bottom: $sectionTitleMarginBottom;
 	}
 
-
-
 }
 
 
+/***************************************
+****************************************
+FOOTER**********************************
+****************************************
+***************************************/
 
-
-//REQUEST INPUTS
-
-.inactiveValue  {
-	color:grey;
-}
-
-.activeValue {
-	color:black;
-}
-
-//FOOTER
 
 footer {
 	display:flex;
@@ -683,10 +592,14 @@ footer {
 }
 
 
-//MEDIA QUERIES
+/****************************************************************
+****************************************
+MEDIA QUERIES***************************
+****************************************
+****************************************************************/
 
-//Medium(Nav Removal Only) Screens
-@media all and (min-width:800px) and (max-width:860px) {
+//MEDIUM
+@media all and (min-width:700px) and (max-width:860px) {
 
 	body {
 		button {
@@ -696,10 +609,10 @@ footer {
 		}
 	}
 
-	header img {
-		margin-left:42%;
+	header #logo {
 		padding:6px; //Fix this later
-		width:150px;
+		width:19vw;
+		margin-left:39vw;
 	}
 
 	nav {
@@ -736,7 +649,8 @@ footer {
 		}
 
 		.featuredStudentContainer {
-			width:80%;
+			width:60%;
+			margin:0 auto;
 			margin-bottom:10px;
 		}
 	}
@@ -750,8 +664,8 @@ footer {
 	}
 }
 
-//Small Screens
-@media all and (max-width:800px) and (min-width:1px)  {
+//SMALL
+@media all and (max-width:700px) and (min-width:1px)  {
 
 	body {
 		button {
@@ -761,13 +675,17 @@ footer {
 		}
 	}
 
-	header img {
-		margin-left:42%;
+		header #logo {
 		padding:6px; //Fix this later
-		width:150px;
+		width:19vw;
+		margin-left:39vw;
 	}
 
 	nav {
+		display:none;
+	}
+
+	.empty {
 		display:none;
 	}
 
@@ -796,7 +714,7 @@ footer {
 			}
 		}
 
-		.sub-hero-middle, .sub-hero-2 {
+		.middleSubHero, .edgeSubHero {
 			width:80%;
 			margin:0 auto;
 			margin-bottom:20px;
@@ -806,116 +724,70 @@ footer {
 			}
 		}
 
-		.sub-hero-middle {
-			order:0;
+		.middleSubHero {
+			order:-1;
 			transition: none;
 		}
 
-		.sub-hero-middle:hover { 
+		.middleSubHero:hover { 
 		transform: none; 
 		}
 
+		.edgeSubHero {
+			order:0;
 
-		.sub-hero-2 {
-			order:1;
-
-			.sub-hero-2-content {
+			.edgeSubHeroContent {
 				transition: none;
 			}
 
-			.sub-hero-2-content:hover { 
+			.edgeSubHeroContent:hover { 
 				transform: none;
 			}
 		}
 
-		a.arrowmobile {
-				display:block;
-				order: 2;
-				width:20%;
-				margin:30px auto;
-			}
-
-		.arrowmobile {
-			img  {
-				order: 2;
-				width:100%;
-				display:block;
-				margin:0;
-			}
-
-
-
+		.heroArrow {
+			display:none;
 		}
 
+		.arrowMobile img {
+			display:block;
+			order: 5;
+			margin:30px auto 60px auto;
+		}	
 
+		.arrowMobile a {
+			order: 5;
+		}
 	}
 
 	.why {
 		display:flex;
 
-	.front, .back {
-		backface-visibility: hidden; /* hide back of pane during swap */
-		position:relative;
-		top: 0;
-		left: 0;
-	}
-
-	.flip-container, {
-		margin: 20px auto;
-		width:100%;
-	}
-
-	.flip-container2, {
-		margin: 0 auto;
-		width:90%;
-	}
-
-	.flipper2 {
-		width:100%;
-	}
-
-		.what {
-			order:4;
+		.arrow4 {
+			order:2;
 		}
 
-		.flip-container .flipper {
-			z-index:0;
-
-		}
-
-
-
-		.flip-container:hover .flipper, .flip-container.hover .flipper {
-			transform: rotateY(0deg); /* The new position when flipped */
-			
-		}	
-
-		.why-box-featured {
+		.whyBoxFeatured {
 			order:0;
 			transform:none;
 			z-index:0;
 			min-height:0px;
-			width:80%;
+			width:50%;
+			padding:2vw;
 			margin:0 auto;
-		}
-
-		#flip3 {
-			order:0;
-			z-index: 0;
-			transform:none;
 		}
 
 		.sub-whys {
-			width:100%;
+			width:90%;
 			z-index: 0;
-			order: 2;
-			margin:0 auto;
+			order: 1;
+			margin:2vh auto;
 			
-			.why-box, .flip1, .flip2, .flip0 {
+			.why-box  {
 				z-index: 0;
 				transform:none;
 				width:96%;
-				margin:0 auto;
+				margin:2vh auto;
 			
 				.KPI {
 					h3 	{
@@ -953,8 +825,12 @@ footer {
 }
 
 
+/***************************************
+****************************************
+PAGE: CURRICULUM************************
+****************************************
+***************************************/
 
-////CURRICULUM PAGE
 
 .curriculumTitle {
 	text-align:center;
@@ -1009,7 +885,12 @@ footer {
 
 
 
-/////TUITION PAGE
+/***************************************
+****************************************
+PAGE: TUITION***************************
+****************************************
+***************************************/
+
 
 .tuitionMainWrapper {
 	background:white;
@@ -1053,6 +934,13 @@ footer {
 }
 
 
+.clickedWhy1.KPI {
+	width: 80%;
+    padding: 5%;
+    margin: 3% auto;
+    text-align: center;
+}
+
 
 
 // -webkit-animation: 0s linear 0s normal none infinite animate;
@@ -1086,11 +974,4 @@ footer {
 // 		from {background-position:0 0;}
 // 		to {background-position: 0 0;}
 // 	}	
-
-.clickedWhy1.KPI {
-	width: 80%;
-    padding: 5%;
-    margin: 3% auto;
-    text-align: center;
-}
 
