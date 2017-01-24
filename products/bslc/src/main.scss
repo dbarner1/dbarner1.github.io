@@ -871,22 +871,22 @@ MEDIA QUERIES***************************
 
 /***************************************
 ****************************************
-PAGE: CURRICULUM************************
+PAGE: LEARN MORE************************
 ****************************************
 ***************************************/
 
-.curriculumWrapper {
+.learnMoreWrapper {
 	display:flex;
 	flex-direction:column;
 	background:white;
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
 
-	.curriculumTitle {
+	.learnMoreTitle {
 		text-align:center;
 		margin-bottom:1%;
 	}
 
-	.curriculumHero {
+	.learnMoreHero {
 		display:flex;
 		flex-direction:row;
 		justify-content: space-around;
@@ -1001,6 +1001,67 @@ PAGE: TUITION***************************
 }
 
 
+/***************************************
+****************************************
+PAGE: CURRICULUM************************
+****************************************
+***************************************/
+
+.curriculumWrapper {
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	padding-top:40px;
+	background:white;
+	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
+
+	.curriculumTitle {
+		text-align:center;
+		margin-bottom:1%;
+	}
+
+	.curriculumHero {
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		height:76vh;
+
+		.curriculumOptions {
+			margin-top:3vh;
+			width:20%;
+			
+
+			.curriculumOption {
+				border-top:1px solid grey;
+				border-left:1px solid grey;
+				background:white;
+			}
+
+			.num4 {
+				border-top:1px solid grey;
+				border-bottom:1px solid grey;
+
+			}
+
+			.selected {
+				background:orange;
+			}
+		}
+
+		.curriculumView {
+			border:1px solid grey;
+			background:rgba(255,255,255,.8);
+			width:80%;
+			min-height:30vh;
+			margin-bottom:10%;
+			margin-right:10%;
+
+			h3 {
+				background:grey;
+			}
+		}
+	}
+
 
 // -webkit-animation: 0s linear 0s normal none infinite animate;
 // 	-moz-animation: 0s linear 0s normal none infinite animate;
@@ -1033,4 +1094,4 @@ PAGE: TUITION***************************
 // 		from {background-position:0 0;}
 // 		to {background-position: 0 0;}
 // 	}	
-
+}

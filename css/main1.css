@@ -784,4 +784,47 @@ Medium Screen Special Settings**************
 }
 
 
+/******************************************
+Things I Love******************************
+******************************************/
+
+.curriculumCTA {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 80px;
+}
+
+.curriculumCTA h2 {
+	margin-top:10px;
+	text-align:center;	
+}
+
+.curriculumCTA h3 {
+	margin-top:20px;
+	margin-bottom:70px;
+	text-align:center;
+	color:red;
+}
+
+.curriculumCTA p {
+	margin-left:40px;
+}
+
+.languageHeader {
+	font-weight:bold;
+}
+
+.headerCTA {
+	margin-bottom:30px;
+}
+
+.curriculumCTA li {
+	margin-left:100px;
+}
+
+	
+}
+
+
 

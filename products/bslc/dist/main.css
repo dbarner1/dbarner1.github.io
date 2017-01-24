@@ -656,46 +656,46 @@ MEDIA QUERIES***************************
     width: 30%; } }
 /***************************************
 ****************************************
-PAGE: CURRICULUM************************
+PAGE: LEARN MORE************************
 ****************************************
 ***************************************/
-.curriculumWrapper {
+.learnMoreWrapper {
   display: flex;
   flex-direction: column;
   background: white;
   background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
-  .curriculumWrapper .curriculumTitle {
+  .learnMoreWrapper .learnMoreTitle {
     text-align: center;
     margin-bottom: 1%; }
-  .curriculumWrapper .curriculumHero {
+  .learnMoreWrapper .learnMoreHero {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 73vh; }
-    .curriculumWrapper .curriculumHero .video {
+    .learnMoreWrapper .learnMoreHero .video {
       width: 40%; }
-    .curriculumWrapper .curriculumHero .learnMoreWrapper {
+    .learnMoreWrapper .learnMoreHero .learnMoreWrapper {
       display: flex;
       flex-direction: row;
       width: 50%; }
-      .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions {
+      .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreOptions {
         margin-top: 3vh; }
-        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .learnMoreOption {
+        .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreOptions .learnMoreOption {
           border-top: 1px solid grey;
           border-left: 1px solid grey;
           background: white; }
-        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .num4 {
+        .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreOptions .num4 {
           border-top: 1px solid grey;
           border-bottom: 1px solid grey; }
-        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .selected {
+        .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreOptions .selected {
           background: orange; }
-      .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreView {
+      .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreView {
         border: 1px solid grey;
         background: rgba(255, 255, 255, 0.8);
         width: 70%;
         min-height: 30vh;
         margin-bottom: 2%; }
-        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreView h3 {
+        .learnMoreWrapper .learnMoreHero .learnMoreWrapper .learnMoreView h3 {
           background: grey; }
 
 /***************************************
@@ -742,5 +742,47 @@ PAGE: TUITION***************************
   padding: 5%;
   margin: 3% auto;
   text-align: center; }
+
+/***************************************
+****************************************
+PAGE: CURRICULUM************************
+****************************************
+***************************************/
+.curriculumWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 40px;
+  background: white;
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  .curriculumWrapper .curriculumTitle {
+    text-align: center;
+    margin-bottom: 1%; }
+  .curriculumWrapper .curriculumHero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 76vh; }
+    .curriculumWrapper .curriculumHero .curriculumOptions {
+      margin-top: 3vh;
+      width: 20%; }
+      .curriculumWrapper .curriculumHero .curriculumOptions .curriculumOption {
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+        background: white; }
+      .curriculumWrapper .curriculumHero .curriculumOptions .num4 {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey; }
+      .curriculumWrapper .curriculumHero .curriculumOptions .selected {
+        background: orange; }
+    .curriculumWrapper .curriculumHero .curriculumView {
+      border: 1px solid grey;
+      background: rgba(255, 255, 255, 0.8);
+      width: 80%;
+      min-height: 30vh;
+      margin-bottom: 10%;
+      margin-right: 10%; }
+      .curriculumWrapper .curriculumHero .curriculumView h3 {
+        background: grey; }
 
 /*# sourceMappingURL=main.css.map */
