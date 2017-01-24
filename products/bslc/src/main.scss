@@ -85,6 +85,10 @@ header {
 		width:150px;
 	}
 
+	.aSelected {
+		color:orange;
+	}
+
 	nav {
 		float:right;
 		margin-right:5%;
@@ -103,6 +107,8 @@ header {
 			text-decoration:none;
 			color:$textColor;
 		}	
+
+
 
 		a:hover {
 			color:orange;
@@ -159,12 +165,11 @@ HERO************************************
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
 	min-height:97vh;
 	width:100vw;
-	display:flex;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
@@ -269,7 +274,11 @@ WHY*************************************
 ***************************************/
 
 .why {
-	display:flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+ 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:space-around;
@@ -287,7 +296,11 @@ WHY*************************************
 	}
 
 	.whyBoxFeatured {
-		display:flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		flex-direction:column;
 		flex-wrap:wrap;
 		width:25%;
@@ -372,7 +385,11 @@ STUDENTS********************************
 
 
 .students {
-	display:flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	flex-direction:column;
 	background:rgba(255,255,255,1);
 	padding-top:16vh;
@@ -402,14 +419,22 @@ STUDENTS********************************
 	}
 
 	.allButArrow {
-		display:flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		flex-direction:row;
 		flex-wrap:wrap;
 		justify-content:space-between;
 	}
 
 	.featuredStudentContainer {
-		display:flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		flex-direction:column;
 		padding:2%;
 		width: 30vw;
@@ -558,7 +583,11 @@ FOOTER**********************************
 
 
 footer {
-	display:flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	flex-direction:row;
 	flex-wrap:wrap;
 	width:100%;
@@ -644,7 +673,11 @@ MEDIA QUERIES***************************
 
 	.students {
 		.allButArrow {
-			display:flex;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 			flex-direction:column;
 		}
 
@@ -690,7 +723,11 @@ MEDIA QUERIES***************************
 	}
 
 	.hero {
-		display:flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		flex-direction:column;
 		flex-wrap:wrap;
 		justify-content:flex-start;
@@ -761,7 +798,11 @@ MEDIA QUERIES***************************
 	}
 
 	.why {
-		display:flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
 		.arrow4 {
 			order:2;
@@ -804,7 +845,11 @@ MEDIA QUERIES***************************
 
 	.students {
 		.allButArrow {
-			display:flex;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 			flex-direction:column;
 		}
 
@@ -824,64 +869,72 @@ MEDIA QUERIES***************************
 
 }
 
-
 /***************************************
 ****************************************
 PAGE: CURRICULUM************************
 ****************************************
 ***************************************/
 
-
-.curriculumTitle {
-	text-align:center;
-	margin-bottom:1%;
-}
-
-
-.curriculum-15 {
-	border:1px solid grey;
-	background:white;
-	width:100%;
-	margin-bottom:2%;
-}
-
-.curriculum-15 h3 {
-	background:grey;
-}
-
 .curriculumWrapper {
+	display:flex;
+	flex-direction:column;
 	background:white;
-	margin:$headerHeight+30px 10% 0 2%;
-}
+	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
 
-.whiteBG {
-	background:white;
-}
+	.curriculumTitle {
+		text-align:center;
+		margin-bottom:1%;
+	}
 
-.learnMore-25 {
-	float:left;
-	border:1px solid grey;
-	background:white;
-	width:40%;
-	margin-bottom:2%;
-	margin-left:4%;
-	margin-right:4%;
-	margin-top:3%;
-}
+	.curriculumHero {
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		height:73vh;
 
-.learnMore-25 h3 {
-	background:grey;
-}
+		.video {
+			width:40%;	
+		}
+		
+		.learnMoreWrapper {
+			display:flex;
+			flex-direction:row;
+			width:50%;
 
-.learnMore-25 p {
-	padding: 4%;
-}
+			.learnMoreOptions {
+				margin-top:3vh;
 
-.video {
-	float: left;
-	width:100%;	
-}
+				.learnMoreOption {
+					border-top:1px solid grey;
+					border-left:1px solid grey;
+					background:white;
+				}
 
+				.num4 {
+					border-top:1px solid grey;
+					border-bottom:1px solid grey;
+
+				}
+
+				.selected {
+					background:orange;
+				}
+			}
+
+			.learnMoreView {
+				border:1px solid grey;
+				background:rgba(255,255,255,.8);
+				width:70%;
+				min-height:30vh;
+				margin-bottom:2%;
+
+				h3 {
+					background:grey;
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -896,8 +949,14 @@ PAGE: TUITION***************************
 	background:white;
 }
 
+.headline{
+	width:30vw;
+	margin:0 auto;
+}
+
 .tuitionWrapper {
 	padding-top:5%;
+	background:white;
 
 	table, tr, td {
 		border:1px solid black;

@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Dave Barner">
 	<title>Bay State Learning Center</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dist/normalize.css">
-	<link rel="stylesheet" type="text/css" href="dist/main.css">
+	<link rel="stylesheet" type="text/css" href="dist/main.css?v3">
 
+
+	<!--jQuery used only for scrolling behavior and carouseling - frameworks = bad for showing knowledge!-->
 </head>
-<body class="whiteBG">
+<body>
+	<header>
+		<a href="index.html"><img id="logo" src="img/bslcLogo.jpeg" alt="BSLC Logo"/></a>
+		<nav>
+			<ul>
+				<li class="border-left"><h3><a href="learnmore.html">Learn More</a></h3></li>
+				<li><h3><a class="aSelected" href="curriculum.html">Curriculum</a></h3></li>
+				<li><h3><a href="tuition.html">Tuition</a></h3></li>
+				<li><h3><a href="#">Makerspace</a></h3></li>
+				<li><h3><a href="contactus.html">Contact Us</a></h3></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="clear"></div>
 
-		<header>
-			<img id="hamburger" src="img/hamburger.png" alt="hamburger"/>
-			<a href="index.html"><img src="img/bslcLogo.jpeg" alt="BSLC Logo"/></a>
-			<nav>
-				<ul>
-					<li><h4><a href="learnmore.html">Learn More</a></h4></li>
-					<li><h4><a href="curriculum.html">Curriculum</a></h4></li>
-					<li><h4>Tuition</h4></li>
-					<li><h4>Contact Us</h4></li>
-				</ul>
-			</nav>
-		</header>
 	<div class="curriculumWrapper">
 		<div class="clear"></div>
 
-			<div class="curriculumTitle">
-				<h1>Curriculum</h1> 
+		<div class="curriculumTitle">
+			<h1>How We Work</h1> 
+		</div>
+
+		<div class="curriculumHero">
+
+
+			<div class="learnMoreWrapper">
+				<div class="learnMoreOptions">
+					<div class="selected learnMoreOption num1">
+						Monday
+					</div>
+					<div class="learnMoreOption num2">
+						Tuesday
+					</div>
+					<div class="learnMoreOption num3">
+						Thursday
+					</div>
+					<div class="learnMoreOption num4">
+						Friday
+					</div>					
+				</div>
+				<div class="learnMoreView">
+					<h3>Our Philosophy</h3>
+					<p>At Bay State Learning Center we think that the best and most lasting kind of learning is self-directed learning. At BSLC each student has the opportunity to work with a mentor to design a specialized learning program to fit his or her own needs, strengths, and interests. In addition to personalized support and a regular schedule of optional classes, BSLC provides a safe, comfortable environment where students can work, socialize, and thrive free of the coercion and pressure of traditional school. 
+
+					BSLC serves all kinds of students from successful straight A students who are bored or uninspired, to students who struggle with the imposed structure of school, to students who are disengaged and uninterested in standardized course work. Some want a better outlet for their creative ambitions and others have a specific area or discipline they want to focus on but find that the demands of school displace their interests. BSLC is for kids who need an open, flexible environment where they can find the security and freedom to succeed without irrelevant demands, arbitrary standardization, and institutional uniformity. Students like this can learn more and significantly improve their lives by leaving traditional school behind, and BSLC can provide them the opportunity to do so.</p>	
+				</div>
 			</div>
 
-			<div class="topTuition">
 
-				<div class="curriculum-15">
-					<h3>Photography Monday, 10:00 -11:00. Avery Kallas </h3>
-					<p>We will discover how images and the eye works, and peek into the history of photography and photographers.  Students will learn how to take good still photographs with any device from your smartphone to a fancy camera as well as how to shoot good useful video so you can edit it together for video art.</p>	
-				</div>
 
-				<div class="curriculum-15">
-					<h3>Public Speaking Monday, 11:00 -12:00. Adam Tierney-Eliot </h3>
-					<p>In this course we will explore some of the basic skills necessary for public speaking and set them in the context of Aristotle's Rhetoric.  We will take a look at his three elements of persuasion, ethos (reputation or credibility), pathos (emotional and intuitive connection), and logos (reasoned argument) and put them into practice while considering if there is anything the old guy missed. </p>	
-				</div>
+<!--
+				<div class="learnMore-25">
+					<h3>We Are For Everyone</h3>
+					<p>BSLC is a non-coercive environment for students ages 10-19. We do not have grades, tests, or specific curricular requirements. 
 
-				<div class="curriculum-15">
-					<h3>Self Defense Monday, 12:00 -1:00. Vivian Pratt Focus. Confidence. Respect. Discipline.</h3>
-					<p>Improve all of these powerful traits within yourself by learning, and perhaps someday mastering, the art of self defense. In this class we will explore a variety of styles and traditions including Japanese Shotokan, Kenpo, Japanese Juijitsu, Okinawan and others. The techniques that we will study include various forms, locks, takedowns, grappling and sparring. The practice of self defense will improve your strength, balance, movement control and overall fitness - as well as equip you to fight off the occasional attacker!</p>
+BSLC is committed to working with families with limited economic resources and has rolling admissions, accepting students at any time in the school year. </p>	
 				</div>
+				-->
 
-				<div class="curriculum-15">
-					<h3>Photoshop & the Digital World Monday, 1:00 -3:00. Avery Kallas </h3>
-					<p>Using Adobe Photoshop, students will learn the basics of how the program is structured, how to mange, reformat and enhance digital photos, and how to alter them to make their own art.  At the same time, we will discuss how Photoshop and "photoshopping" has impacted culture, art, fashion, advertising, the world, and maybe us. </p>
-				</div>
-
-				<div class="curriculum-15">
-					<h3>Self Assessment Monday, 2:00 -3:00.George Popham</h3>
-					<p> At BSLC Humanities, History, Literature are all intended to be part of a cluster, each class reinforces and highlights the material from the other classes. However, sometimes this can be overwhelming and self-assessment hour is intended to help with this. We'll spend this hour going over our notes from class and isolating the biggest most important themes and ideas. We'll discuss the ways that history, society and politics influence and inspire the literature we read. In self-assessment hour we'll write summaries, flesh out our notes, and ask ourselves questions that anchor our knowledge and deepen our understanding of the material from other classes.</p>
-				</div>
-			</div><!--top tuition-->
-		
 		</div><!--/curriculum wrapper-->
 
 		<div class="clear"></div>
@@ -75,7 +92,8 @@
 		</div><!--footwrap-->
 	</footer>
 	</div><!--/main-wrapper-->
-	<script type="text/javascript" src="src/main.js"></script>
+	<script type="text/javascript" src="dist/main.js"></script>
+	<script type="text/javascript" src="dist/learnmore.js"></script>
 </body>
 </html>
 		

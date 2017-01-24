@@ -61,6 +61,8 @@ header {
     margin-left: 10%;
     padding: 6px;
     width: 150px; }
+  header .aSelected {
+    color: orange; }
   header nav {
     float: right;
     margin-right: 5%; }
@@ -116,7 +118,6 @@ HERO************************************
   background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
   min-height: 97vh;
   width: 100vw;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -197,7 +198,16 @@ WHY*************************************
 ****************************************
 ***************************************/
 .why {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -212,7 +222,16 @@ WHY*************************************
     width: 45%;
     margin: 10vh 0 0 2vw; }
   .why .whyBoxFeatured {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     flex-wrap: wrap;
     width: 25%;
@@ -272,7 +291,16 @@ STUDENTS********************************
 ****************************************
 ***************************************/
 .students {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: column;
   background: white;
   padding-top: 16vh;
@@ -293,12 +321,30 @@ STUDENTS********************************
     width: 15%;
     margin: 2% 42.5% 0 42.5%; }
   .students .allButArrow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
   .students .featuredStudentContainer {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     padding: 2%;
     width: 30vw;
@@ -405,7 +451,16 @@ FOOTER**********************************
 ****************************************
 ***************************************/
 footer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -453,7 +508,16 @@ MEDIA QUERIES***************************
     font-size: .8em; }
 
   .students .allButArrow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column; }
   .students .featuredStudentContainer {
     width: 60%;
@@ -481,7 +545,16 @@ MEDIA QUERIES***************************
     display: none; }
 
   .hero {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -525,7 +598,16 @@ MEDIA QUERIES***************************
       order: 5; }
 
   .why {
-    display: flex; }
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
     .why .arrow4 {
       order: 2; }
     .why .whyBoxFeatured {
@@ -552,7 +634,16 @@ MEDIA QUERIES***************************
           font-size: .8em; }
 
   .students .allButArrow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column; }
   .students .featuredStudentContainer {
     width: 80%;
@@ -568,45 +659,44 @@ MEDIA QUERIES***************************
 PAGE: CURRICULUM************************
 ****************************************
 ***************************************/
-.curriculumTitle {
-  text-align: center;
-  margin-bottom: 1%; }
-
-.curriculum-15 {
-  border: 1px solid grey;
-  background: white;
-  width: 100%;
-  margin-bottom: 2%; }
-
-.curriculum-15 h3 {
-  background: grey; }
-
 .curriculumWrapper {
+  display: flex;
+  flex-direction: column;
   background: white;
-  margin: 80px 10% 0 2%; }
-
-.whiteBG {
-  background: white; }
-
-.learnMore-25 {
-  float: left;
-  border: 1px solid grey;
-  background: white;
-  width: 40%;
-  margin-bottom: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-top: 3%; }
-
-.learnMore-25 h3 {
-  background: grey; }
-
-.learnMore-25 p {
-  padding: 4%; }
-
-.video {
-  float: left;
-  width: 100%; }
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  .curriculumWrapper .curriculumTitle {
+    text-align: center;
+    margin-bottom: 1%; }
+  .curriculumWrapper .curriculumHero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 73vh; }
+    .curriculumWrapper .curriculumHero .video {
+      width: 40%; }
+    .curriculumWrapper .curriculumHero .learnMoreWrapper {
+      display: flex;
+      flex-direction: row;
+      width: 50%; }
+      .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions {
+        margin-top: 3vh; }
+        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .learnMoreOption {
+          border-top: 1px solid grey;
+          border-left: 1px solid grey;
+          background: white; }
+        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .num4 {
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey; }
+        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreOptions .selected {
+          background: orange; }
+      .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreView {
+        border: 1px solid grey;
+        background: rgba(255, 255, 255, 0.8);
+        width: 70%;
+        min-height: 30vh;
+        margin-bottom: 2%; }
+        .curriculumWrapper .curriculumHero .learnMoreWrapper .learnMoreView h3 {
+          background: grey; }
 
 /***************************************
 ****************************************
@@ -616,8 +706,13 @@ PAGE: TUITION***************************
 .tuitionMainWrapper {
   background: white; }
 
+.headline {
+  width: 30vw;
+  margin: 0 auto; }
+
 .tuitionWrapper {
-  padding-top: 5%; }
+  padding-top: 5%;
+  background: white; }
   .tuitionWrapper table, .tuitionWrapper tr, .tuitionWrapper td {
     border: 1px solid black;
     margin: 2% auto;
