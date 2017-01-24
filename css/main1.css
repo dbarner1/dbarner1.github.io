@@ -198,7 +198,7 @@ Portfolio**********************************
 	min-width: 200px;
 	width: 20vw;
 	background-color:white;
-	margin:0 2vw;
+	margin:2vw 2vw;
 	border-bottom:1px solid rgba(0,0,0,.2);
 }
 
@@ -244,10 +244,39 @@ button {
 	background-repeat:no-repeat;
 }
 
+
+
 .youtube .portfolio-middle {
 	background:url('../images/youtube.png');
 	background-size:50%;
 	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.react .portfolio-middle {
+	background:rgba(24,23,24,1);
+	background:url("../images/react.png");
+	background-size:100%;
+	background-position:center;
+	background-color:white;
+	background-repeat:no-repeat;
+}
+
+.operationImpact .portfolio-middle {
+	background:rgba(24,23,24,1);
+	background:url("../images/circuit-1.svg");
+	background-size:50%;
+	background-position:center;
+	background-color:white;
+	background-repeat:no-repeat;
+}
+
+.stripe .portfolio-middle {
+	background:rgba(24,23,24,1);
+	background:url("../images/stripe.png");
+	background-size:100%;
+	background-position:center;
+	background-color:white;
 	background-repeat:no-repeat;
 }
 
