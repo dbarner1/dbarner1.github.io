@@ -148,6 +148,10 @@ Section Shared Settings********************
 HERO SECTION "CTA"*************************
 ******************************************/
 
+.CTA h3 {
+	font-size:1.5vw;
+}
+
 #avatar {
 	width: 18vh;
 	padding-bottom: 2vh;
@@ -434,8 +438,8 @@ Arrows*************************************
 #downArrow4 {
 	display:block;
 	width: 4vw;
-	padding-top: 3vh;
-	margin: 15vh 48vw 0 48vw;
+	padding-top: 1vh;
+	margin: 10vh 48vw 0 48vw;
 }
 
 .safariParent {
@@ -461,7 +465,7 @@ Arrows*************************************
 Small Screen Special Settings**************
 ******************************************/
 
-@media (min-width:1px) AND (max-width:423px) {
+@media (min-width:1px) AND (max-width:500px) {
 
 	h2 {font-size: 9vw; font-weight: 200;}
 	h3 {font-size: 4vw; font-weight: 200;}
@@ -482,6 +486,14 @@ Small Screen Special Settings**************
 
 	.CTA {
 		padding:0 1vw;
+	}
+
+	.CTA h2 {
+	font-size:5vw;
+	}
+
+	.CTA h3 {
+	font-size:3vw;
 	}
 
 	.sub-hero-2 img {
@@ -511,7 +523,7 @@ Small Screen Special Settings**************
 	}
 
 	#companies {
-	padding-top: 3vh;
+	padding-top: 6vh;
 }
 	#companies .logo {
 		max-height: 17vw;
@@ -546,7 +558,7 @@ Small Screen Special Settings**************
 
 	#downArrow4  {
 		width: 10vw;
-		padding-top: 2vh;
+		padding-top: 0vh;
 		margin: 0vh 54vw 0 46vw;
 		}
 
@@ -591,8 +603,8 @@ Small Screen Special Settings**************
 	}
 
 	#companies {
-		min-height:75vh;
-	}
+		min-height:80vh;
+	}	
 
 	#hero4 {
 		padding-top: 6vh;
@@ -608,7 +620,7 @@ Small Screen Special Settings**************
 Medium Screen Special Settings**************
 ******************************************/
 
-@media (min-width:423px) AND (max-width:807px) {
+@media (min-width:500px) AND (max-width:807px) {
 
 	h2 {font-size: 6vw; font-weight:200;}
 	h3 {font-size: 3.4vw; font-weight:200;}
@@ -631,12 +643,20 @@ Medium Screen Special Settings**************
 	}
 
 	#avatar {
-		width: 20vw;
+		width: 10vw;
 		padding-bottom: 5px;
 	}
 
 	.smallLinkDiv {
 		margin-top: 30px;
+	}
+
+	.CTA h2 {
+		font-size:4vw;
+	}
+
+	.CTA h3 {
+		font-size:2.2vw;
 	}
 
 	.smallLinks {
