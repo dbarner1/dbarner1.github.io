@@ -69,10 +69,24 @@ var curriculumContent2 = [
 		["Title",["Time"],["Teacher"],"Description"]
 	],
 	["Friday",
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
+		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"],
 		["Outing",["Time"],["George Popham","Avery Kallas"],"Description"]
 	],
 	["Saturday",
-		["Makerspace",["Time"],["Paul Barner"],"Description"]
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
+		["Makerspace",["Time"],["Paul Barner"],"Description"],
 	]
 ]
 
@@ -80,11 +94,11 @@ for(i=0;i<curriculumOptions.length;i++) {
 	(function () {
 		var j=i;
 		var optionSelected =curriculumOptions[i];
+
 		optionSelected.addEventListener("click", function() {
 			console.log("clicked" + (j+1) + "!");
 			curriculumView.innerHTML = "<h2>" + curriculumContent2[j][0] + "</h2><h3>+" + curriculumContent2[j][1][0] + "</h3><p>" + curriculumContent2[j][1][1] + "</p><p>" + curriculumContent2[j][1][2] + "</p><p>" + curriculumContent2[j][1][3] + "</p><h3>+" + curriculumContent2[j][2][0] + "</h3><p>" + curriculumContent2[j][2][1] + "</p><p>" + curriculumContent2[j][2][2] + "</p><p>" + curriculumContent2[j][2][3] + "</p><h3>+" + curriculumContent2[j][3][0] + "</h3><p>" + curriculumContent2[j][3][1] + "</p><p>" + curriculumContent2[j][3][2] + "</p><p>" + curriculumContent2[j][3][2] + "</p><h3>+" + curriculumContent2[j][4][0] + "</h3><p>" + curriculumContent2[j][4][1] + "</p><p>" + curriculumContent2[j][4][2] + "</p><p>" + curriculumContent2[j][4][3] + "</p><h3>+" + curriculumContent2[j][5][0] + "</h3><p>" + curriculumContent2[j][5][1] + "</p><p>" + curriculumContent2[j][5][2] + "</p><p>" + curriculumContent2[j][5][3] + "</p>";
 	 		
-		
 			if(hasClass(this,"selected")) {
 				console.log("already selected");
 			} else {

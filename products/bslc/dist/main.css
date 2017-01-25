@@ -749,12 +749,16 @@ PAGE: CURRICULUM************************
 ****************************************
 ***************************************/
 .curriculumWrapper {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 80px;
   background: white;
   background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  .curriculumWrapper .curriculumIntro {
+    width: 76vw;
+    background: white;
+    margin-left: 140px;
+    margin-bottom: 5vh;
+    margin-right: 50px; }
   .curriculumWrapper .curriculumTitle {
     text-align: center;
     margin-bottom: 1%; }
