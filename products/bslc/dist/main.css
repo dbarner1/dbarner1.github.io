@@ -194,6 +194,93 @@ EMPTY***********************************
 
 /***************************************
 ****************************************
+PRAISE**********************************
+****************************************
+***************************************/
+.praise {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-height: 92vh;
+  padding-top: 10vh;
+  background: url("../img/greenBG.png") repeat 0 0;
+  text-align: center; }
+  .praise h3 {
+    color: white;
+    font-size: 160%; }
+  .praise .stories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw; }
+    .praise .stories .story {
+      padding: 2vw;
+      width: 150px; }
+    .praise .stories .notFeatured {
+      background-color: white; }
+    .praise .stories .featured {
+      padding: 0;
+      width: 100%;
+      height: 20vw;
+      order: -1;
+      background-color: none;
+      margin-bottom: 5vh; }
+
+.studentPraise {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-height: 92vh;
+  padding-top: 10vh;
+  background: url("../img/greenBG.png") repeat 0 0;
+  text-align: center; }
+  .studentPraise h3 {
+    color: white;
+    font-size: 160%; }
+  .studentPraise .studentStories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw; }
+    .studentPraise .studentStories .studentStory {
+      padding: 2vw;
+      width: 150px; }
+    .studentPraise .studentStories .studentNotFeatured {
+      background-color: white; }
+    .studentPraise .studentStories .studentFeatured {
+      padding: 0;
+      width: 100%;
+      height: 20vw;
+      order: -1;
+      background-color: none;
+      margin-bottom: 5vh; }
+
+/***************************************
+****************************************
 WHY*************************************
 ****************************************
 ***************************************/
