@@ -1024,12 +1024,11 @@ PAGE: CURRICULUM************************
 		display:flex;
 		flex-direction:row;
 		justify-content: space-around;
-		height:76vh;
+		min-height:76vh;
 
 		.curriculumOptions {
 			margin-top:3vh;
-			width:20%;
-			
+			margin-left:50px;
 
 			.curriculumOption {
 				border-top:1px solid grey;
@@ -1050,14 +1049,20 @@ PAGE: CURRICULUM************************
 
 		.curriculumView {
 			border:1px solid grey;
-			background:rgba(255,255,255,.8);
-			width:80%;
-			min-height:30vh;
-			margin-bottom:10%;
-			margin-right:10%;
+			background:rgba(200,200,200,.8);
+			width:100%;
+			margin-bottom:10vh;
+			margin-right:10vh;
+
+			h2 {
+				font-size:160%;
+				background-color:black;
+				color:white;
+			}
 
 			h3 {
-				background:grey;
+				font-size:120%;
+				background-color:white;
 			}
 		}
 	}
