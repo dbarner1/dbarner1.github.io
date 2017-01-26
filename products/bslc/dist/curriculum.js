@@ -97,7 +97,11 @@ for(i=0;i<curriculumOptions.length;i++) {
 
 		optionSelected.addEventListener("click", function() {
 			console.log("clicked" + (j+1) + "!");
-			curriculumView.innerHTML = "<h2>" + curriculumContent2[j][0] + "</h2><h3>+" + curriculumContent2[j][1][0] + "</h3><p>" + curriculumContent2[j][1][1] + "</p><p>" + curriculumContent2[j][1][2] + "</p><p>" + curriculumContent2[j][1][3] + "</p><h3>+" + curriculumContent2[j][2][0] + "</h3><p>" + curriculumContent2[j][2][1] + "</p><p>" + curriculumContent2[j][2][2] + "</p><p>" + curriculumContent2[j][2][3] + "</p><h3>+" + curriculumContent2[j][3][0] + "</h3><p>" + curriculumContent2[j][3][1] + "</p><p>" + curriculumContent2[j][3][2] + "</p><p>" + curriculumContent2[j][3][2] + "</p><h3>+" + curriculumContent2[j][4][0] + "</h3><p>" + curriculumContent2[j][4][1] + "</p><p>" + curriculumContent2[j][4][2] + "</p><p>" + curriculumContent2[j][4][3] + "</p><h3>+" + curriculumContent2[j][5][0] + "</h3><p>" + curriculumContent2[j][5][1] + "</p><p>" + curriculumContent2[j][5][2] + "</p><p>" + curriculumContent2[j][5][3] + "</p>";
+
+			var curriculumViewMsg = "<h2>" + curriculumContent2[j][0] + "</h2><h3>" + curriculumContent2[j][1][0] + "</h3><p class='time'>" + curriculumContent2[j][1][1] + ", " + curriculumContent2[j][1][2] + "</p><p>" + curriculumContent2[j][1][3] + "</p><h3>" + curriculumContent2[j][2][0] + "</h3><p class='time'>" + curriculumContent2[j][2][1] + ", " + curriculumContent2[j][2][2] + "</p><p>" + curriculumContent2[j][2][3] + "</p><h3>" + curriculumContent2[j][3][0] + "</h3><p class='time'>" + curriculumContent2[j][3][1] + ", " + curriculumContent2[j][3][2] + "</p><p>" + curriculumContent2[j][3][2] + "</p><h3>" + curriculumContent2[j][4][0] + "</h3><p class='time'>" + curriculumContent2[j][4][1] + ", " + curriculumContent2[j][4][2] + "</p><p>" + curriculumContent2[j][4][3] + "</p><h3>" + curriculumContent2[j][5][0] + "</h3><p class='time'>" + curriculumContent2[j][5][1] + ", " + curriculumContent2[j][5][2] + "</p><p>" + curriculumContent2[j][5][3] + "</p>";
+
+
+			curriculumView.innerHTML = curriculumViewMsg;
 	 		
 			if(hasClass(this,"selected")) {
 				console.log("already selected");

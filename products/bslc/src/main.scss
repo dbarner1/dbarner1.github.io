@@ -1114,10 +1114,17 @@ PAGE: CURRICULUM************************
 
 	.curriculumIntro {
 		width:76vw;
-		background:white;
+		color:white;
 		margin-left:140px;
 		margin-bottom:5vh;
 		margin-right:50px;
+		text-align:center;
+
+		h2 {
+				font-weight:bold;
+				font-size:150%;
+		}
+
 	}
 	.curriculumModules {
 		display:flex;
@@ -1128,14 +1135,17 @@ PAGE: CURRICULUM************************
 
 		.curriculumModule {
 			display:inline-block;
-			width:27vw;
-			height:27vw;
+			width:50vw;
+			min-height:10vw;
 			border:1px solid white;
 			background-color:white;
+			margin-bottom:3vh;
+			padding:3vw;
 
-			h3 {
+			h2 {
 				font-weight:bold;
 				margin-bottom:2vh;
+				font-size:150%;
 			}
 		}
 	}
@@ -1151,22 +1161,22 @@ PAGE: CURRICULUM************************
 		justify-content: space-around;
 		min-height:76vh;
 
-
-
 		.curriculumOptions {
-			margin-top:3vh;
+			margin-top:10vh;
 			margin-left:50px;
 
+
 			.curriculumOption {
-				border-top:1px solid grey;
-				border-left:1px solid grey;
+				border-top:1px solid lightgrey;
+				border-left:1px solid lightgrey;
 				background:white;
+				padding:1vw;
+				border-right:1px solid lightgrey;
 			}
 
-			.num4 {
-				border-top:1px solid grey;
-				border-bottom:1px solid grey;
-
+			.num6 {
+				border-top:1px solid lightgrey;
+				border-bottom:1px solid lightgrey;
 			}
 
 			.selected {
@@ -1175,21 +1185,36 @@ PAGE: CURRICULUM************************
 		}
 
 		.curriculumView {
-			border:1px solid grey;
-			background:rgba(200,200,200,.8);
+			background:white;
 			width:100%;
 			margin-bottom:10vh;
 			margin-right:10vh;
+			padding-bottom:4vh;
 
 			h2 {
 				font-size:160%;
-				background-color:black;
+				background-color:orange;
 				color:white;
+				padding:1vw;
+
 			}
 
 			h3 {
 				font-size:120%;
 				background-color:white;
+				padding-top:1vw;
+				padding-left:1vw;
+				font-weight:bold;
+
+			}
+
+			.time, .teacher {
+				color:grey;
+				font-weight:italics;
+			}
+
+			p {
+				padding:0 3vw;
 			}
 		}
 	}
