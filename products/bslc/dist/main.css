@@ -105,6 +105,11 @@ ARROWS**********************************
   width: 40%;
   margin: 20px 0 20px 30vw; }
 
+.arrow6 {
+  width: 40%;
+  padding: 0 10vw;
+  margin: 50px 0 20px 0; }
+
 .arrow3 {
   width: 5%;
   margin: 10px auto 0 auto; }
@@ -214,7 +219,7 @@ PRAISE**********************************
   margin: 0 auto;
   min-height: 92vh;
   padding-top: 10vh;
-  background: url("../img/greenBG.png") repeat 0 0;
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
   text-align: center; }
   .praise h3 {
     color: white;
@@ -227,16 +232,23 @@ PRAISE**********************************
     padding: 2vw; }
     .praise .stories .story {
       padding: 2vw;
-      width: 150px; }
+      width: 200px;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 20px;
+      text-align: left; }
+      .praise .stories .story .author {
+        text-align: right;
+        color: blue; }
     .praise .stories .notFeatured {
       background-color: white; }
     .praise .stories .featured {
-      padding: 0;
+      padding-left: 20%;
       width: 100%;
       height: 20vw;
       order: -1;
       background-color: none;
-      margin-bottom: 5vh; }
+      margin-bottom: 15vw; }
 
 .studentPraise {
   display: -webkit-box;
@@ -475,6 +487,67 @@ REQUEST INFO****************************
   margin: 0 auto;
   display: inline-block;
   background: white;
+  padding: 10vh 0 30vh 0;
+  width: 100%;
+  height: 375px;
+  color: white;
+  text-align: center;
+  background: url("../img/greenBG.png") repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate; }
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 500; } }
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 500; } }
+@-ms-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 500; } }
+@-o-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 500; } }
+@keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 500px; } }
+  .requestInfo form {
+    max-width: 30%;
+    margin: 8vh auto 10vh auto;
+    background-color: rgba(5, 5, 5, 0.3);
+    padding: 2%;
+    color: white;
+    font-weight: 100; }
+    .requestInfo form label {
+      margin-top: 2vh; }
+    .requestInfo form input {
+      display: block;
+      margin: 1vh auto 0 auto;
+      border: 0px;
+      width: 250px; }
+    .requestInfo form button {
+      width: 250px; }
+  .requestInfo label {
+    display: block; }
+  .requestInfo h2 {
+    margin-bottom: 5%; }
+
+.volunteerInfo {
+  margin: 0 auto;
+  display: inline-block;
+  background: white;
   padding: 10vh 0 10vh 0;
   width: 100%;
   height: 375px;
@@ -511,25 +584,25 @@ REQUEST INFO****************************
     background-position: 0 0; }
   to {
     background-position: 0 500px; } }
-  .requestInfo form {
+  .volunteerInfo form {
     max-width: 30%;
     margin: 8vh auto 0 auto;
     background-color: rgba(5, 5, 5, 0.3);
     padding: 2%;
     color: white;
     font-weight: 100; }
-    .requestInfo form label {
+    .volunteerInfo form label {
       margin-top: 2vh; }
-    .requestInfo form input {
+    .volunteerInfo form input {
       display: block;
       margin: 1vh auto 0 auto;
       border: 0px;
       width: 250px; }
-    .requestInfo form button {
+    .volunteerInfo form button {
       width: 250px; }
-  .requestInfo label {
+  .volunteerInfo label {
     display: block; }
-  .requestInfo h2 {
+  .volunteerInfo h2 {
     margin-bottom: 5%; }
 
 /***************************************
@@ -746,45 +819,86 @@ MEDIA QUERIES***************************
 PAGE: TUITION***************************
 ****************************************
 ***************************************/
-.tuitionMainWrapper {
-  background: white; }
-
-.headline {
-  width: 30vw;
-  margin: 0 auto; }
-
 .tuitionWrapper {
-  padding-top: 5%;
-  background: white; }
-  .tuitionWrapper table, .tuitionWrapper tr, .tuitionWrapper td {
-    border: 1px solid black;
-    margin: 2% auto;
-    padding: 2%; }
-  .tuitionWrapper h3 {
-    text-align: center;
-    background: grey; }
-
-.topTuition {
-  margin: 0 10% 0 10%; }
-
-.tuition-20 {
-  float: left;
-  border: 1px solid grey;
-  background: white;
-  width: 20%;
-  margin-bottom: 2%; }
-
-.tuition-100 {
-  border: 1px solid grey;
-  background: white;
   width: 100%;
-  margin-bottom: 2%; }
-
-.clickedWhy1.KPI {
-  width: 80%;
-  padding: 5%;
-  margin: 3% auto;
-  text-align: center; }
+  padding-top: 80px;
+  background: white;
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  .tuitionWrapper .tuitionIntro {
+    width: 76vw;
+    color: white;
+    margin-left: 140px;
+    margin-bottom: 5vh;
+    margin-right: 50px;
+    text-align: center; }
+    .tuitionWrapper .tuitionIntro h2 {
+      font-weight: bold;
+      font-size: 150%; }
+  .tuitionWrapper .tuitionModules {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 4vh; }
+    .tuitionWrapper .tuitionModules .tuitionModule {
+      display: inline-block;
+      width: 50vw;
+      min-height: 10vw;
+      border: 1px solid white;
+      background-color: white;
+      margin-bottom: 3vh;
+      padding: 3vw; }
+      .tuitionWrapper .tuitionModules .tuitionModule h2 {
+        font-weight: bold;
+        margin-bottom: 2vh;
+        font-size: 150%; }
+  .tuitionWrapper .tuitionTitle {
+    text-align: center;
+    margin-bottom: 1%; }
+  .tuitionWrapper .tuitionHero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 76vh; }
+    .tuitionWrapper .tuitionHero .tuitionOptions {
+      margin-top: 10vh;
+      margin-left: 50px; }
+      .tuitionWrapper .tuitionHero .tuitionOptions .tuitionOption {
+        border-top: 1px solid lightgrey;
+        border-left: 1px solid lightgrey;
+        background: white;
+        padding: 1vw;
+        border-right: 1px solid lightgrey; }
+      .tuitionWrapper .tuitionHero .tuitionOptions .num6 {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey; }
+      .tuitionWrapper .tuitionHero .tuitionOptions .selected {
+        background: orange; }
+    .tuitionWrapper .tuitionHero .tuitionView {
+      background: white;
+      width: 100%;
+      margin-bottom: 10vh;
+      margin-right: 10vh;
+      padding-bottom: 4vh; }
+      .tuitionWrapper .tuitionHero .tuitionView h5 {
+        text-align: center;
+        margin-top: 10%; }
+      .tuitionWrapper .tuitionHero .tuitionView h2 {
+        font-size: 160%;
+        background-color: orange;
+        color: white;
+        padding: 1vw; }
+      .tuitionWrapper .tuitionHero .tuitionView h3 {
+        font-size: 120%;
+        background-color: white;
+        padding-top: 1vw;
+        padding-left: 1vw;
+        font-weight: bold; }
+      .tuitionWrapper .tuitionHero .tuitionView .time, .tuitionWrapper .tuitionHero .tuitionView .teacher {
+        color: grey;
+        font-weight: italics; }
+      .tuitionWrapper .tuitionHero .tuitionView p {
+        padding: 0 3vw; }
 
 /***************************************
 ****************************************
@@ -867,7 +981,12 @@ PAGE: CURRICULUM************************
   width: 100%;
   padding-top: 80px;
   background: white;
-  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+  /***************************************
+  ****************************************
+  PAGE: MAKERSPACE************************
+  ****************************************
+  ***************************************/ }
   .curriculumWrapper .curriculumIntro {
     width: 76vw;
     color: white;
@@ -943,5 +1062,71 @@ PAGE: CURRICULUM************************
         font-weight: italics; }
       .curriculumWrapper .curriculumHero .curriculumView p {
         padding: 0 3vw; }
+  .curriculumWrapper .makerspaceWrapper {
+    background: white;
+    background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+    padding-top: 80px;
+    width: 100%; }
+    .curriculumWrapper .makerspaceWrapper .makerspaceTitle {
+      width: 100vw;
+      color: white;
+      text-align: center; }
+    .curriculumWrapper .makerspaceWrapper .makerspaceHero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      min-height: 73vh;
+      width: 100vw; }
+      .curriculumWrapper .makerspaceWrapper .makerspaceHero iframe {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 60vw;
+        height: 30vw;
+        display: block; }
+      .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh; }
+        .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .makerspaceOption {
+            border-top: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            background: white;
+            text-align: center;
+            width: 10vw;
+            padding: 2vw; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .num6 {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .selected {
+            background: orange; }
+        .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView {
+          width: 84vw;
+          background: white;
+          min-height: 38.25vh;
+          margin-bottom: 10vh;
+          padding-bottom: 4vh;
+          padding-left: 2px;
+          padding-right: 2px;
+          border: 1px solid lightgrey; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView h2 {
+            font-size: 160%;
+            background-color: orange;
+            color: white;
+            padding: 1vw; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView h3 {
+            font-size: 120%;
+            background-color: white;
+            padding-top: 1vw;
+            padding-left: 1vw;
+            font-weight: bold; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView .time, .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView .teacher {
+            color: grey;
+            font-weight: italics; }
+          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView p {
+            padding: 0 3vw; }
 
 /*# sourceMappingURL=main.css.map */
