@@ -968,74 +968,6 @@ MEDIA QUERIES***************************
 
 }
 
-/***************************************
-****************************************
-PAGE: LEARN MORE************************
-****************************************
-***************************************/
-
-.learnMoreWrapper {
-	display:flex;
-	flex-direction:column;
-	background:white;
-	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
-
-	.learnMoreTitle {
-		text-align:center;
-		margin-bottom:1%;
-	}
-
-	.learnMoreHero {
-		display:flex;
-		flex-direction:row;
-		justify-content: space-around;
-		height:73vh;
-
-		.video {
-			width:40%;	
-		}
-		
-		.learnMoreWrapper {
-			display:flex;
-			flex-direction:row;
-			width:50%;
-
-			.learnMoreOptions {
-				margin-top:3vh;
-
-				.learnMoreOption {
-					border-top:1px solid grey;
-					border-left:1px solid grey;
-					background:white;
-				}
-
-				.num4 {
-					border-top:1px solid grey;
-					border-bottom:1px solid grey;
-
-				}
-
-				.selected {
-					background:orange;
-				}
-			}
-
-			.learnMoreView {
-				border:1px solid grey;
-				background:rgba(255,255,255,.8);
-				width:70%;
-				min-height:30vh;
-				margin-bottom:2%;
-
-				h3 {
-					background:grey;
-				}
-			}
-		}
-	}
-}
-
-
 
 /***************************************
 ****************************************
@@ -1098,6 +1030,108 @@ PAGE: TUITION***************************
     margin: 3% auto;
     text-align: center;
 }
+
+
+/***************************************
+****************************************
+PAGE: LEARN MORE************************
+****************************************
+***************************************/
+
+.learnMoreWrapper1 {
+	background:white;
+	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
+	padding-top:80px;
+	width:100%;
+
+	.learnMoreTitle {
+		width:100vw;
+		color:white;
+		text-align:center;
+	}
+
+	.learnMoreHero {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		min-height:73vh;
+		width:100vw;
+
+		iframe {
+			margin-top:5vh;
+			margin-bottom:5vh;
+			width:60vw;
+			height:30vw;
+			display:block;	
+		}
+		
+		.learnMoreWrapper {
+			display:flex;
+			flex-direction:row;
+			width:100vw;
+			margin-top:5vh;
+
+			.learnMoreOptions {
+				margin-left:12vw;
+
+				.learnMoreOption {
+				border-top:1px solid lightgrey;
+				border-left:1px solid lightgrey;
+				background:white;
+				padding:1vw;
+				border-right:1px solid lightgrey;
+				}
+
+				.num6 {
+					border-top:1px solid grey;
+					border-bottom:1px solid grey;
+
+				}
+
+				.selected {
+					background:orange;
+				}
+			}
+
+			.learnMoreView {
+				background:white;
+				width:60%;
+				min-height:38.25vh;
+				margin-bottom:10vh;
+				margin-right:10vh;
+				padding-bottom:4vh;
+
+			h2 {
+				font-size:160%;
+				background-color:orange;
+				color:white;
+				padding:1vw;
+
+			}
+
+			h3 {
+				font-size:120%;
+				background-color:white;
+				padding-top:1vw;
+				padding-left:1vw;
+				font-weight:bold;
+
+			}
+
+			.time, .teacher {
+				color:grey;
+				font-weight:italics;
+			}
+
+			p {
+				padding:0 3vw;
+			}
+			}
+		}
+	}
+}
+
+
 
 
 /***************************************
