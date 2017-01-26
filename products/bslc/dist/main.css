@@ -814,29 +814,33 @@ PAGE: LEARN MORE************************
       display: block; }
     .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper {
       display: flex;
-      flex-direction: row;
-      width: 100vw;
+      flex-direction: column;
       margin-top: 5vh; }
       .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreOptions {
-        margin-left: 12vw; }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
         .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreOptions .learnMoreOption {
           border-top: 1px solid lightgrey;
           border-left: 1px solid lightgrey;
           background: white;
-          padding: 1vw;
-          border-right: 1px solid lightgrey; }
+          text-align: center;
+          width: 10vw;
+          padding: 2vw; }
         .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreOptions .num6 {
           border-top: 1px solid grey;
           border-bottom: 1px solid grey; }
         .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreOptions .selected {
           background: orange; }
       .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreView {
+        width: 84vw;
         background: white;
-        width: 60%;
         min-height: 38.25vh;
         margin-bottom: 10vh;
-        margin-right: 10vh;
-        padding-bottom: 4vh; }
+        padding-bottom: 4vh;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid lightgrey; }
         .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreView h2 {
           font-size: 160%;
           background-color: orange;
@@ -920,6 +924,9 @@ PAGE: CURRICULUM************************
       margin-bottom: 10vh;
       margin-right: 10vh;
       padding-bottom: 4vh; }
+      .curriculumWrapper .curriculumHero .curriculumView h5 {
+        text-align: center;
+        margin-top: 10%; }
       .curriculumWrapper .curriculumHero .curriculumView h2 {
         font-size: 160%;
         background-color: orange;
