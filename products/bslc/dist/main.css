@@ -70,8 +70,6 @@ header {
       display: inline-block;
       padding: 0 5px;
       color: #378bd5; }
-    header nav h3 {
-      font-weight: 400; }
     header nav a {
       text-decoration: none;
       color: #378bd5; }
@@ -170,12 +168,12 @@ HERO************************************
     text-align: center;
     color: snow;
     margin-bottom: 80px; }
+    .hero .headline .noBannerAnnouncement {
+      margin-top: 11	vh; }
     .hero .headline h1 {
       width: 90%;
       margin: 10px auto 0 auto;
       font-size: 3em; }
-      .hero .headline h1 .noBannerAnnouncement {
-        margin-top: 70px; }
     .hero .headline h3 {
       width: 80%;
       margin: 0 auto;
@@ -310,7 +308,11 @@ PRAISE**********************************
     padding: 2vw; }
     .studentPraise .studentStories .studentStory {
       padding: 2vw;
-      width: 150px; }
+      width: 220px;
+      text-align: left; }
+      .studentPraise .studentStories .studentStory .author {
+        text-align: right;
+        color: blue; }
     .studentPraise .studentStories .studentNotFeatured {
       background-color: white; }
     .studentPraise .studentStories .studentFeatured {
@@ -568,7 +570,8 @@ REQUEST INFO****************************
       border: 0px;
       width: 250px; }
     .requestInfo form button {
-      width: 250px; }
+      width: 250px;
+      background-color: green; }
   .requestInfo label {
     display: block; }
   .requestInfo h2 {
@@ -929,6 +932,9 @@ PAGE: TUITION***************************
         font-weight: italics; }
       .tuitionWrapper .tuitionHero .tuitionView p {
         padding: 0 3vw; }
+
+.hide {
+  display: none; }
 
 /***************************************
 ****************************************

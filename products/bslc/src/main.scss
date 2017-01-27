@@ -27,7 +27,12 @@ p 			{font-size:80%;}
 
 //GLOBAL SETTINGS
 
+
+
 body {
+
+
+
 	background: $primaryColor;
 	background-image: url("../img/class.png");
 	overflow:scroll;
@@ -92,6 +97,7 @@ header {
 	nav {
 		float:right;
 		margin-right:5%;
+
 		
 		li {
 			display:inline-block;
@@ -100,7 +106,7 @@ header {
 		}	
 
 		h3 {
-			font-weight:400;
+			
 		}
 
 		a {
@@ -161,6 +167,8 @@ ARROWS**********************************
 	}
 
 
+
+
 /***************************************
 ****************************************
 HERO************************************
@@ -191,7 +199,7 @@ HERO************************************
 		margin-top:50px;
 		height:5vw;
 		text-align:center;
-	
+
 		h2 {
 			width:40vw;
 			padding-top:1.2vw;
@@ -224,14 +232,16 @@ HERO************************************
 		color:$headlineColor;
 		margin-bottom:80px;
 
+			.noBannerAnnouncement {
+				margin-top:11	vh;
+			}
+
 		h1 {
 			width:90%;
 			margin:10px auto 0 auto;
 			font-size:3em;
 
-			.noBannerAnnouncement {
-				margin-top:70px;
-			}
+
 		}
 
 		h3 {
@@ -405,7 +415,13 @@ PRAISE**********************************
 		
 		.studentStory {
 			padding:2vw;
-			width:150px;
+			width:220px;
+			text-align: left;
+
+			.author {
+				text-align:right;
+				color:blue;
+			}	
 		}
 
 		.studentNotFeatured {
@@ -716,6 +732,7 @@ REQUEST INFO****************************
 
 		button {
 			width:250px;
+			background-color:green;
 		}
 
 	}
@@ -1230,6 +1247,10 @@ PAGE: TUITION***************************
 }
 
 
+		.hide {
+			display:none;
+		}
+
 /***************************************
 ****************************************
 PAGE: LEARN MORE************************
@@ -1602,4 +1623,7 @@ PAGE: MAKERSPACE************************
 // 		from {background-position:0 0;}
 // 		to {background-position: 0 0;}
 // 	}	
+
+	
+
 }
