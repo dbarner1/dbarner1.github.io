@@ -179,7 +179,44 @@ HERO************************************
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
+	
+	.bannerAnnouncement {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		align-content:space-around;
+		background:orange;
+		width:100vw;
+		color:white;
+		margin-top:50px;
+		height:5vw;
+		text-align:center;
+	
+		h2 {
+			width:40vw;
+			padding-top:1.2vw;
+			font-size:2vw;
+			margin-left:5vw;
+		}
 
+		button {
+			width:10vw;
+			margin-right:30vw;
+			margin-top:1vw;
+			height:2vw;
+			padding-top: .8vw;
+		}
+
+		a {
+			text-decoration:none;
+		}
+
+		h3 {
+			margin-right:5vw;
+			margin-top:1vw;
+			font-weight:bold;
+		}
+	}
 	.headline {
 		height: 50px;
 		width:80%;
@@ -189,8 +226,12 @@ HERO************************************
 
 		h1 {
 			width:90%;
-			margin:70px auto 0 auto;
+			margin:10px auto 0 auto;
 			font-size:3em;
+
+			.noBannerAnnouncement {
+				margin-top:70px;
+			}
 		}
 
 		h3 {
