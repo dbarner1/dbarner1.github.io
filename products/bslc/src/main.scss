@@ -31,7 +31,13 @@ p 			{font-size:80%;}
 
 body {
 
+	.edgeButton:hover {
+		color:orange;	
+	}
 
+	.orangeButtonA:hover {
+		color:blue;
+	}
 
 	background: $primaryColor;
 	background-image: url("../img/class.png");
@@ -56,10 +62,9 @@ body {
 		}
 	}
 
-	button a:hover {
-		color:orange;
 
-	}
+
+
 
 	a {
 		color:white;
@@ -113,8 +118,6 @@ header {
 			text-decoration:none;
 			color:$textColor;
 		}	
-
-
 
 		a:hover {
 			color:orange;
@@ -196,23 +199,29 @@ HERO************************************
 		background:orange;
 		width:100vw;
 		color:white;
-		margin-top:50px;
-		height:5vw;
+		margin-top: $headerHeight;
+		max-height:50px;
 		text-align:center;
 
 		h2 {
-			width:40vw;
-			padding-top:1.2vw;
+			width:50vw;
+			margin-top:10px;
 			font-size:2vw;
-			margin-left:5vw;
+			margin-left:20px;
 		}
 
 		button {
-			width:10vw;
-			margin-right:30vw;
-			margin-top:1vw;
-			height:2vw;
-			padding-top: .8vw;
+			min-width:10vw;
+			max-width:100px;
+			margin-top:5px;
+			margin-bottom:5px;
+			padding:5px;
+			height:40px
+			
+		}
+
+		button:hover {
+			color:orange;	
 		}
 
 		a {
@@ -225,23 +234,23 @@ HERO************************************
 			font-weight:bold;
 		}
 	}
+
 	.headline {
 		height: 50px;
 		width:80%;
 		text-align:center;
 		color:$headlineColor;
-		margin-bottom:80px;
-
-			.noBannerAnnouncement {
-				margin-top:11	vh;
-			}
 
 		h1 {
 			width:90%;
-			margin:10px auto 0 auto;
+			margin-left:auto;
+			margin-right:auto;
 			font-size:3em;
 
+			.noBannerAnnouncement {
+				margin-top:100px;
 
+			}
 		}
 
 		h3 {
@@ -256,18 +265,19 @@ HERO************************************
 		text-align:center;
 		transition: all .2s ease-in-out; 
 
+
+
 		.orangeButton  {
 			background-color:orange;
 			margin-top:2%;	
 
 			a {
 				text-decoration:none;
-			}
+			}	
 
-			a:hover {
-				color:blue;
-			}
 		}
+
+
 
 		#classPic {
 			width:100%;
@@ -281,7 +291,7 @@ HERO************************************
 	}
 
 	.middleSubHero:hover { 
-		transform: scale(1.3); 
+		transform: scale(1.1); 
 	}
 
 	.edgeSubHero {
@@ -714,7 +724,7 @@ REQUEST INFO****************************
 		margin:8vh auto 10vh auto;
 		background-color:rgba(5,5,5,.3);
 		padding:2%;
-		color:white;
+		color:black;
 		font-weight:100;
 
 		label {
@@ -728,11 +738,13 @@ REQUEST INFO****************************
 			margin:1vh auto 0 auto; 
 			border:0px;
 			width:250px;
+			color:black;
 		}
 
 		button {
 			width:250px;
 			background-color:green;
+			color:white;
 		}
 
 	}
@@ -794,7 +806,7 @@ REQUEST INFO****************************
 		margin:8vh auto 0 auto;
 		background-color:rgba(5,5,5,.3);
 		padding:2%;
-		color:white;
+		color:black;
 		font-weight:100;
 
 		label {
@@ -812,6 +824,7 @@ REQUEST INFO****************************
 
 		button {
 			width:250px;
+			color:white;
 		}
 
 	}
@@ -880,7 +893,7 @@ MEDIA QUERIES***************************
 ****************************************************************/
 
 //MEDIUM
-@media all and (min-width:700px) and (max-width:860px) {
+@media all and (min-width:701px) and (max-width:860px) {
 
 	body {
 		button {
@@ -960,7 +973,7 @@ MEDIA QUERIES***************************
 		}
 	}
 
-		header #logo {
+	header #logo {
 		padding:6px; //Fix this later
 		width:19vw;
 		margin-left:39vw;
@@ -985,17 +998,26 @@ MEDIA QUERIES***************************
 		justify-content:flex-start;
 		min-height:95vh;
 
+		.bannerAnnouncement {
+			order:-2;
+			margin-bottom:30px;
+		}
+
 		.headline {
-			order:-1;
+			order:-2;
 			width:100%;
 			height:100px;
-			margin: 70px 0 20px 0;
+			margin-bottom:10px;
 
 			h1 {
 				font-size:7vw;
-				margin-top:0px;
-				width:95%;
+				width:95%;	
+
+				.noBannerAnnouncement {
+					margin-top:70px;
+				}
 			}
+
 
 			h3 {
 				width:95%;
@@ -1012,6 +1034,10 @@ MEDIA QUERIES***************************
 				display:none;
 			}
 		}
+
+		.noBannerAnnouncement {
+				margin-top:70px;
+			}
 
 		.middleSubHero {
 			order:-1;
@@ -1323,6 +1349,11 @@ PAGE: LEARN MORE************************
 				padding-left:2px;
 				padding-right:2px;
 				border:1px solid lightgrey;
+
+				img {
+					width:20%;
+					padding-left:3vw;
+				}
 
 				h2 {
 					font-size:160%;

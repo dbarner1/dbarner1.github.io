@@ -26,6 +26,10 @@ body {
   background-size: 100vw;
   background-position: center;
   background-attachment: fixed; }
+  body .edgeButton:hover {
+    color: orange; }
+  body .orangeButtonA:hover {
+    color: blue; }
   body button {
     display: block;
     background: #378bd5;
@@ -37,8 +41,6 @@ body {
     padding: 2%; }
     body button h5 {
       font-weight: 100; }
-  body button a:hover {
-    color: orange; }
   body a {
     color: white; }
 
@@ -143,19 +145,22 @@ HERO************************************
     width: 100vw;
     color: white;
     margin-top: 50px;
-    height: 5vw;
+    max-height: 50px;
     text-align: center; }
     .hero .bannerAnnouncement h2 {
-      width: 40vw;
-      padding-top: 1.2vw;
+      width: 50vw;
+      margin-top: 10px;
       font-size: 2vw;
-      margin-left: 5vw; }
+      margin-left: 20px; }
     .hero .bannerAnnouncement button {
-      width: 10vw;
-      margin-right: 30vw;
-      margin-top: 1vw;
-      height: 2vw;
-      padding-top: .8vw; }
+      min-width: 10vw;
+      max-width: 100px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 5px;
+      height: 40px; }
+    .hero .bannerAnnouncement button:hover {
+      color: orange; }
     .hero .bannerAnnouncement a {
       text-decoration: none; }
     .hero .bannerAnnouncement h3 {
@@ -166,14 +171,14 @@ HERO************************************
     height: 50px;
     width: 80%;
     text-align: center;
-    color: snow;
-    margin-bottom: 80px; }
-    .hero .headline .noBannerAnnouncement {
-      margin-top: 11	vh; }
+    color: snow; }
     .hero .headline h1 {
       width: 90%;
-      margin: 10px auto 0 auto;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 3em; }
+      .hero .headline h1 .noBannerAnnouncement {
+        margin-top: 100px; }
     .hero .headline h3 {
       width: 80%;
       margin: 0 auto;
@@ -187,8 +192,6 @@ HERO************************************
       margin-top: 2%; }
       .hero .middleSubHero .orangeButton a {
         text-decoration: none; }
-      .hero .middleSubHero .orangeButton a:hover {
-        color: blue; }
     .hero .middleSubHero #classPic {
       width: 100%; }
     .hero .middleSubHero p {
@@ -196,7 +199,7 @@ HERO************************************
       margin: 0 auto;
       color: white; }
   .hero .middleSubHero:hover {
-    transform: scale(1.3); }
+    transform: scale(1.1); }
   .hero .edgeSubHero {
     padding: 0 2%;
     width: 25vw;
@@ -560,7 +563,7 @@ REQUEST INFO****************************
     margin: 8vh auto 10vh auto;
     background-color: rgba(5, 5, 5, 0.3);
     padding: 2%;
-    color: white;
+    color: black;
     font-weight: 100; }
     .requestInfo form label {
       margin-top: 2vh; }
@@ -568,10 +571,12 @@ REQUEST INFO****************************
       display: block;
       margin: 1vh auto 0 auto;
       border: 0px;
-      width: 250px; }
+      width: 250px;
+      color: black; }
     .requestInfo form button {
       width: 250px;
-      background-color: green; }
+      background-color: green;
+      color: white; }
   .requestInfo label {
     display: block; }
   .requestInfo h2 {
@@ -622,7 +627,7 @@ REQUEST INFO****************************
     margin: 8vh auto 0 auto;
     background-color: rgba(5, 5, 5, 0.3);
     padding: 2%;
-    color: white;
+    color: black;
     font-weight: 100; }
     .volunteerInfo form label {
       margin-top: 2vh; }
@@ -632,7 +637,8 @@ REQUEST INFO****************************
       border: 0px;
       width: 250px; }
     .volunteerInfo form button {
-      width: 250px; }
+      width: 250px;
+      color: white; }
   .volunteerInfo label {
     display: block; }
   .volunteerInfo h2 {
@@ -679,7 +685,7 @@ footer {
 MEDIA QUERIES***************************
 ****************************************
 ****************************************************************/
-@media all and (min-width: 700px) and (max-width: 860px) {
+@media all and (min-width: 701px) and (max-width: 860px) {
   body button h5 {
     font-size: 80%; }
 
@@ -752,15 +758,19 @@ MEDIA QUERIES***************************
     flex-wrap: wrap;
     justify-content: flex-start;
     min-height: 95vh; }
+    .hero .bannerAnnouncement {
+      order: -2;
+      margin-bottom: 30px; }
     .hero .headline {
-      order: -1;
+      order: -2;
       width: 100%;
       height: 100px;
-      margin: 70px 0 20px 0; }
+      margin-bottom: 10px; }
       .hero .headline h1 {
         font-size: 7vw;
-        margin-top: 0px;
         width: 95%; }
+        .hero .headline h1 .noBannerAnnouncement {
+          margin-top: 70px; }
       .hero .headline h3 {
         width: 95%;
         font-size: 3vw; }
@@ -770,6 +780,8 @@ MEDIA QUERIES***************************
       margin-bottom: 20px; }
       .hero .middleSubHero .arrow, .hero .edgeSubHero .arrow {
         display: none; }
+    .hero .noBannerAnnouncement {
+      margin-top: 70px; }
     .hero .middleSubHero {
       order: -1;
       transition: none; }
@@ -991,6 +1003,9 @@ PAGE: LEARN MORE************************
         padding-left: 2px;
         padding-right: 2px;
         border: 1px solid lightgrey; }
+        .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreView img {
+          width: 20%;
+          padding-left: 3vw; }
         .learnMoreWrapper1 .learnMoreHero .learnMoreWrapper .learnMoreView h2 {
           font-size: 160%;
           background-color: orange;
