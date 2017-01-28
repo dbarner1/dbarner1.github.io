@@ -1033,12 +1033,7 @@ PAGE: CURRICULUM************************
   width: 100%;
   padding-top: 80px;
   background: white;
-  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
-  /***************************************
-  ****************************************
-  PAGE: MAKERSPACE************************
-  ****************************************
-  ***************************************/ }
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
   .curriculumWrapper .curriculumIntro {
     width: 76vw;
     color: white;
@@ -1114,71 +1109,97 @@ PAGE: CURRICULUM************************
         font-weight: italics; }
       .curriculumWrapper .curriculumHero .curriculumView p {
         padding: 0 3vw; }
-  .curriculumWrapper .makerspaceWrapper {
-    background: white;
-    background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
-    padding-top: 80px;
-    width: 100%; }
-    .curriculumWrapper .makerspaceWrapper .makerspaceTitle {
-      width: 100vw;
-      color: white;
-      text-align: center; }
-    .curriculumWrapper .makerspaceWrapper .makerspaceHero {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      min-height: 73vh;
-      width: 100vw; }
-      .curriculumWrapper .makerspaceWrapper .makerspaceHero iframe {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        width: 60vw;
-        height: 30vw;
-        display: block; }
-      .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper {
+
+/***************************************
+****************************************
+PAGE: MAKERSPACE************************
+****************************************
+***************************************/
+.makerspaceWrapper1 {
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+  padding-top: 80px;
+  width: 100%; }
+  .makerspaceWrapper1 .makerspaceTitle {
+    width: 100vw;
+    color: white;
+    text-align: center; }
+  .makerspaceWrapper1 .makerspaceHero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 73vh;
+    width: 100vw;
+    padding-top: 5vh; }
+    .makerspaceWrapper1 .makerspaceHero .slideshowContainer {
+      order: -1; }
+      .makerspaceWrapper1 .makerspaceHero .slideshowContainer .slideshow {
+        width: 40vw;
+        min-width: 300px; }
+        .makerspaceWrapper1 .makerspaceHero .slideshowContainer .slideshow img {
+          width: 100%;
+          height: 250px; }
+      .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics {
         display: flex;
-        flex-direction: column;
-        margin-top: 5vh; }
-        .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .makerspaceOption {
-            border-top: 1px solid lightgrey;
-            border-left: 1px solid lightgrey;
-            background: white;
-            text-align: center;
-            width: 10vw;
-            padding: 2vw; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .num6 {
-            border-top: 1px solid grey;
-            border-bottom: 1px solid grey; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceOptions .selected {
-            background: orange; }
-        .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView {
-          width: 84vw;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40vw;
+        margin: 0 auto; }
+        .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img1, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img2, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img3, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img4 {
+          width: 24%;
+          height: 50px; }
+          .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img1 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img2 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img3 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img4 img {
+            width: 100%;
+            height: 100%; }
+      .makerspaceWrapper1 .makerspaceHero .slideshowContainer .arrow {
+        width: 10%;
+        margin-left: 40%;
+        margin-top: 2vh; }
+    .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper {
+      display: flex;
+      flex-direction: row;
+      width: 40vw; }
+      .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions {
+        display: flex;
+        flex-direction: column; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions .makerspaceOption {
+          border-top: 1px solid lightgrey;
+          border-left: 1px solid lightgrey;
           background: white;
-          min-height: 38.25vh;
-          margin-bottom: 10vh;
-          padding-bottom: 4vh;
-          padding-left: 2px;
-          padding-right: 2px;
-          border: 1px solid lightgrey; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView h2 {
-            font-size: 160%;
-            background-color: orange;
-            color: white;
-            padding: 1vw; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView h3 {
-            font-size: 120%;
-            background-color: white;
-            padding-top: 1vw;
-            padding-left: 1vw;
-            font-weight: bold; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView .time, .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView .teacher {
-            color: grey;
-            font-weight: italics; }
-          .curriculumWrapper .makerspaceWrapper .makerspaceHero .makerspaceWrapper .makerspaceView p {
-            padding: 0 3vw; }
+          text-align: center;
+          width: 10vw;
+          padding: 2vw; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions .num6 {
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions .selected {
+          background: orange; }
+      .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView {
+        width: 50vw;
+        background: white;
+        min-height: 38.25vh;
+        margin-bottom: 10vh;
+        padding-bottom: 4vh;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid lightgrey; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView img {
+          width: 20%;
+          padding-left: 3vw; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView h2 {
+          font-size: 160%;
+          background-color: orange;
+          color: white;
+          padding: 1vw; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView h3 {
+          font-size: 120%;
+          background-color: white;
+          padding-top: 1vw;
+          padding-left: 1vw;
+          font-weight: bold; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView .time, .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView .teacher {
+          color: grey;
+          font-weight: italics; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView p {
+          padding: 0 3vw; }
 
 /*# sourceMappingURL=main.css.map */
