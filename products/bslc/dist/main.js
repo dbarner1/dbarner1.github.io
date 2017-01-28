@@ -77,9 +77,9 @@ $(document).ready(function(){
 
 var banner = document.querySelector(".bannerAnnouncement");
 var closeBannerButton = document.querySelector(".closeBanner");
-var headlineDiv1 = document.querySelector(".headline h1");
+var headlineDiv = document.querySelector(".headline");
 var headlineDiv3 = document.querySelector(".headline h3");
-var middleSubHeroDiv = document.querySelector(".middleSubHero");
+//var middleSubHeroDiv = document.querySelector(".middleSubHero");
 
 closeBannerButton.addEventListener("click", function() {
   console.log("hey");
@@ -87,9 +87,9 @@ closeBannerButton.addEventListener("click", function() {
     addClass(closeBannerButton, "hide");
     removeClass(banner, "bannerAnnouncement");
     removeClass(closeBannerButton, "closeBanner");
-    addClass(headlineDiv1, "noBannerAnnouncement");
+    addClass(headlineDiv, "noBannerAnnouncement");
     addClass(headlineDiv3, "noBannerAnnouncement");
-    addClass(middleSubHeroDiv, "noBannerAnnouncement");
+   // addClass(middleSubHeroDiv, "noBannerAnnouncement");
 })
 
 

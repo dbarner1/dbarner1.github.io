@@ -195,19 +195,20 @@ HERO************************************
 		display:flex;
 		flex-direction:row;
 		flex-wrap:wrap;
-		align-content:space-around;
 		background:orange;
 		width:100vw;
-		color:white;
+		color:white;	
 		margin-top: $headerHeight;
-		max-height:50px;
+		height:50px;
 		text-align:center;
 
 		h2 {
-			width:50vw;
 			margin-top:10px;
-			font-size:2vw;
-			margin-left:20px;
+			margin-left:30px;
+			margin-right:100px;
+			font-size:140%;
+			min-width:65vw;
+			text-align:left;
 		}
 
 		button {
@@ -216,7 +217,7 @@ HERO************************************
 			margin-top:5px;
 			margin-bottom:5px;
 			padding:5px;
-			height:40px
+			height:40px;
 		}
 
 		button:hover {
@@ -228,10 +229,9 @@ HERO************************************
 		}
 
 		h3 {
-			margin-right:5vw;
-			margin-top:1vw;
-			margin-left:150px;
-			font-weight:bold;
+			margin-left:3vw;
+			margin-top:5px;
+			font-size:80%;
 		}
 	}
 
@@ -243,14 +243,9 @@ HERO************************************
 
 		h1 {
 			width:90%;
-			margin-left:auto;
-			margin-right:auto;
-			font-size:3em;
-
-			.noBannerAnnouncement {
-				margin-top:100px;
-
-			}
+			margin:0 auto;
+			margin-top:-20px;
+			font-size:3em;	
 		}
 
 		h3 {
@@ -266,7 +261,6 @@ HERO************************************
 		transition: all .2s ease-in-out; 
 
 
-
 		.orangeButton  {
 			background-color:orange;
 			margin-top:2%;	
@@ -276,8 +270,6 @@ HERO************************************
 			}	
 
 		}
-
-
 
 		#classPic {
 			width:100%;
@@ -299,7 +291,6 @@ HERO************************************
 		width: 25vw;
 		min-height: 30%;
 		text-align:center;
-
 		a {
 			text-decoration:none;
 		}
@@ -321,6 +312,9 @@ HERO************************************
 	}
 }/*End of Hero*/
 
+.noBannerAnnouncement {
+	margin-top:90px;
+}
 
 /***************************************
 ****************************************
@@ -426,6 +420,7 @@ PRAISE**********************************
 		.studentStory {
 			padding:2vw;
 			width:220px;
+			margin-top:10px;
 			text-align: left;
 
 			.author {
@@ -914,14 +909,42 @@ MEDIA QUERIES***************************
 	}
 
 	.hero {
+
+		.bannerAnnouncement {
+			display:block;
+			flex-direction:column;
+			flex-wrap:wrap;
+			width:100vw;
+			height:120px;
+
+				h2 {
+					margin:10px 0;
+					text-align:center;
+				}
+
+				button {
+					margin:10px auto;
+				}
+
+				h3 {
+					margin:0 auto;
+					font-size:70%;
+					font-weight:600;	
+				}
+		}
+
+		.noBannerAnnouncement {
+			.edgeSubHero {
+				margin-top:-50px;
+			}
+		}
+
 		.headline h1 {
 			font-size:2.5em;
-			margin-top:100px;
 		}
 	}
 
 	.why {
-		
 		.why-box {
 		
 			.KPI {
@@ -998,16 +1021,44 @@ MEDIA QUERIES***************************
 		justify-content:flex-start;
 		min-height:95vh;
 
-		.bannerAnnouncement {
-			order:-2;
-			margin-bottom:30px;
+.bannerAnnouncement {
+			display:block;
+			flex-direction:column;
+			flex-wrap:wrap;
+			width:100vw;
+			height:140px;
+			order:-5;
+
+				h2 {
+					margin:10px 0;
+					text-align:center;
+				}
+
+				button {
+					margin:10px auto;
+				}
+
+				h3 {
+					margin:0 auto;
+					font-size:70%;
+					font-weight:600;	
+				}
 		}
+
+		.noBannerAnnouncement {
+			.edgeSubHero {
+				margin-top:-50px;
+			}
+		}
+
+
 
 		.headline {
 			order:-2;
 			width:100%;
 			height:100px;
 			margin-bottom:10px;
+			margin-top:30px;
 
 			h1 {
 				font-size:7vw;
@@ -1060,6 +1111,8 @@ MEDIA QUERIES***************************
 			}
 		}
 
+		
+
 		.heroArrow {
 			display:none;
 		}
@@ -1094,6 +1147,10 @@ MEDIA QUERIES***************************
 			width:50%;
 			padding:2vw;
 			margin:0 auto;
+
+			.KPI {
+				font-size:3vw;
+			}
 		}
 
 		.sub-whys {
@@ -1110,7 +1167,7 @@ MEDIA QUERIES***************************
 			
 				.KPI {
 					h3 	{
-						font-size:1em;
+						font-size:3vw;
 					}
 				}
 			
@@ -1138,16 +1195,37 @@ MEDIA QUERIES***************************
 	}
 
 	.requestInfo form {
-		max-width:60%;	
+		max-width:70%;	
+		input {
+			max-width:90%;
+		}
+
+		button {
+			max-width:90%;
+		}
 	}
 
 	footer .facebook_icon {
 		width:30%;
 	}
 
+
+
+	.praise {
+			.stories {
+				.story .featured {
+						width:80vw;
+						padding:0;
+					
+					
+						#video {
+							width:100%;
+							padding:0;
+						}
+				}
+			}
+		}
 }
-
-
 /***************************************
 ****************************************
 PAGE: TUITION***************************
@@ -1273,9 +1351,7 @@ PAGE: TUITION***************************
 }
 
 
-		.hide {
-			display:none;
-		}
+	
 
 /***************************************
 ****************************************
@@ -1543,12 +1619,12 @@ PAGE: MAKERSPACE************************
 				order:-1;
 
 				.slideshow {
-					width:40vw;
+					width:50vw;
 					min-width:300px;
 
 					img {
 						width:100%;
-						height:250px;
+						height:300px;
 					}
 				}
 
@@ -1691,5 +1767,7 @@ PAGE: MAKERSPACE************************
 // 	}	
 
 	
-
+	.hide {
+			display:none;
+		}
 
