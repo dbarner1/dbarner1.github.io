@@ -1657,7 +1657,11 @@ MEDIA QUERIES***************************
 	}
 
 	.requestInfo form {
-		max-width:60%;	
+		max-width:50%;	
+	}
+
+	.volunteerInfo form {
+		max-width:50%;
 	}
 
 	footer .facebook_icon {
@@ -1814,8 +1818,6 @@ MEDIA QUERIES***************************
 			}
 		}
 
-		
-
 		.heroArrow {
 			display:none;
 		}
@@ -1901,8 +1903,14 @@ MEDIA QUERIES***************************
 		}
 	}
 
+
+
+	.volunteerInfo form {
+		max-width:80%;
+	}
+
 	.requestInfo form {
-		max-width:70%;	
+		max-width:80%;	
 		input {
 			max-width:90%;
 		}
