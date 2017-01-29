@@ -881,408 +881,6 @@ footer {
 }
 
 
-/****************************************************************
-****************************************
-MEDIA QUERIES***************************
-****************************************
-****************************************************************/
-
-//MEDIUM
-@media all and (min-width:701px) and (max-width:860px) {
-
-	body {
-
-		button {
-			h5 {
-				font-size: 80%;
-			}
-		}
-	}
-
-	header {
-		height:80px;
-
-		#logo {
-			padding:0px; //Fix this later
-			width:19vw;
-			margin-left:39vw;
-		}
-
-		nav {
-			float:none;
-			margin:0 auto;
-			margin-top:-20px;
-			width:80vw;
-			text-align:center;
-
-			
-			li {
-				display:inline-block;
-				padding: 0 5px;
-			}	
-
-			h3 {
-				
-			}
-
-			a {
-				text-decoration:none;
-				color:$textColor;
-			}	
-
-			a:hover {
-				color:orange;
-			}
-		}
-	}
-
-	.hero {
-
-		.bannerAnnouncement {
-			display:block;
-			flex-direction:column;
-			flex-wrap:wrap;
-			width:100vw;
-			height:150px;
-
-				h2 {
-					margin:40px 0 10px 0;
-					text-align:center;
-				}
-
-				button {
-					margin:10px auto;
-				}
-
-				h3 {
-					margin:0 auto;
-					font-size:70%;
-					font-weight:600;	
-				}
-		}
-
-		.noBannerAnnouncement {
-
-			h1 {
-				margin-top:5px;
-			}
-			.edgeSubHero {
-				margin-top:-50px;
-			}
-		}
-
-		.headline h1 {
-			font-size:2.5em;
-		}
-	}
-
-	.why {
-		.why-box {
-		
-			.KPI {
-				h3 {
-					font-size:1em;
-				}
-			}
-		
-			 .kpiDescription p {
-				font-size:.8em;
-			}
-		}
-	}
-
-	.students {
-		.allButArrow {
-			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  			display: -ms-flexbox;      /* TWEENER - IE 10 */
-  			display: -webkit-flex;     /* NEW - Chrome */
-  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-			flex-direction:column;
-		}
-
-		.featuredStudentContainer {
-			width:60%;
-			margin:0 auto;
-			margin-bottom:10px;
-		}
-	}
-
-	.requestInfo form {
-		max-width:60%;	
-	}
-
-	footer .facebook_icon {
-		width:30%;
-	}
-}
-
-//SMALL
-@media all and (max-width:700px) and (min-width:1px)  {
-
-	body {
-		button {
-			h5 {
-				font-size: 80%;
-			}
-		}
-	}
-
-	header {
-		height:80px;
-
-		#logo {
-			width:100px;
-			display:block;
-			margin:0 auto;
-			
-		}
-
-		nav {
-			float:none;
-			margin:0 auto;
-			margin-top:-20px;
-			width:80vw;
-			text-align:center;
-
-			li {
-				display:inline-block;
-				padding: 0 5px;
-			}	
-
-			h3 {
-				
-			}
-
-			a {
-				text-decoration:none;
-				color:$textColor;
-			}	
-
-			a:hover {
-				color:orange;
-			}
-		}
-	}
-
-	.empty {
-		display:none;
-	}
-
-	.hero {
-		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  		display: -ms-flexbox;      /* TWEENER - IE 10 */
-  		display: -webkit-flex;     /* NEW - Chrome */
-  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-		flex-direction:column;
-		flex-wrap:wrap;
-		justify-content:flex-start;
-		min-height:95vh;
-
-	.bannerAnnouncement {
-			display:block;
-			flex-direction:column;
-			flex-wrap:wrap;
-			width:100vw;
-			height:150px;
-			order:-5;
-
-				h2 {
-					margin:40px 0 5px 0;
-					text-align:center;
-				}
-
-				button {
-					margin:10px auto;
-				}
-
-				h3 {
-					margin:0 auto 10px auto;
-					font-size:70%;
-					font-weight:600;	
-				}
-		}
-
-		.noBannerAnnouncement {
-
-			.edgeSubHero {
-				margin-top:-50px;
-			}
-		}
-
-		.headline {
-			order:-2;
-			width:100%;
-			height:100px;
-			margin-bottom:10px;
-			margin-top:30px;
-
-			h1 {
-				font-size:7vw;
-				width:95%;	
-
-				.noBannerAnnouncement {
-					margin-top:100px;
-				}
-			}
-
-			h3 {
-				width:95%;
-				font-size:3vw;
-			}
-		}
-
-		.middleSubHero, .edgeSubHero {
-			width:80%;
-			margin:0 auto;
-			margin-bottom:20px;
-
-			.arrow {
-				display:none;
-			}
-		}
-
-		.noBannerAnnouncement {
-				margin-top:110px;
-			}
-
-		.middleSubHero {
-			order:-1;
-			transition: none;
-		}
-
-		.middleSubHero:hover { 
-		transform: none; 
-		}
-
-		.edgeSubHero {
-			order:0;
-
-			.edgeSubHeroContent {
-				transition: none;
-			}
-
-			.edgeSubHeroContent:hover { 
-				transform: none;
-			}
-		}
-
-		
-
-		.heroArrow {
-			display:none;
-		}
-
-		.arrowMobile img {
-			display:block;
-			order: 5;
-			margin:30px auto 60px auto;
-		}	
-
-		.arrowMobile a {
-			order: 5;
-		}
-	}
-
-	.why {
-		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  		display: -ms-flexbox;      /* TWEENER - IE 10 */
-  		display: -webkit-flex;     /* NEW - Chrome */
-  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-
-		.arrow4 {
-			order:2;
-		}
-
-		.whyBoxFeatured {
-			order:0;
-			transform:none;
-			z-index:0;
-			min-height:0px;
-			width:50%;
-			padding:2vw;
-			margin:0 auto;
-
-			.KPI {
-				font-size:3vw;
-			}
-		}
-
-		.sub-whys {
-			width:90%;
-			z-index: 0;
-			order: 1;
-			margin:2vh auto;
-			
-			.why-box  {
-				z-index: 0;
-				transform:none;
-				width:96%;
-				margin:2vh auto;
-			
-				.KPI {
-					h3 	{
-						font-size:3vw;
-					}
-				}
-			
-				 .kpiDescription p {
-					font-size:.8em;
-				}
-			}
-		}
-	}
-
-	.students {
-		.allButArrow {
-			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  			display: -ms-flexbox;      /* TWEENER - IE 10 */
-  			display: -webkit-flex;     /* NEW - Chrome */
-  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-			flex-direction:column;
-		}
-
-		.featuredStudentContainer {
-			width:80%;
-			margin-bottom:10px;
-		}
-	}
-
-	.requestInfo form {
-		max-width:70%;	
-		input {
-			max-width:90%;
-		}
-
-		button {
-			max-width:90%;
-		}
-	}
-
-	footer .facebook_icon {
-		width:30%;
-	}
-
-
-
-	.praise {
-			.stories {
-				.story .featured {
-						width:80vw;
-						padding:0;
-					
-					
-						#video {
-							width:100%;
-							padding:0;
-						}
-				}
-			}
-		}
-}
 /***************************************
 ****************************************
 PAGE: TUITION***************************
@@ -1786,6 +1384,113 @@ PAGE: MAKERSPACE************************
 }
 
 
+/***************************************
+****************************************
+PAGE: CONTACT US************************
+****************************************
+***************************************/
+
+.contactUsWrapper1 {
+	background:white;
+	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
+	padding-top:80px;
+	width:100%;
+
+	.contactUsTitle {
+		width:100vw;
+		color:white;
+		text-align:center;
+	}
+
+	.contactUsHero {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		min-height:73vh;
+		width:100vw;
+
+		iframe {
+			margin-top:5vh;
+			margin-bottom:5vh;
+			width:60vw;
+			height:30vw;
+			display:block;	
+		}
+		
+		.contactUsWrapper {
+			display:flex;
+			flex-direction:column;
+			margin-top:5vh;
+
+			.contactUsOptions {
+			display:flex;
+			flex-direction:row;
+			justify-content: space-around;
+
+				.contactUsOption {
+					border-top:1px solid lightgrey;
+					border-left:1px solid lightgrey;
+					background:white;
+					text-align:center;
+					width:16vw;
+					padding:2vw;
+				}
+
+				.num6 {
+					border-top:1px solid grey;
+					border-bottom:1px solid grey;
+
+				}
+
+				.selected {
+					background:orange;
+				}
+			}
+
+			.contactUsView {
+				width:84vw;
+				background:white;
+				min-height:38.25vh;
+				margin-bottom:10vh;
+				padding-bottom:4vh;
+				padding-left:2px;
+				padding-right:2px;
+				border:1px solid lightgrey;
+
+				img {
+					width:20%;
+					padding-left:3vw;
+				}
+
+				h2 {
+					font-size:160%;
+					background-color:orange;
+					color:white;
+					padding:1vw;
+
+				}
+
+				h3 {
+					font-size:120%;
+					background-color:white;
+					padding-top:1vw;
+					padding-left:1vw;
+					font-weight:bold;
+
+				}
+
+				.time, .teacher {
+					color:grey;
+					font-weight:italics;
+				}
+
+				p {
+					padding:0 3vw;
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -1823,8 +1528,641 @@ PAGE: MAKERSPACE************************
 // 		to {background-position: 0 0;}
 // 	}	
 
-	
+
+/****************************************************************
+****************************************
+MEDIA QUERIES***************************
+****************************************
+****************************************************************/
+
+//MEDIUM
+@media all and (min-width:701px) and (max-width:860px) {
+
+	body {
+
+		button {
+			h5 {
+				font-size: 80%;
+			}
+		}
+	}
+
+	header {
+		height:80px;
+
+		#logo {
+			padding:0px; //Fix this later
+			width:19vw;
+			margin-left:39vw;
+		}
+
+		nav {
+			float:none;
+			margin:0 auto;
+			margin-top:-20px;
+			width:80vw;
+			text-align:center;
+
+			
+			li {
+				display:inline-block;
+				padding: 0 5px;
+			}	
+
+			h3 {
+				
+			}
+
+			a {
+				text-decoration:none;
+				color:$textColor;
+			}	
+
+			a:hover {
+				color:orange;
+			}
+		}
+	}
+
+	.hero {
+
+		.bannerAnnouncement {
+			display:block;
+			flex-direction:column;
+			flex-wrap:wrap;
+			width:100vw;
+			height:150px;
+
+				h2 {
+					margin:40px 0 10px 0;
+					text-align:center;
+				}
+
+				button {
+					margin:10px auto;
+				}
+
+				h3 {
+					margin:0 auto;
+					font-size:70%;
+					font-weight:600;	
+				}
+		}
+
+		.noBannerAnnouncement {
+
+			h1 {
+				margin-top:5px;
+			}
+			.edgeSubHero {
+				margin-top:-50px;
+			}
+		}
+
+		.headline h1 {
+			font-size:2.5em;
+		}
+	}
+
+	.why {
+		.why-box {
+		
+			.KPI {
+				h3 {
+					font-size:1em;
+				}
+			}
+		
+			 .kpiDescription p {
+				font-size:.8em;
+			}
+		}
+	}
+
+	.students {
+		.allButArrow {
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+			flex-direction:column;
+		}
+
+		.featuredStudentContainer {
+			width:60%;
+			margin:0 auto;
+			margin-bottom:10px;
+		}
+	}
+
+	.requestInfo form {
+		max-width:60%;	
+	}
+
+	footer .facebook_icon {
+		width:30%;
+	}
+}
+
+//SMALL
+@media all and (max-width:700px) and (min-width:1px)  {
+
+	body {
+		button {
+			h5 {
+				font-size: 80%;
+			}
+		}
+	}
+
+	header {
+		height:100px;
+
+		#logo {
+			width:100px;
+			display:block;
+			margin:0 auto;
+			
+		}
+
+		nav {
+			float:none;
+			margin:0 auto;
+			margin-top:-20px;
+			width:80vw;
+			text-align:center;
+
+			li {
+				display:inline-block;
+				padding: 0 5px;
+			}	
+
+			h3 {
+				
+			}
+
+			a {
+				text-decoration:none;
+				color:$textColor;
+			}	
+
+			a:hover {
+				color:orange;
+			}
+		}
+	}
+
+	.empty {
+		display:none;
+	}
+
+	.hero {
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+		flex-direction:column;
+		flex-wrap:wrap;
+		justify-content:flex-start;
+		min-height:95vh;
+
+	.bannerAnnouncement {
+			display:block;
+			flex-direction:column;
+			flex-wrap:wrap;
+			width:100vw;
+			height:200px;
+			order:-5;
+
+				h2 {
+					margin:70px 0 5px 0;
+					text-align:center;
+				}
+
+				button {
+					margin:10px auto;
+				}
+
+				h3 {
+					margin:0 auto 10px auto;
+					font-size:70%;
+					font-weight:600;	
+				}
+		}
+
+		.noBannerAnnouncement {
+
+			.edgeSubHero {
+				margin-top:-50px;
+			}
+		}
+
+		.headline {
+			order:-2;
+			width:100%;
+			height:100px;
+			margin-bottom:10px;
+			margin-top:40px;
+
+			h1 {
+				font-size:7vw;
+				width:95%;	
+
+			
+			}
+
+			h3 {
+				width:95%;
+				font-size:3vw;
+			}
+		}
+
+		.middleSubHero, .edgeSubHero {
+			width:80%;
+			margin:0 auto;
+			margin-bottom:20px;
+
+			.arrow {
+				display:none;
+			}
+		}
+
+		.noBannerAnnouncement {
+				margin-top:130px;
+			}
+
+		.middleSubHero {
+			order:-1;
+			transition: none;
+		}
+
+		.middleSubHero:hover { 
+		transform: none; 
+		}
+
+		.edgeSubHero {
+			order:0;
+
+			.edgeSubHeroContent {
+				transition: none;
+			}
+
+			.edgeSubHeroContent:hover { 
+				transform: none;
+			}
+		}
+
+		
+
+		.heroArrow {
+			display:none;
+		}
+
+		.arrowMobile img {
+			display:block;
+			order: 5;
+			margin:30px auto 60px auto;
+		}	
+
+		.arrowMobile a {
+			order: 5;
+		}
+	}
+
+	.learnMoreWrapper1 {
+		padding-top:110px;
+	}
+
+	.why {
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+		.arrow4 {
+			order:2;
+		}
+
+		.whyBoxFeatured {
+			order:0;
+			transform:none;
+			z-index:0;
+			min-height:0px;
+			width:50%;
+			padding:2vw;
+			margin:0 auto;
+
+			.KPI {
+				font-size:3vw;
+			}
+		}
+
+		.sub-whys {
+			width:90%;
+			z-index: 0;
+			order: 1;
+			margin:2vh auto;
+			
+			.why-box  {
+				z-index: 0;
+				transform:none;
+				width:96%;
+				margin:2vh auto;
+			
+				.KPI {
+					h3 	{
+						font-size:3vw;
+					}
+				}
+			
+				 .kpiDescription p {
+					font-size:.8em;
+				}
+			}
+		}
+	}
+
+	.students {
+		.allButArrow {
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+  			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+			flex-direction:column;
+		}
+
+		.featuredStudentContainer {
+			width:80%;
+			margin-bottom:10px;
+		}
+	}
+
+	.requestInfo form {
+		max-width:70%;	
+		input {
+			max-width:90%;
+		}
+
+		button {
+			max-width:90%;
+		}
+	}
+
+	footer .facebook_icon {
+		width:30%;
+	}
+
+	.praise {
+		.stories {
+			.story .featured {
+				width:80vw;
+				padding:0;
+							
+				#video {
+					width:100%;
+					padding:0;
+				}
+			}
+		}	
+	}
+
+	.learnMoreOption {
+				font-size:50%;
+	}
+
+	.tuitionWrapper {
+		padding-top:100px;
+
+		.tuitionIntro {
+			margin:20px auto 20px auto;
+		}
+
+		.tuitionModules {
+			.tuitionModule {
+				width:90vw;
+			}
+		}
+
+		.tuitionHero {
+			display:flex;
+			flex-direction:column;
+			flex-wrap:wrap;
+			min-height:5px;
+			width:97vw;
+			margin:0 auto;
+
+			.tuitionOptions {
+				margin:0;
+
+				.tuitionOption {
+					padding:2vw;
+				}
+			}
+
+			.tuitionView {
+
+				h2 {
+					margin-bottom:20px;
+				}
+
+				h3, p {
+					padding:0 5vw;
+				}
+
+				h3 {
+					padding-top:10px;
+				}
+			}
+		}
+	}
+
+
+
+	.curriculumWrapper {
+			padding-top:100px;
+
+		.curriculumIntro {
+			margin:20px auto 20px auto;
+		}
+
+		.curriculumModules {
+			.curriculumModule {
+				width:90vw;
+			}
+		}
+
+		.curriculumHero {
+			display:flex;
+			flex-direction:column;
+			flex-wrap:wrap;
+			min-height:5px;
+			width:97vw;
+			margin:0 auto;
+
+			.curriculumOptions {
+				margin:0;
+
+				.curriculumOption {
+					padding:2vw;
+				}
+			}
+
+			.curriculumView {
+
+				h2 {
+					margin-bottom:20px;
+				}
+
+				h3, p {
+					padding:0 5vw;
+				}
+
+				h3 {
+					padding-top:10px;
+				}
+			}
+		}
+	}
+
+.contactUsWrapper1{
+
+	padding-top:100px;
+
+	.contactUsTitle {
+
+	}
+
+	.contactUsHero {
+		min-height:10px;
+
+		.contactUsWrapper {
+			flex-direction:row;
+			margin-bottom:20px;
+
+			.contactUsOptions {
+				flex-direction:column;
+				margin:0;
+				height:45vw;
+				
+
+				.contactUsOption {
+					height:10vw;
+						font-size:2.5vw;
+
+				}
+			}
+
+			.contactUsView {
+				width:50vw;
+				height:50vw;
+			}
+
+		}
+
+
+	}
+}
+
+.makerspaceWrapper1 {
+
+	padding-top:110px;
+	.makerspaceTitle {
+
+	}
+
+	.makerspaceHero {
+
+
+			.slideshowContainer {
+				width: 80vw;
+
+				.slideshow {
+					width: 80vw;
+
+					img {
+						
+					}
+				}
+
+				.otherPics {
+				
+
+					.img1, .img2, .img3, .img4 {
+				
+
+						 img {
+							width:100%;
+						}
+					}
+				}
+
+				.arrow {
+					
+				}
+
+			}
+
+		.makerspaceWrapper {
+			flex-direction:column;
+			width:80vw;
+
+			.makerspaceOptions {
+				flex-direction:row;
+				justify-content:space-around;
+				margin:20px auto 0 auto;
+
+				.makerspaceOption {
+					width:20vw;
+				}
+
+				.num6 {
+				
+
+				}
+
+				.selected {
+					
+				}
+			}
+
+			.makerspaceView {
+				width:80vw;
+
+				img {
+					
+				}
+
+				h2 {
+					
+
+				}
+
+				h3 {
+					
+
+				}
+
+				.time, .teacher {
+				
+				}
+
+				p {
+					
+				}
+			}
+		}
+	}
+}
+
+}
+
 	.hide {
 			display:none;
 		}
+
+
 

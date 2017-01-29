@@ -683,258 +683,6 @@ footer {
     margin: 0 auto;
     text-align: center; }
 
-/****************************************************************
-****************************************
-MEDIA QUERIES***************************
-****************************************
-****************************************************************/
-@media all and (min-width: 701px) and (max-width: 860px) {
-  body button h5 {
-    font-size: 80%; }
-
-  header {
-    height: 80px; }
-    header #logo {
-      padding: 0px;
-      width: 19vw;
-      margin-left: 39vw; }
-    header nav {
-      float: none;
-      margin: 0 auto;
-      margin-top: -20px;
-      width: 80vw;
-      text-align: center; }
-      header nav li {
-        display: inline-block;
-        padding: 0 5px; }
-      header nav a {
-        text-decoration: none;
-        color: #378bd5; }
-      header nav a:hover {
-        color: orange; }
-
-  .hero .bannerAnnouncement {
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 150px; }
-    .hero .bannerAnnouncement h2 {
-      margin: 40px 0 10px 0;
-      text-align: center; }
-    .hero .bannerAnnouncement button {
-      margin: 10px auto; }
-    .hero .bannerAnnouncement h3 {
-      margin: 0 auto;
-      font-size: 70%;
-      font-weight: 600; }
-  .hero .noBannerAnnouncement h1 {
-    margin-top: 5px; }
-  .hero .noBannerAnnouncement .edgeSubHero {
-    margin-top: -50px; }
-  .hero .headline h1 {
-    font-size: 2.5em; }
-
-  .why .why-box .KPI h3 {
-    font-size: 1em; }
-  .why .why-box .kpiDescription p {
-    font-size: .8em; }
-
-  .students .allButArrow {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    flex-direction: column; }
-  .students .featuredStudentContainer {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-
-  .requestInfo form {
-    max-width: 60%; }
-
-  footer .facebook_icon {
-    width: 30%; } }
-@media all and (max-width: 700px) and (min-width: 1px) {
-  body button h5 {
-    font-size: 80%; }
-
-  header {
-    height: 80px; }
-    header #logo {
-      width: 100px;
-      display: block;
-      margin: 0 auto; }
-    header nav {
-      float: none;
-      margin: 0 auto;
-      margin-top: -20px;
-      width: 80vw;
-      text-align: center; }
-      header nav li {
-        display: inline-block;
-        padding: 0 5px; }
-      header nav a {
-        text-decoration: none;
-        color: #378bd5; }
-      header nav a:hover {
-        color: orange; }
-
-  .empty {
-    display: none; }
-
-  .hero {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    min-height: 95vh; }
-    .hero .bannerAnnouncement {
-      display: block;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100vw;
-      height: 150px;
-      order: -5; }
-      .hero .bannerAnnouncement h2 {
-        margin: 40px 0 5px 0;
-        text-align: center; }
-      .hero .bannerAnnouncement button {
-        margin: 10px auto; }
-      .hero .bannerAnnouncement h3 {
-        margin: 0 auto 10px auto;
-        font-size: 70%;
-        font-weight: 600; }
-    .hero .noBannerAnnouncement .edgeSubHero {
-      margin-top: -50px; }
-    .hero .headline {
-      order: -2;
-      width: 100%;
-      height: 100px;
-      margin-bottom: 10px;
-      margin-top: 30px; }
-      .hero .headline h1 {
-        font-size: 7vw;
-        width: 95%; }
-        .hero .headline h1 .noBannerAnnouncement {
-          margin-top: 100px; }
-      .hero .headline h3 {
-        width: 95%;
-        font-size: 3vw; }
-    .hero .middleSubHero, .hero .edgeSubHero {
-      width: 80%;
-      margin: 0 auto;
-      margin-bottom: 20px; }
-      .hero .middleSubHero .arrow, .hero .edgeSubHero .arrow {
-        display: none; }
-    .hero .noBannerAnnouncement {
-      margin-top: 110px; }
-    .hero .middleSubHero {
-      order: -1;
-      transition: none; }
-    .hero .middleSubHero:hover {
-      transform: none; }
-    .hero .edgeSubHero {
-      order: 0; }
-      .hero .edgeSubHero .edgeSubHeroContent {
-        transition: none; }
-      .hero .edgeSubHero .edgeSubHeroContent:hover {
-        transform: none; }
-    .hero .heroArrow {
-      display: none; }
-    .hero .arrowMobile img {
-      display: block;
-      order: 5;
-      margin: 30px auto 60px auto; }
-    .hero .arrowMobile a {
-      order: 5; }
-
-  .why {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
-    .why .arrow4 {
-      order: 2; }
-    .why .whyBoxFeatured {
-      order: 0;
-      transform: none;
-      z-index: 0;
-      min-height: 0px;
-      width: 50%;
-      padding: 2vw;
-      margin: 0 auto; }
-      .why .whyBoxFeatured .KPI {
-        font-size: 3vw; }
-    .why .sub-whys {
-      width: 90%;
-      z-index: 0;
-      order: 1;
-      margin: 2vh auto; }
-      .why .sub-whys .why-box {
-        z-index: 0;
-        transform: none;
-        width: 96%;
-        margin: 2vh auto; }
-        .why .sub-whys .why-box .KPI h3 {
-          font-size: 3vw; }
-        .why .sub-whys .why-box .kpiDescription p {
-          font-size: .8em; }
-
-  .students .allButArrow {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    flex-direction: column; }
-  .students .featuredStudentContainer {
-    width: 80%;
-    margin-bottom: 10px; }
-
-  .requestInfo form {
-    max-width: 70%; }
-    .requestInfo form input {
-      max-width: 90%; }
-    .requestInfo form button {
-      max-width: 90%; }
-
-  footer .facebook_icon {
-    width: 30%; }
-
-  .praise .stories .story .featured {
-    width: 80vw;
-    padding: 0; }
-    .praise .stories .story .featured #video {
-      width: 100%;
-      padding: 0; } }
 /***************************************
 ****************************************
 PAGE: TUITION***************************
@@ -1274,6 +1022,423 @@ PAGE: MAKERSPACE************************
         .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView p {
           padding: 0 3vw; }
 
+/***************************************
+****************************************
+PAGE: CONTACT US************************
+****************************************
+***************************************/
+.contactUsWrapper1 {
+  background: white;
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+  padding-top: 80px;
+  width: 100%; }
+  .contactUsWrapper1 .contactUsTitle {
+    width: 100vw;
+    color: white;
+    text-align: center; }
+  .contactUsWrapper1 .contactUsHero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 73vh;
+    width: 100vw; }
+    .contactUsWrapper1 .contactUsHero iframe {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      width: 60vw;
+      height: 30vw;
+      display: block; }
+    .contactUsWrapper1 .contactUsHero .contactUsWrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5vh; }
+      .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions .contactUsOption {
+          border-top: 1px solid lightgrey;
+          border-left: 1px solid lightgrey;
+          background: white;
+          text-align: center;
+          width: 16vw;
+          padding: 2vw; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions .num6 {
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions .selected {
+          background: orange; }
+      .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView {
+        width: 84vw;
+        background: white;
+        min-height: 38.25vh;
+        margin-bottom: 10vh;
+        padding-bottom: 4vh;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid lightgrey; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView img {
+          width: 20%;
+          padding-left: 3vw; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView h2 {
+          font-size: 160%;
+          background-color: orange;
+          color: white;
+          padding: 1vw; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView h3 {
+          font-size: 120%;
+          background-color: white;
+          padding-top: 1vw;
+          padding-left: 1vw;
+          font-weight: bold; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView .time, .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView .teacher {
+          color: grey;
+          font-weight: italics; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView p {
+          padding: 0 3vw; }
+
+/****************************************************************
+****************************************
+MEDIA QUERIES***************************
+****************************************
+****************************************************************/
+@media all and (min-width: 701px) and (max-width: 860px) {
+  body button h5 {
+    font-size: 80%; }
+
+  header {
+    height: 80px; }
+    header #logo {
+      padding: 0px;
+      width: 19vw;
+      margin-left: 39vw; }
+    header nav {
+      float: none;
+      margin: 0 auto;
+      margin-top: -20px;
+      width: 80vw;
+      text-align: center; }
+      header nav li {
+        display: inline-block;
+        padding: 0 5px; }
+      header nav a {
+        text-decoration: none;
+        color: #378bd5; }
+      header nav a:hover {
+        color: orange; }
+
+  .hero .bannerAnnouncement {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 150px; }
+    .hero .bannerAnnouncement h2 {
+      margin: 40px 0 10px 0;
+      text-align: center; }
+    .hero .bannerAnnouncement button {
+      margin: 10px auto; }
+    .hero .bannerAnnouncement h3 {
+      margin: 0 auto;
+      font-size: 70%;
+      font-weight: 600; }
+  .hero .noBannerAnnouncement h1 {
+    margin-top: 5px; }
+  .hero .noBannerAnnouncement .edgeSubHero {
+    margin-top: -50px; }
+  .hero .headline h1 {
+    font-size: 2.5em; }
+
+  .why .why-box .KPI h3 {
+    font-size: 1em; }
+  .why .why-box .kpiDescription p {
+    font-size: .8em; }
+
+  .students .allButArrow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column; }
+  .students .featuredStudentContainer {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+
+  .requestInfo form {
+    max-width: 60%; }
+
+  footer .facebook_icon {
+    width: 30%; } }
+@media all and (max-width: 700px) and (min-width: 1px) {
+  body button h5 {
+    font-size: 80%; }
+
+  header {
+    height: 100px; }
+    header #logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto; }
+    header nav {
+      float: none;
+      margin: 0 auto;
+      margin-top: -20px;
+      width: 80vw;
+      text-align: center; }
+      header nav li {
+        display: inline-block;
+        padding: 0 5px; }
+      header nav a {
+        text-decoration: none;
+        color: #378bd5; }
+      header nav a:hover {
+        color: orange; }
+
+  .empty {
+    display: none; }
+
+  .hero {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 95vh; }
+    .hero .bannerAnnouncement {
+      display: block;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 200px;
+      order: -5; }
+      .hero .bannerAnnouncement h2 {
+        margin: 70px 0 5px 0;
+        text-align: center; }
+      .hero .bannerAnnouncement button {
+        margin: 10px auto; }
+      .hero .bannerAnnouncement h3 {
+        margin: 0 auto 10px auto;
+        font-size: 70%;
+        font-weight: 600; }
+    .hero .noBannerAnnouncement .edgeSubHero {
+      margin-top: -50px; }
+    .hero .headline {
+      order: -2;
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+      margin-top: 40px; }
+      .hero .headline h1 {
+        font-size: 7vw;
+        width: 95%; }
+      .hero .headline h3 {
+        width: 95%;
+        font-size: 3vw; }
+    .hero .middleSubHero, .hero .edgeSubHero {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+      .hero .middleSubHero .arrow, .hero .edgeSubHero .arrow {
+        display: none; }
+    .hero .noBannerAnnouncement {
+      margin-top: 130px; }
+    .hero .middleSubHero {
+      order: -1;
+      transition: none; }
+    .hero .middleSubHero:hover {
+      transform: none; }
+    .hero .edgeSubHero {
+      order: 0; }
+      .hero .edgeSubHero .edgeSubHeroContent {
+        transition: none; }
+      .hero .edgeSubHero .edgeSubHeroContent:hover {
+        transform: none; }
+    .hero .heroArrow {
+      display: none; }
+    .hero .arrowMobile img {
+      display: block;
+      order: 5;
+      margin: 30px auto 60px auto; }
+    .hero .arrowMobile a {
+      order: 5; }
+
+  .learnMoreWrapper1 {
+    padding-top: 110px; }
+
+  .why {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+    .why .arrow4 {
+      order: 2; }
+    .why .whyBoxFeatured {
+      order: 0;
+      transform: none;
+      z-index: 0;
+      min-height: 0px;
+      width: 50%;
+      padding: 2vw;
+      margin: 0 auto; }
+      .why .whyBoxFeatured .KPI {
+        font-size: 3vw; }
+    .why .sub-whys {
+      width: 90%;
+      z-index: 0;
+      order: 1;
+      margin: 2vh auto; }
+      .why .sub-whys .why-box {
+        z-index: 0;
+        transform: none;
+        width: 96%;
+        margin: 2vh auto; }
+        .why .sub-whys .why-box .KPI h3 {
+          font-size: 3vw; }
+        .why .sub-whys .why-box .kpiDescription p {
+          font-size: .8em; }
+
+  .students .allButArrow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column; }
+  .students .featuredStudentContainer {
+    width: 80%;
+    margin-bottom: 10px; }
+
+  .requestInfo form {
+    max-width: 70%; }
+    .requestInfo form input {
+      max-width: 90%; }
+    .requestInfo form button {
+      max-width: 90%; }
+
+  footer .facebook_icon {
+    width: 30%; }
+
+  .praise .stories .story .featured {
+    width: 80vw;
+    padding: 0; }
+    .praise .stories .story .featured #video {
+      width: 100%;
+      padding: 0; }
+
+  .learnMoreOption {
+    font-size: 50%; }
+
+  .tuitionWrapper {
+    padding-top: 100px; }
+    .tuitionWrapper .tuitionIntro {
+      margin: 20px auto 20px auto; }
+    .tuitionWrapper .tuitionModules .tuitionModule {
+      width: 90vw; }
+    .tuitionWrapper .tuitionHero {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-height: 5px;
+      width: 97vw;
+      margin: 0 auto; }
+      .tuitionWrapper .tuitionHero .tuitionOptions {
+        margin: 0; }
+        .tuitionWrapper .tuitionHero .tuitionOptions .tuitionOption {
+          padding: 2vw; }
+      .tuitionWrapper .tuitionHero .tuitionView h2 {
+        margin-bottom: 20px; }
+      .tuitionWrapper .tuitionHero .tuitionView h3, .tuitionWrapper .tuitionHero .tuitionView p {
+        padding: 0 5vw; }
+      .tuitionWrapper .tuitionHero .tuitionView h3 {
+        padding-top: 10px; }
+
+  .curriculumWrapper {
+    padding-top: 100px; }
+    .curriculumWrapper .curriculumIntro {
+      margin: 20px auto 20px auto; }
+    .curriculumWrapper .curriculumModules .curriculumModule {
+      width: 90vw; }
+    .curriculumWrapper .curriculumHero {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-height: 5px;
+      width: 97vw;
+      margin: 0 auto; }
+      .curriculumWrapper .curriculumHero .curriculumOptions {
+        margin: 0; }
+        .curriculumWrapper .curriculumHero .curriculumOptions .curriculumOption {
+          padding: 2vw; }
+      .curriculumWrapper .curriculumHero .curriculumView h2 {
+        margin-bottom: 20px; }
+      .curriculumWrapper .curriculumHero .curriculumView h3, .curriculumWrapper .curriculumHero .curriculumView p {
+        padding: 0 5vw; }
+      .curriculumWrapper .curriculumHero .curriculumView h3 {
+        padding-top: 10px; }
+
+  .contactUsWrapper1 {
+    padding-top: 100px; }
+    .contactUsWrapper1 .contactUsHero {
+      min-height: 10px; }
+      .contactUsWrapper1 .contactUsHero .contactUsWrapper {
+        flex-direction: row;
+        margin-bottom: 20px; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions {
+          flex-direction: column;
+          margin: 0;
+          height: 45vw; }
+          .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsOptions .contactUsOption {
+            height: 10vw;
+            font-size: 2.5vw; }
+        .contactUsWrapper1 .contactUsHero .contactUsWrapper .contactUsView {
+          width: 50vw;
+          height: 50vw; }
+
+  .makerspaceWrapper1 {
+    padding-top: 110px; }
+    .makerspaceWrapper1 .makerspaceHero .slideshowContainer {
+      width: 80vw; }
+      .makerspaceWrapper1 .makerspaceHero .slideshowContainer .slideshow {
+        width: 80vw; }
+      .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img1 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img2 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img3 img, .makerspaceWrapper1 .makerspaceHero .slideshowContainer .otherPics .img4 img {
+        width: 100%; }
+    .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper {
+      flex-direction: column;
+      width: 80vw; }
+      .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px auto 0 auto; }
+        .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceOptions .makerspaceOption {
+          width: 20vw; }
+      .makerspaceWrapper1 .makerspaceHero .makerspaceWrapper .makerspaceView {
+        width: 80vw; } }
 .hide {
   display: none; }
 
