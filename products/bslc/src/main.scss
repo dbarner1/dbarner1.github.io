@@ -925,6 +925,16 @@ PAGE: TUITION***************************
 			margin-bottom:3vh;
 			padding:3vw;
 
+			.tuitionRates {
+				border:1px solid grey;
+				margin:10px;
+
+				tr, td {
+					border: 1px solid grey;
+					padding:5px;
+				}
+			}
+
 			h2 {
 				font-weight:bold;
 				margin-bottom:2vh;
@@ -1935,10 +1945,12 @@ MEDIA QUERIES***************************
 		}
 
 		.tuitionModules {
+
 			.tuitionModule {
 				width:90vw;
 			}
 		}
+
 
 		.tuitionHero {
 			display:flex;

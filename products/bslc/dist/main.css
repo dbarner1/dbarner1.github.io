@@ -717,6 +717,12 @@ PAGE: TUITION***************************
       background-color: white;
       margin-bottom: 3vh;
       padding: 3vw; }
+      .tuitionWrapper .tuitionModules .tuitionModule .tuitionRates {
+        border: 1px solid grey;
+        margin: 10px; }
+        .tuitionWrapper .tuitionModules .tuitionModule .tuitionRates tr, .tuitionWrapper .tuitionModules .tuitionModule .tuitionRates td {
+          border: 1px solid grey;
+          padding: 5px; }
       .tuitionWrapper .tuitionModules .tuitionModule h2 {
         font-weight: bold;
         margin-bottom: 2vh;
@@ -1050,7 +1056,7 @@ PAGE: CONTACT US************************
     width: 100vw; }
     .contactUsWrapper1 .contactUsHero iframe {
       width: 35vw;
-      min-height: 30vw;
+      min-height: 40vw;
       display: block; }
     .contactUsWrapper1 .contactUsHero .contactUsView {
       background-color: white;
