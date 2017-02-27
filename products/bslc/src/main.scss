@@ -1393,8 +1393,14 @@ PAGE: CONTACT US************************
 .contactUsWrapper1 {
 	background:white;
 	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
-	padding-top:80px;
+	padding:80px 0;
 	width:100%;
+
+
+	img {
+		width:50vw;
+		margin: 2vw auto;
+	}
 
 	.contactUsTitle {
 		width:100vw;
@@ -1404,17 +1410,36 @@ PAGE: CONTACT US************************
 
 	.contactUsHero {
 		display:flex;
+		flex-direction:row;
 		flex-wrap:wrap;
 		justify-content: space-around;
-		min-height:73vh;
+		margin:4vh auto;
+		padding:2vw;
+		min-height:50vh;
 		width:100vw;
 
 		iframe {
-			margin-top:5vh;
-			margin-bottom:5vh;
-			width:60vw;
-			height:30vw;
+			width:35vw;
+			min-height:40vw;
 			display:block;	
+		}
+
+		.contactUsView {
+			background-color:white;
+			padding:2vw;
+			width:35vw;
+
+			h2 {
+				text-align:center;
+			}
+
+			h3 {
+				margin-top:10px;
+			}
+
+			p {
+				margin-top:2px;
+			}
 		}
 		
 		.contactUsWrapper {
@@ -1447,47 +1472,7 @@ PAGE: CONTACT US************************
 				}
 			}
 
-			.contactUsView {
-				width:84vw;
-				background:white;
-				min-height:38.25vh;
-				margin-bottom:10vh;
-				padding-bottom:4vh;
-				padding-left:2px;
-				padding-right:2px;
-				border:1px solid lightgrey;
-
-				img {
-					width:20%;
-					padding-left:3vw;
-				}
-
-				h2 {
-					font-size:160%;
-					background-color:orange;
-					color:white;
-					padding:1vw;
-
-				}
-
-				h3 {
-					font-size:120%;
-					background-color:white;
-					padding-top:1vw;
-					padding-left:1vw;
-					font-weight:bold;
-
-				}
-
-				.time, .teacher {
-					color:grey;
-					font-weight:italics;
-				}
-
-				p {
-					padding:0 3vw;
-				}
-			}
+			
 		}
 	}
 }
