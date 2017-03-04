@@ -108,6 +108,18 @@ header {
 			display:inline-block;
 			padding: 0 5px;
 			color:$textColor;
+
+			button {
+				color: white;
+				background-color: orange;
+				width: 80px;
+				height: 30px;
+				margin-top:-10px;
+			}
+
+			button:hover {
+				color:black;
+			}
 		}	
 
 		h3 {
@@ -656,15 +668,47 @@ STUDENTS********************************
 	}
 
 	.student {
-		width:90px;
+		width:150px;
 		height:13%;
 		background-color:grey;
 		border:1px solid white;
 	}
 
-	
 }
 
+/***************************************
+****************************************
+PARTNERS********************************
+****************************************
+***************************************/
+
+
+.partners {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	flex-direction:column;
+	justify-content:space-around;
+	color:white;
+	width:100%;
+	min-height:80vh;
+	text-align:center;
+	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+
+	.logos {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+	}
+	img {
+		width:20vw;
+		height:15vw;
+	}
+
+}
 
 /***************************************
 ****************************************
@@ -852,7 +896,7 @@ footer {
 	flex-wrap:wrap;
 	width:100%;
 	background:rgba(255,255,255,1);
-	padding:10px 0;	
+	padding:30px 0;	
 
 	.icon {
 		width:6%;
@@ -873,7 +917,7 @@ footer {
 	}
 
 	.footWrap {
-		width:50%;
+		width:30%;
 		margin:0 auto;
 		text-align:center;
 	}
@@ -1184,11 +1228,42 @@ PAGE: CURRICULUM************************
 		margin-bottom:1%;
 	}
 
+	.calendar {
+		margin-left: 50px;
+		display:flex;
+		flex-direction:column;
+		min-height:40vh;
+
+
+		h2 {
+			color:white;
+			font-weight:bold;
+			margin-bottom:2vh;
+			font-size:150%;
+			margin: 0 auto;
+		}
+
+		.displayNone {
+			display:none;
+		}
+
+		button {
+			background-color:orange;
+			color:white;
+			width:20vw;
+		}
+
+		iframe {
+			margin: 0 auto 5vw auto;
+		}
+	}
+
 	.curriculumHero {
 		display:flex;
 		flex-direction:row;
 		justify-content: space-around;
 		min-height:76vh;
+
 
 		.curriculumOptions {
 			margin-top:10vh;

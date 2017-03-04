@@ -90,6 +90,20 @@ var curriculumContent2 = [
 	]
 ]
 
+var calendarButton = document.querySelector(".calendarLink");
+var calendar = document.querySelector("iframe");
+
+calendarButton.addEventListener("click", function(){
+	
+	if(hasClass(calendar,"displayNone")) {
+		removeClass(calendar,"displayNone")
+	} else {
+		addClass(calendar, "displayNone")
+	}
+
+});	
+
+
 for(i=0;i<curriculumOptions.length;i++) {
 	(function () {
 		var j=i;

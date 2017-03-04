@@ -72,6 +72,14 @@ header {
       display: inline-block;
       padding: 0 5px;
       color: #378bd5; }
+      header nav li button {
+        color: white;
+        background-color: orange;
+        width: 80px;
+        height: 30px;
+        margin-top: -10px; }
+      header nav li button:hover {
+        color: black; }
     header nav a {
       text-decoration: none;
       color: #378bd5; }
@@ -511,10 +519,42 @@ STUDENTS********************************
       width: 80%;
       margin: 0; }
   .students .student {
-    width: 90px;
+    width: 150px;
     height: 13%;
     background-color: grey;
     border: 1px solid white; }
+
+/***************************************
+****************************************
+PARTNERS********************************
+****************************************
+***************************************/
+.partners {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  min-height: 80vh;
+  text-align: center;
+  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0; }
+  .partners .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .partners img {
+    width: 20vw;
+    height: 15vw; }
 
 /***************************************
 ****************************************
@@ -667,7 +707,7 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   background: white;
-  padding: 10px 0; }
+  padding: 30px 0; }
   footer .icon {
     width: 6%;
     min-width: 60px; }
@@ -679,7 +719,7 @@ footer {
   footer a {
     display: inline; }
   footer .footWrap {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     text-align: center; }
 
@@ -891,6 +931,25 @@ PAGE: CURRICULUM************************
   .curriculumWrapper .curriculumTitle {
     text-align: center;
     margin-bottom: 1%; }
+  .curriculumWrapper .calendar {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh; }
+    .curriculumWrapper .calendar h2 {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 2vh;
+      font-size: 150%;
+      margin: 0 auto; }
+    .curriculumWrapper .calendar .displayNone {
+      display: none; }
+    .curriculumWrapper .calendar button {
+      background-color: orange;
+      color: white;
+      width: 20vw; }
+    .curriculumWrapper .calendar iframe {
+      margin: 0 auto 5vw auto; }
   .curriculumWrapper .curriculumHero {
     display: flex;
     flex-direction: row;
