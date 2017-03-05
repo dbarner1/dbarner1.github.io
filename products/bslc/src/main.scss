@@ -223,7 +223,7 @@ HERO************************************
 		display:flex;
 		flex-direction:row;
 		flex-wrap:wrap;
-		background:orange;
+		background:$textColor;
 		width:100vw;
 		color:white;	
 		margin-top: $headerHeight;
@@ -246,10 +246,13 @@ HERO************************************
 			margin-bottom:5px;
 			padding:5px;
 			height:40px;
+			background-color:white;
+			color:$textColor;
 		}
 
 		button:hover {
-			color:orange;	
+			background-color:orange;
+			color:white;	
 		}
 
 		a {

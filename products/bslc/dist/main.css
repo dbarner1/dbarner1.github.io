@@ -164,7 +164,7 @@ HERO************************************
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: orange;
+    background: #378bd5;
     width: 100vw;
     color: white;
     margin-top: 75px;
@@ -183,9 +183,12 @@ HERO************************************
       margin-top: 5px;
       margin-bottom: 5px;
       padding: 5px;
-      height: 40px; }
+      height: 40px;
+      background-color: white;
+      color: #378bd5; }
     .hero .bannerAnnouncement button:hover {
-      color: orange; }
+      background-color: orange;
+      color: white; }
     .hero .bannerAnnouncement a {
       text-decoration: none; }
     .hero .bannerAnnouncement h3 {
