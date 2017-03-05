@@ -136,15 +136,15 @@ HERO************************************
   50% {
     background-color: #e8c883; }
   75% {
-    background-color: #FFF; }
+    background-color: #e02d30; }
   100% {
-    background-color: #000; } }
+    background-color: #266ca5; } }
 /*Body Styles*/
 .hero {
   background-color: white;
   color: white;
   -webkit-animation: pulse ease-in-out 30s alternate;
-  background-color: #45CEEF;
+  background-color: #266ca5;
   min-height: 99vh;
   width: 100vw;
   display: -webkit-box;
@@ -241,7 +241,7 @@ HERO************************************
         margin-top: 4%;
         margin-bottom: 4%; }
   .hero .edgeSubHeroContent:hover {
-    transform: scale(1.3); }
+    transform: scale(1.1); }
 
 /*End of Hero*/
 .noBannerAnnouncement {
