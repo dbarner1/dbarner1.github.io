@@ -57,17 +57,18 @@ header {
   z-index: 1000;
   background: white;
   width: 100%;
-  height: 50px;
+  height: 75px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
   header #logo {
     margin-left: 10%;
-    padding: 6px;
-    width: 150px; }
+    padding: 0px;
+    width: 120px; }
   header .aSelected {
     color: orange; }
   header nav {
     float: right;
-    margin-right: 5%; }
+    margin-right: 5%;
+    margin-top: 10px; }
     header nav li {
       display: inline-block;
       padding: 0 5px;
@@ -127,9 +128,24 @@ ARROWS**********************************
 HERO************************************
 ****************************************
 ***************************************/
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #266ca5; }
+  25% {
+    background-color: #e02d30; }
+  50% {
+    background-color: #e8c883; }
+  75% {
+    background-color: #FFF; }
+  100% {
+    background-color: #000; } }
+/*Body Styles*/
 .hero {
-  background: url("http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
-  min-height: 97vh;
+  background-color: white;
+  color: white;
+  -webkit-animation: pulse ease-in-out 30s alternate;
+  background-color: #45CEEF;
+  min-height: 99vh;
   width: 100vw;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -151,7 +167,7 @@ HERO************************************
     background: orange;
     width: 100vw;
     color: white;
-    margin-top: 50px;
+    margin-top: 75px;
     height: 50px;
     text-align: center; }
     .hero .bannerAnnouncement h2 {
@@ -180,11 +196,10 @@ HERO************************************
     height: 50px;
     width: 80%;
     text-align: center;
-    color: snow; }
+    color: white; }
     .hero .headline h1 {
       width: 90%;
       margin: 0 auto;
-      margin-top: -20px;
       font-size: 3em; }
     .hero .headline h3 {
       width: 80%;
@@ -192,6 +207,7 @@ HERO************************************
       text-transform: uppercase; }
   .hero .middleSubHero {
     width: 40vw;
+    margin-top: 40px;
     text-align: center;
     transition: all .2s ease-in-out; }
     .hero .middleSubHero .orangeButton {
@@ -211,15 +227,18 @@ HERO************************************
     padding: 0 2%;
     width: 25vw;
     min-height: 30%;
+    margin-top: 40px;
     text-align: center; }
     .hero .edgeSubHero a {
       text-decoration: none; }
     .hero .edgeSubHero .edgeSubHeroContent {
-      background: rgba(245, 245, 245, 0.7);
+      background: rgba(30, 30, 30, 0.2);
       border: 1px solid(245, 245, 245, 1);
       padding: 3%;
+      min-height: 10vw;
       transition: all .2s ease-in-out; }
       .hero .edgeSubHero .edgeSubHeroContent h3 {
+        margin-top: 4%;
         margin-bottom: 4%; }
   .hero .edgeSubHeroContent:hover {
     transform: scale(1.3); }

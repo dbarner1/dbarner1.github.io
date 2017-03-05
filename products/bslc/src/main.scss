@@ -6,7 +6,7 @@ $primaryColor: #FFF;
 $sectionDivide: 15%;	
 $img-Margin:25px;
 $sectionTitleMarginBottom: 5%;
-$headerHeight: 50px;
+$headerHeight: 75px;
 $leftTextMargin:10%;
 $moduleHeight:575px;
 $textColor:rgba(55,139,213,1);
@@ -91,8 +91,8 @@ header {
 	
 	#logo {
 		margin-left:$leftTextMargin;
-		padding:6px; //Fix this later
-		width:150px;
+		padding:0px; //Fix this later
+		width:120px;
 	}
 
 	.aSelected {
@@ -102,6 +102,7 @@ header {
 	nav {
 		float:right;
 		margin-right:5%;
+		margin-top:10px;
 
 		
 		li {
@@ -190,9 +191,24 @@ HERO************************************
 ****************************************
 ***************************************/
 
+@-webkit-keyframes pulse {
+      0% {background-color: rgba(38,108,165,1);}
+     25% {background-color: rgba(224,45,48,1);}
+     50% {background-color: rgba(232,200,131,1);}
+     75% {background-color: #FFF;}
+     100% {background-color: #000;}
+}
+
+/*Body Styles*/
+
 .hero {
-	background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
-	min-height:97vh;
+	background-color:white;
+	color:white;
+    -webkit-animation: pulse ease-in-out 30s alternate;
+    background-color: #45CEEF;	
+
+	//background:url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; //Hero background by https://codepen.io/asfarmed/pen/cfslr
+	min-height:99vh;
 	width:100vw;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -251,12 +267,12 @@ HERO************************************
 		height: 50px;
 		width:80%;
 		text-align:center;
-		color:$headlineColor;
+		color:white;
 
 		h1 {
 			width:90%;
 			margin:0 auto;
-			margin-top:-20px;
+			
 			font-size:3em;	
 		}
 
@@ -269,6 +285,7 @@ HERO************************************
 
 	.middleSubHero {
 		width: 40vw;
+		margin-top:40px;
 		text-align:center;
 		transition: all .2s ease-in-out; 
 
@@ -302,18 +319,22 @@ HERO************************************
 		padding:0 2%;
 		width: 25vw;
 		min-height: 30%;
+		margin-top:40px;
 		text-align:center;
 		a {
 			text-decoration:none;
 		}
 
 		.edgeSubHeroContent {
-			background:rgba(245,245,245,.7);
+
+			background:rgba(30,30,30,.2);
 			border: 1px solid(245,245,245,1);
 			padding:3%;
+			min-height:10vw;
 			transition: all .2s ease-in-out; 
 
 			h3 {
+				margin-top:4%;
 				margin-bottom:4%;
 			}
 		}
