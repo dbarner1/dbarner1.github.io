@@ -2,22 +2,10 @@
   header('Content-Type: text/x-vcard; charset=utf-8');
 ?>
 BEGIN:VCARD
-VERSION:3.0
-N:Qeepsake;;
+VERSION:2.1
+N:Qeepsake
 FN:Qeepsake
-ORG:Qeepsake Inc.;
-TITLE:Your Qeepsake Bot
-EMAIL;type=INTERNET;type=WORK;type=pref:support@qeepsake.com
-TEL;type=WORK;type=pref:+1 617 555 1212
-TEL;type=WORK:+1 (617) 555-1234
-TEL;type=CELL:+1 781 555 1212
-TEL;type=HOME:+1 202 555 1212
-item1.ADR;type=WORK:;;200 Third St, Waltham MA
-item1.X-ABADR:us
-item2.ADR;type=HOME;type=pref:;;200 Third St, Waltham MA
-item2.X-ABADR:us
-NOTE:Email our support channel any time you need help!
-item3.URL;type=pref:http\://www.qeepsake.com
-item4.X-ABLabel:FOAF
-item5.X-ABLabel:_$!<Friend>!$_
+TEL;HOME;PREF:7814679961
+EMAIL:support@qeepsake.com
+URL:http://qeepsake.com
 END:VCARD
