@@ -6,10 +6,6 @@ FN:Qeepsake
 EMAIL:support@qeepsake.com
 ORG:Qeepsake;
 TEL:781-467-9961
-TEL:614-682-7015
-TEL;type=FAX:614-923-7829
-PHOTO;MEDIATYPE=image/png:http://dbarner.me/logo.png
-URL:https://notifi.us
-URL:https://labbett.net
-ADR:;423 E. Town Street;Suite 204;Columbus;OH;43215;United States
+PHOTO:http://dbarner.me/logo.png
+URL:https://qeepsake.com
 END:VCARD
